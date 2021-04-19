@@ -1,0 +1,49 @@
+{
+    "vars": {},
+    "config": {
+        "pathParams": {},
+        "base_url": "^",
+        "scripts": {
+            "base": "https://s3-us-west-1.amazonaws.com/ui-guru/samples/",
+            "queue": [
+                {
+                    "path": "soundcloud.json",
+                    "mapping": {
+                        "from": "collection[2].track",
+                        "to":"content.track"
+                    }
+                }
+            ]
+        }
+    },
+    "content": {},
+    "components": {
+        "vibes-elements": {
+            "template_url": "./ui/templates/samples/soundcloud/vibes-elements.tpl"
+        },
+        "vibes-logo": {
+            "template_url": "./ui/templates/samples/soundcloud/vibes-logo.tpl"
+        },
+        "vibes-artwork": {
+            "template_url": "./ui/templates/samples/soundcloud/vibes-artwork.tpl"
+        },
+        "vibes-switcher": {
+            "template_url": "./ui/templates/samples/soundcloud/vibes-switcher.tpl"
+        },
+        "vibes-data": {
+            "template_url": "./ui/templates/samples/soundcloud/vibes-data.tpl"
+        },
+        "vibes-info": {
+            "template_url": "./ui/templates/samples/soundcloud/vibes-info.tpl"
+        },
+        "vibes-scrubber": {
+            "template_url": "./ui/templates/samples/soundcloud/vibes-scrubber.tpl"
+        },
+        "vibes-controls": {
+            "template_url": "./ui/templates/samples/soundcloud/vibes-controls.tpl"
+        },
+        "vibes-menu": {
+            "template_url": "./ui/templates/samples/soundcloud/vibes-menu.tpl"
+        }
+	}
+}

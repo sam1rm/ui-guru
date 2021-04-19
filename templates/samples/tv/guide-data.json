@@ -1,0 +1,4672 @@
+[
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 0,
+                "CatId": 5,
+                "Title": "Local Programming",
+                "ProgramId": 900147,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 5950,
+            "FullName": "CBS",
+            "Name": "CBSw",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 0,
+                "CatId": 5,
+                "Title": "Local Programming",
+                "ProgramId": 900147,
+                "StartTime": {
+                    "time": "14:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 5946,
+            "FullName": "ABC",
+            "Name": "ABCw",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 44,
+                "CatId": 4,
+                "Title": "NBC Nightly News With Lester Holt",
+                "ProgramId": 4350421,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 41,
+                "CatId": 2,
+                "Title": "Football Night in Minnesota",
+                "ProgramId": 31483160,
+                "StartTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:20",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 41,
+                "CatId": 2,
+                "Title": "Thursday Night Football:Cowboys at Vikings",
+                "ProgramId": 29536642,
+                "StartTime": {
+                    "time": "17:20",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "20:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 5956,
+            "FullName": "NBC",
+            "Name": "NBCw",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 0,
+                "CatId": 5,
+                "Title": "Local Programming",
+                "ProgramId": 900147,
+                "StartTime": {
+                    "time": "12:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 5953,
+            "FullName": "FOX",
+            "Name": "FOXw",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 266,
+                "CatId": 3,
+                "Title": "Odd Squad",
+                "ProgramId": 29956793,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 266,
+                "CatId": 3,
+                "Title": "Odd Squad",
+                "ProgramId": 31347779,
+                "StartTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 266,
+                "CatId": 3,
+                "Title": "Wild Kratts",
+                "ProgramId": 26701161,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 266,
+                "CatId": 3,
+                "Title": "Arthur",
+                "ProgramId": 12580965,
+                "StartTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 5958,
+            "FullName": "PBS",
+            "Name": "PBSw",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 0,
+                "CatId": 5,
+                "Title": "Local Programming",
+                "ProgramId": 900147,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "20:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 17765,
+            "FullName": "The CW",
+            "Name": "CWw",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 0,
+                "CatId": 5,
+                "Title": "Local Programming",
+                "ProgramId": 900147,
+                "StartTime": {
+                    "time": "06:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "20:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 17767,
+            "FullName": "MyNetworkTV",
+            "Name": "MNTw",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 8,
+                "CatId": 5,
+                "Title": "Blue Bloods",
+                "ProgramId": 23964601,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 8,
+                "CatId": 5,
+                "Title": "Blue Bloods",
+                "ProgramId": 24028724,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 4231,
+            "FullName": "ION (West Non-Network)",
+            "Name": "ION",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 12,
+                "CatId": 4,
+                "Title": "Al Rojo Vivo con Mar\u00eda Celeste",
+                "ProgramId": 3482940,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 8,
+                "CatId": 9,
+                "Title": "Suelta la sopa",
+                "ProgramId": 22871295,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 3815,
+            "FullName": "Telemundo Network (West)",
+            "Name": "TELMUN",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 8,
+                "CatId": 5,
+                "Title": "El gordo y la flaca",
+                "ProgramId": 1078349,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 8,
+                "CatId": 4,
+                "Title": "Primer impacto",
+                "ProgramId": 843285,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 2229,
+            "FullName": "Univisi\u00f3n Network (Pacific)",
+            "Name": "UNI",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "The First 48",
+                "ProgramId": 18522901,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "The First 48",
+                "ProgramId": 23028026,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 8560,
+            "FullName": "A&E Network (West)",
+            "Name": "A&E",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 8,
+                "CatId": 1,
+                "Title": "Yes Man",
+                "ProgramId": 8904902,
+                "StartTime": {
+                    "time": "14:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 8,
+                "CatId": 1,
+                "Title": "Monster-in-Law",
+                "ProgramId": 4781089,
+                "StartTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "19:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 10768,
+            "FullName": "AMC (West)",
+            "Name": "AMC",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "Monsters Inside Me",
+                "ProgramId": 28051277,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "Monsters Inside Me",
+                "ProgramId": 25452152,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 448,
+            "FullName": "Animal Planet (East)",
+            "Name": "ANIMAL",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "Star Trek: The Next Generation",
+                "ProgramId": 805516,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "Star Trek: The Next Generation",
+                "ProgramId": 1038046,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 3389,
+            "FullName": "BBC America (East)",
+            "Name": "BBC",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 8,
+                "CatId": 1,
+                "Title": "Set It Off",
+                "ProgramId": 483,
+                "StartTime": {
+                    "time": "14:25",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 9013,
+            "FullName": "Black Entertainment Television (West)",
+            "Name": "BET",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "Top Chef",
+                "ProgramId": 28920514,
+                "StartTime": {
+                    "time": "15:59",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "Top Chef",
+                "ProgramId": 28967908,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 10769,
+            "FullName": "Bravo (West)",
+            "Name": "BRAVO",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 266,
+                "CatId": 3,
+                "Title": "The Amazing World of Gumball",
+                "ProgramId": 23128833,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 266,
+                "CatId": 3,
+                "Title": "The Amazing World of Gumball",
+                "ProgramId": 23008739,
+                "StartTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 268,
+                "CatId": 3,
+                "Title": "The Powerpuff Girls",
+                "ProgramId": 31458025,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 268,
+                "CatId": 3,
+                "Title": "Clarence",
+                "ProgramId": 31538126,
+                "StartTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:45",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 268,
+                "CatId": 3,
+                "Title": "Uncle Grandpa",
+                "ProgramId": 31458038,
+                "StartTime": {
+                    "time": "17:45",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 3461,
+            "FullName": "",
+            "Name": "TOON-W",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 8,
+                "CatId": 1,
+                "Title": "Lucky Numbers",
+                "ProgramId": 2996939,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:45",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 8,
+                "CatId": 1,
+                "Title": "The Transporter",
+                "ProgramId": 3807457,
+                "StartTime": {
+                    "time": "17:45",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "19:20",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 2529,
+            "FullName": "Cinemax (West)",
+            "Name": "MAX",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "Reba",
+                "ProgramId": 3482916,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "Reba",
+                "ProgramId": 3611431,
+                "StartTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 266,
+                "CatId": 5,
+                "Title": "Last Man Standing",
+                "ProgramId": 25561926,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 266,
+                "CatId": 5,
+                "Title": "Last Man Standing",
+                "ProgramId": 25620088,
+                "StartTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 10092,
+            "FullName": "CMT (West)",
+            "Name": "CMT",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 8,
+                "CatId": 5,
+                "Title": "The Profit",
+                "ProgramId": 31522543,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 8,
+                "CatId": 5,
+                "Title": "Shark Tank",
+                "ProgramId": 23502684,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 28,
+            "FullName": "Consumer News & Business Channel",
+            "Name": "CNBC",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 12,
+                "CatId": 4,
+                "Title": "Erin Burnett OutFront",
+                "ProgramId": 31532403,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 9,
+                "CatId": 4,
+                "Title": "Anderson Cooper 360",
+                "ProgramId": 31532404,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 429,
+            "FullName": "Cable News Network",
+            "Name": "CNN",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 2,
+                "CatId": 5,
+                "Title": "South Park",
+                "ProgramId": 19783764,
+                "StartTime": {
+                    "time": "15:39",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "16:13",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "South Park",
+                "ProgramId": 5521545,
+                "StartTime": {
+                    "time": "16:13",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "16:46",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "South Park",
+                "ProgramId": 5142463,
+                "StartTime": {
+                    "time": "16:46",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:19",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "South Park",
+                "ProgramId": 25337360,
+                "StartTime": {
+                    "time": "17:19",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:52",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 2,
+                "CatId": 5,
+                "Title": "Futurama",
+                "ProgramId": 19696425,
+                "StartTime": {
+                    "time": "17:52",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:25",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 2526,
+            "FullName": "Comedy Central (West)",
+            "Name": "COMEDY",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 264,
+                "CatId": 1,
+                "Title": "Cloud 9",
+                "ProgramId": 21781739,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:40",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 266,
+                "CatId": 3,
+                "Title": "Liv and Maddie: Cali Style",
+                "ProgramId": 30582099,
+                "StartTime": {
+                    "time": "17:40",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:05",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 2499,
+            "FullName": "The Disney Channel (West)",
+            "Name": "DISNEY",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 266,
+                "CatId": 3,
+                "Title": "Right Now Kapow",
+                "ProgramId": 30934986,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 266,
+                "CatId": 3,
+                "Title": "Star vs. the Forces of Evil",
+                "ProgramId": 31344718,
+                "StartTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 266,
+                "CatId": 3,
+                "Title": "Star vs. the Forces of Evil",
+                "ProgramId": 31344715,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "Walk the Prank",
+                "ProgramId": 30035228,
+                "StartTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 3876,
+            "FullName": "Disney XD (West)",
+            "Name": "DISXD",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 10,
+                "CatId": 9,
+                "Title": "Tiny House, Big Living",
+                "ProgramId": 29802954,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 10,
+                "CatId": 9,
+                "Title": "Tiny House, Big Living",
+                "ProgramId": 29802947,
+                "StartTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 10,
+                "CatId": 9,
+                "Title": "Tiny House, Big Living",
+                "ProgramId": 29801032,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 10,
+                "CatId": 9,
+                "Title": "Tiny House, Big Living",
+                "ProgramId": 29801029,
+                "StartTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 6332,
+            "FullName": "Do it Yourself Network (East)",
+            "Name": "DIY",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "Emergency Room: Life and Death at VGH",
+                "ProgramId": 23533427,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "Emergency Room: Life and Death at VGH",
+                "ProgramId": 23395647,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 5799,
+            "FullName": "Discovery Life Channel",
+            "Name": "DLIF",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "Moonshiners",
+                "ProgramId": 31369485,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "Moonshiners",
+                "ProgramId": 31414976,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 2533,
+            "FullName": "The Discovery Channel (West)",
+            "Name": "DSC",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 8,
+                "CatId": 5,
+                "Title": "Botched",
+                "ProgramId": 29692173,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 8,
+                "CatId": 5,
+                "Title": "Botched",
+                "ProgramId": 29692229,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 2517,
+            "FullName": "E! Entertainment Television (West)",
+            "Name": "E!",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 12,
+                "CatId": 2,
+                "Title": "Championship Drive",
+                "ProgramId": 27917833,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 12,
+                "CatId": 2,
+                "Title": "E:60 Profile",
+                "ProgramId": 31593002,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 12,
+                "CatId": 2,
+                "Title": "E:60 Pictures",
+                "ProgramId": 31593004,
+                "StartTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 423,
+            "FullName": "ESPN",
+            "Name": "ESPN",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 9,
+                "CatId": 2,
+                "Title": "Women's Basketball:South Carolina at Texas",
+                "ProgramId": 31484590,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 435,
+            "FullName": "ESPN2",
+            "Name": "ESPN2",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 8,
+                "CatId": 2,
+                "Title": "Classic Global Wrestling",
+                "ProgramId": 22401278,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 8,
+                "CatId": 2,
+                "Title": "Classic Global Wrestling",
+                "ProgramId": 22401278,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 25,
+            "FullName": "ESPN Classic",
+            "Name": "ESPNCLS",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 9,
+                "CatId": 2,
+                "Title": "College Hockey:Michigan at Penn State",
+                "ProgramId": 23433717,
+                "StartTime": {
+                    "time": "15:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 15702,
+            "FullName": "ESPNU",
+            "Name": "ESPNU",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "NCIS: Los Angeles",
+                "ProgramId": 23137313,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "NCIS: Los Angeles",
+                "ProgramId": 23288703,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 13123,
+            "FullName": "Esquire Network SD (West)",
+            "Name": "ESQTV",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 40,
+                "CatId": 1,
+                "Title": "A Mighty Heart",
+                "ProgramId": 6829001,
+                "StartTime": {
+                    "time": "15:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "16:50",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 40,
+                "CatId": 1,
+                "Title": "Tart",
+                "ProgramId": 3828272,
+                "StartTime": {
+                    "time": "16:50",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 2520,
+            "FullName": "Flix (West)",
+            "Name": "FLIXw",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 12,
+                "CatId": 4,
+                "Title": "Tucker Carlson Tonight",
+                "ProgramId": 31509060,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 12,
+                "CatId": 4,
+                "Title": "The O'Reilly Factor",
+                "ProgramId": 925639,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 450,
+            "FullName": "Fox News Channel",
+            "Name": "FNC",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 10,
+                "CatId": 9,
+                "Title": "Beat Bobby Flay",
+                "ProgramId": 25762355,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 10,
+                "CatId": 9,
+                "Title": "Beat Bobby Flay",
+                "ProgramId": 27203725,
+                "StartTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 10,
+                "CatId": 9,
+                "Title": "Chopped",
+                "ProgramId": 21304309,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 12353,
+            "FullName": "Food Network (West)",
+            "Name": "FOOD",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 264,
+                "CatId": 1,
+                "Title": "Willy Wonka & the Chocolate Factory",
+                "ProgramId": 19007478,
+                "StartTime": {
+                    "time": "15:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 2519,
+            "FullName": "",
+            "Name": "FAM-W",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 1,
+                "CatId": 2,
+                "Title": "College Basketball:Columbia at Seton Hall",
+                "ProgramId": 1129095,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 44423,
+            "FullName": "Fox Sports 1",
+            "Name": "FS1",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 264,
+                "CatId": 5,
+                "Title": "Sister, Sister",
+                "ProgramId": 883902,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 264,
+                "CatId": 5,
+                "Title": "Sister, Sister",
+                "ProgramId": 872856,
+                "StartTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 8,
+                "CatId": 5,
+                "Title": "Moesha",
+                "ProgramId": 925799,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 8,
+                "CatId": 5,
+                "Title": "Moesha",
+                "ProgramId": 1012568,
+                "StartTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 21835,
+            "FullName": "Fuse (West)",
+            "Name": "FUSE",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 8,
+                "CatId": 5,
+                "Title": "Mike & Molly",
+                "ProgramId": 21623696,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 8,
+                "CatId": 5,
+                "Title": "Mike & Molly",
+                "ProgramId": 21729397,
+                "StartTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 8,
+                "CatId": 5,
+                "Title": "Mike & Molly",
+                "ProgramId": 21803228,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 8,
+                "CatId": 5,
+                "Title": "Mike & Molly",
+                "ProgramId": 21870405,
+                "StartTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 1182,
+            "FullName": "FX (West)",
+            "Name": "FX",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 264,
+                "CatId": 1,
+                "Title": "Night at the Museum",
+                "ProgramId": 6457738,
+                "StartTime": {
+                    "time": "14:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "16:47",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 8,
+                "CatId": 9,
+                "Title": "FXM Presents",
+                "ProgramId": 20104923,
+                "StartTime": {
+                    "time": "16:47",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 8,
+                "CatId": 1,
+                "Title": "We Bought a Zoo",
+                "ProgramId": 16492293,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "19:20",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 2419,
+            "FullName": "FX Movie Channel",
+            "Name": "FXM",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 8,
+                "CatId": 5,
+                "Title": "The Simpsons",
+                "ProgramId": 4457129,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 8,
+                "CatId": 5,
+                "Title": "The Simpsons",
+                "ProgramId": 4429219,
+                "StartTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 8,
+                "CatId": 5,
+                "Title": "The Simpsons",
+                "ProgramId": 4443980,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 8,
+                "CatId": 5,
+                "Title": "The Simpsons",
+                "ProgramId": 4465446,
+                "StartTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 44427,
+            "FullName": "FXX (West)",
+            "Name": "FXX",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "Shipping Wars",
+                "ProgramId": 25601063,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "Shipping Wars",
+                "ProgramId": 24602336,
+                "StartTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "Shipping Wars",
+                "ProgramId": 23156007,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "Shipping Wars",
+                "ProgramId": 24171009,
+                "StartTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 4580,
+            "FullName": "FYI",
+            "Name": "FYI",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 8,
+                "CatId": 2,
+                "Title": "Golf:Hero World Challenge",
+                "ProgramId": 2717913,
+                "StartTime": {
+                    "time": "14:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 9,
+                "CatId": 2,
+                "Title": "Australian PGA Championship:Second-round play",
+                "ProgramId": 1151403,
+                "StartTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "22:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 1185,
+            "FullName": "The Golf Channel",
+            "Name": "GOLF",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "Family Feud",
+                "ProgramId": 1055967,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "Family Feud",
+                "ProgramId": 1055967,
+                "StartTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 12,
+                "CatId": 5,
+                "Title": "Family Feud",
+                "ProgramId": 1055967,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 12,
+                "CatId": 5,
+                "Title": "Family Feud",
+                "ProgramId": 1055967,
+                "StartTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 1184,
+            "FullName": "GSN (East)",
+            "Name": "GSN",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 264,
+                "CatId": 1,
+                "Title": "A Princess for Christmas",
+                "ProgramId": 19936404,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 5264,
+            "FullName": "Hallmark Channel (West)",
+            "Name": "HALMRK",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 8,
+                "CatId": 1,
+                "Title": "Marathon: The Patriots Day Bombing",
+                "ProgramId": 31464119,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 2505,
+            "FullName": "HBO (West)",
+            "Name": "HBO",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 8,
+                "CatId": 1,
+                "Title": "The Divergent Series: Allegiant",
+                "ProgramId": 23283896,
+                "StartTime": {
+                    "time": "14:10",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "16:15",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 8,
+                "CatId": 1,
+                "Title": "Vice",
+                "ProgramId": 25420768,
+                "StartTime": {
+                    "time": "16:15",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:55",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 8,
+                "CatId": 1,
+                "Title": "Steve Jobs",
+                "ProgramId": 24076425,
+                "StartTime": {
+                    "time": "17:55",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "20:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 4289,
+            "FullName": "HBO 2 (West)",
+            "Name": "HBO2",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 8,
+                "CatId": 1,
+                "Title": "Larry Kramer in Love and Anger",
+                "ProgramId": 26303196,
+                "StartTime": {
+                    "time": "14:45",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "16:10",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 8,
+                "CatId": 1,
+                "Title": "The Normal Heart",
+                "ProgramId": 23730077,
+                "StartTime": {
+                    "time": "16:10",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:25",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 2503,
+            "FullName": "HBO Signature (West)",
+            "Name": "HBOSGw",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 8,
+                "CatId": 9,
+                "Title": "Flip or Flop",
+                "ProgramId": 28728101,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 8,
+                "CatId": 9,
+                "Title": "Flip or Flop",
+                "ProgramId": 27197822,
+                "StartTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 8,
+                "CatId": 9,
+                "Title": "Flip or Flop",
+                "ProgramId": 28403160,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 8,
+                "CatId": 9,
+                "Title": "Flip or Flop",
+                "ProgramId": 28370009,
+                "StartTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 12496,
+            "FullName": "Home & Garden Television (West)",
+            "Name": "HGTV",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "Pawn Stars",
+                "ProgramId": 22013469,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "Pawn Stars",
+                "ProgramId": 22741763,
+                "StartTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "Pawn Stars",
+                "ProgramId": 23639519,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "Pawn Stars",
+                "ProgramId": 25553393,
+                "StartTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 8559,
+            "FullName": "History (West)",
+            "Name": "HISTW",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "20/20 on ID",
+                "ProgramId": 29558517,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 12,
+                "CatId": 5,
+                "Title": "20/20 on ID",
+                "ProgramId": 27176968,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 1161,
+            "FullName": "Investigation Discovery",
+            "Name": "ID",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 8,
+                "CatId": 1,
+                "Title": "National Lampoon's Vacation",
+                "ProgramId": 1215629,
+                "StartTime": {
+                    "time": "14:45",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 8,
+                "CatId": 1,
+                "Title": "Half Baked",
+                "ProgramId": 291798,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "19:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 1192,
+            "FullName": "IFC (East)",
+            "Name": "IFC",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "Grey's Anatomy",
+                "ProgramId": 5071357,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "Project Runway",
+                "ProgramId": 30968630,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 2521,
+            "FullName": "Lifetime Television (West)",
+            "Name": "LIFE",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 8,
+                "CatId": 1,
+                "Title": "Below the Surface",
+                "ProgramId": 29596252,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 12285,
+            "FullName": "LMN (West)",
+            "Name": "LMN",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "Bring It!",
+                "ProgramId": 23826253,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "Bring It!",
+                "ProgramId": 23826255,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 10338,
+            "FullName": "Lifetime Real Women",
+            "Name": "LRW",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 8,
+                "CatId": 1,
+                "Title": "Kingsman: The Secret Service",
+                "ProgramId": 21867875,
+                "StartTime": {
+                    "time": "15:05",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:15",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 8,
+                "CatId": 1,
+                "Title": "Criminal Activities",
+                "ProgramId": 28104704,
+                "StartTime": {
+                    "time": "17:15",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:50",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 3712,
+            "FullName": "More Max (West)",
+            "Name": "MOMAX",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 12,
+                "CatId": 4,
+                "Title": "Hardball With Chris Matthews",
+                "ProgramId": 1007161,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 12,
+                "CatId": 4,
+                "Title": "All In With Chris Hayes",
+                "ProgramId": 21865441,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 1202,
+            "FullName": "msnbc",
+            "Name": "msnbc",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 2,
+                "CatId": 5,
+                "Title": "Catfish: The TV Show",
+                "ProgramId": 26900698,
+                "StartTime": {
+                    "time": "15:40",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "16:50",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 2,
+                "CatId": 5,
+                "Title": "Catfish: The TV Show",
+                "ProgramId": 24317813,
+                "StartTime": {
+                    "time": "16:50",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 2664,
+            "FullName": "MTV (West)",
+            "Name": "MTV",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 8,
+                "CatId": 2,
+                "Title": "Swimming:Winter National Championships",
+                "ProgramId": 31542986,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 8,
+                "CatId": 2,
+                "Title": "Nitro World Games All Access",
+                "ProgramId": 30786989,
+                "StartTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 1219,
+            "FullName": "NBC Sports Network",
+            "Name": "NBCSN",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 12,
+                "CatId": 5,
+                "Title": "Africa's Deadliest",
+                "ProgramId": 19901226,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 12,
+                "CatId": 5,
+                "Title": "Africa's Deadliest",
+                "ProgramId": 31545774,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 9426,
+            "FullName": "National Geographic Channel",
+            "Name": "NGC",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 266,
+                "CatId": 3,
+                "Title": "SpongeBob SquarePants",
+                "ProgramId": 3827431,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 266,
+                "CatId": 3,
+                "Title": "SpongeBob SquarePants",
+                "ProgramId": 6256362,
+                "StartTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 258,
+                "CatId": 3,
+                "Title": "The Loud House",
+                "ProgramId": 29568125,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 258,
+                "CatId": 3,
+                "Title": "The Loud House",
+                "ProgramId": 30814117,
+                "StartTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 2589,
+            "FullName": "Nickelodeon (West)",
+            "Name": "NIK",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "Dr. Phil",
+                "ProgramId": 6723520,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 10,
+                "CatId": 9,
+                "Title": "Dr. Phil",
+                "ProgramId": 6723521,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 28509,
+            "FullName": "The Oprah Winfrey Network (West)",
+            "Name": "OWN",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "America's Next Top Model",
+                "ProgramId": 25783859,
+                "StartTime": {
+                    "time": "15:51",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "16:53",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "America's Next Top Model",
+                "ProgramId": 25783996,
+                "StartTime": {
+                    "time": "16:53",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:55",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 266,
+                "CatId": 1,
+                "Title": "Sister Act",
+                "ProgramId": 1231193,
+                "StartTime": {
+                    "time": "17:55",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "20:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 8449,
+            "FullName": "Oxygen (West)",
+            "Name": "OXYGN",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "That '70s Show",
+                "ProgramId": 3642875,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "That '70s Show",
+                "ProgramId": 3656620,
+                "StartTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "That '70s Show",
+                "ProgramId": 3656622,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "That '70s Show",
+                "ProgramId": 3680562,
+                "StartTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 12013,
+            "FullName": "Pop (West)",
+            "Name": "POP",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 8,
+                "CatId": 9,
+                "Title": "Leah Antonella's Gift Favorites",
+                "ProgramId": 31571532,
+                "StartTime": {
+                    "time": "15:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 436,
+            "FullName": "Quality Value Convenience Network",
+            "Name": "QVC",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 0,
+                "CatId": 5,
+                "Title": "Snapped: Killer Couples",
+                "ProgramId": 23593055,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 0,
+                "CatId": 5,
+                "Title": "Scandal Made Me Famous",
+                "ProgramId": 31498443,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 18127,
+            "FullName": "ReelzChannel",
+            "Name": "REELZ",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "Alaska Mega Machines",
+                "ProgramId": 29620918,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "Alaska Mega Machines",
+                "ProgramId": 29402631,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:01",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 1164,
+            "FullName": "Science",
+            "Name": "SCI",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 8,
+                "CatId": 1,
+                "Title": "The Giver",
+                "ProgramId": 22804573,
+                "StartTime": {
+                    "time": "15:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:15",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 8,
+                "CatId": 1,
+                "Title": "What Women Want",
+                "ProgramId": 3047222,
+                "StartTime": {
+                    "time": "17:15",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "19:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 2512,
+            "FullName": "Showtime (West)",
+            "Name": "SHO",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 8,
+                "CatId": 1,
+                "Title": "The Imitation Game",
+                "ProgramId": 23346702,
+                "StartTime": {
+                    "time": "14:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 8,
+                "CatId": 1,
+                "Title": "What If",
+                "ProgramId": 21982407,
+                "StartTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:15",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 2510,
+            "FullName": "Showtime 2 (West)",
+            "Name": "SHO2w",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 8,
+                "CatId": 5,
+                "Title": "Stealth: Flying Invisible",
+                "ProgramId": 13787944,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 8,
+                "CatId": 5,
+                "Title": "Planes That Changed the World",
+                "ProgramId": 26952112,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 46702,
+            "FullName": "Smithsonian Channel (West)",
+            "Name": "SMITH",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 2,
+                "CatId": 5,
+                "Title": "Cops",
+                "ProgramId": 42820,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 2,
+                "CatId": 5,
+                "Title": "Cops",
+                "ProgramId": 42820,
+                "StartTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 2,
+                "CatId": 5,
+                "Title": "Cops",
+                "ProgramId": 42820,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 2,
+                "CatId": 5,
+                "Title": "Jail",
+                "ProgramId": 21628583,
+                "StartTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 4636,
+            "FullName": "Spike TV (West)",
+            "Name": "SPIKE",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 0,
+                "CatId": 1,
+                "Title": "40 Days and 40 Nights",
+                "ProgramId": 3611799,
+                "StartTime": {
+                    "time": "15:25",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:05",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 8,
+                "CatId": 1,
+                "Title": "Aloha",
+                "ProgramId": 22441381,
+                "StartTime": {
+                    "time": "17:05",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:50",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 2513,
+            "FullName": "Starz (West)",
+            "Name": "STRZw",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 8,
+                "CatId": 5,
+                "Title": "Law & Order",
+                "ProgramId": 855253,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 8,
+                "CatId": 5,
+                "Title": "Law & Order",
+                "ProgramId": 855588,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 2515,
+            "FullName": "SundanceTV (West)",
+            "Name": "SUND",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 8,
+                "CatId": 1,
+                "Title": "Cabin Fever: Patient Zero",
+                "ProgramId": 22867419,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 9196,
+            "FullName": "Syfy (West)",
+            "Name": "Syfy",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 8,
+                "CatId": 1,
+                "Title": "The Deep End of the Ocean",
+                "ProgramId": 1960609,
+                "StartTime": {
+                    "time": "15:20",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:10",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 0,
+                "CatId": 1,
+                "Title": "Monte Walsh",
+                "ProgramId": 3713421,
+                "StartTime": {
+                    "time": "17:10",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "19:10",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 2500,
+            "FullName": "STARZ ENCORE (West)",
+            "Name": "SZENw",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 8,
+                "CatId": 5,
+                "Title": "Friends",
+                "ProgramId": 2675087,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 8,
+                "CatId": 5,
+                "Title": "Friends",
+                "ProgramId": 2693105,
+                "StartTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 8,
+                "CatId": 5,
+                "Title": "Friends",
+                "ProgramId": 2712318,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 8,
+                "CatId": 5,
+                "Title": "Friends",
+                "ProgramId": 2693106,
+                "StartTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 12592,
+            "FullName": "TBS Superstation (West)",
+            "Name": "TBS",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 0,
+                "CatId": 1,
+                "Title": "The Vengeance of She",
+                "ProgramId": 1217568,
+                "StartTime": {
+                    "time": "15:15",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 0,
+                "CatId": 1,
+                "Title": "The Man Who Came to Dinner",
+                "ProgramId": 31830,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "19:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 1263,
+            "FullName": "Turner Classic Movies",
+            "Name": "TCM",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "Say Yes to the Dress",
+                "ProgramId": 25286432,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "Say Yes to the Dress",
+                "ProgramId": 25626892,
+                "StartTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "Say Yes to the Dress",
+                "ProgramId": 25626893,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "Say Yes to the Dress",
+                "ProgramId": 23815685,
+                "StartTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 5143,
+            "FullName": "The Learning Channel (West)",
+            "Name": "TLC",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 8,
+                "CatId": 1,
+                "Title": "Clouds of Sils Maria",
+                "ProgramId": 24062654,
+                "StartTime": {
+                    "time": "15:55",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 2525,
+            "FullName": "The Movie Channel (West)",
+            "Name": "TMC",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 8,
+                "CatId": 5,
+                "Title": "Bones",
+                "ProgramId": 10020618,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 9,
+                "CatId": 2,
+                "Title": "NBA Basketball:Clippers at Cavaliers",
+                "ProgramId": 1167030,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "19:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 3830,
+            "FullName": "Turner Network Television (West)",
+            "Name": "TNT",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 8,
+                "CatId": 9,
+                "Title": "Mysteries at the Museum",
+                "ProgramId": 30938027,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 8,
+                "CatId": 9,
+                "Title": "Mysteries at the Museum",
+                "ProgramId": 27000592,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 1260,
+            "FullName": "Travel Channel (East)",
+            "Name": "TRAVEL",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 8,
+                "CatId": 5,
+                "Title": "Impractical Jokers",
+                "ProgramId": 22557721,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 8,
+                "CatId": 5,
+                "Title": "Impractical Jokers",
+                "ProgramId": 22625845,
+                "StartTime": {
+                    "time": "16:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 8,
+                "CatId": 5,
+                "Title": "Impractical Jokers",
+                "ProgramId": 23797313,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 8,
+                "CatId": 5,
+                "Title": "Impractical Jokers",
+                "ProgramId": 23797314,
+                "StartTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 9247,
+            "FullName": "truTV (West)",
+            "Name": "truTV",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 1,
+                "CatId": 2,
+                "Title": "Trackside Live!",
+                "ProgramId": 27335568,
+                "StartTime": {
+                    "time": "12:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 1,
+                "CatId": 2,
+                "Title": "Race Night Featuring Remington Park",
+                "ProgramId": 27702645,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "21:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 6207,
+            "FullName": "TV Games Network",
+            "Name": "TVG",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 10,
+                "CatId": 5,
+                "Title": "Gunsmoke",
+                "ProgramId": 38581,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 258,
+                "CatId": 5,
+                "Title": "The Andy Griffith Show",
+                "ProgramId": 589781,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 258,
+                "CatId": 5,
+                "Title": "The Andy Griffith Show",
+                "ProgramId": 1078447,
+                "StartTime": {
+                    "time": "17:30",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 9898,
+            "FullName": "TV Land (West)",
+            "Name": "TVLAND",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 8,
+                "CatId": 5,
+                "Title": "Law & Order: Special Victims Unit",
+                "ProgramId": 20013059,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 8,
+                "CatId": 5,
+                "Title": "Law & Order: Special Victims Unit",
+                "ProgramId": 20140821,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 2534,
+            "FullName": "USA Network (West)",
+            "Name": "USA",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 2,
+                "CatId": 9,
+                "Title": "Martha & Snoop's Potluck Dinner Party",
+                "ProgramId": 31474769,
+                "StartTime": {
+                    "time": "15:50",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "16:25",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 2,
+                "CatId": 9,
+                "Title": "Martha & Snoop's Potluck Dinner Party",
+                "ProgramId": 31578712,
+                "StartTime": {
+                    "time": "16:25",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "16:55",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 2,
+                "CatId": 5,
+                "Title": "Love & Hip Hop",
+                "ProgramId": 29314522,
+                "StartTime": {
+                    "time": "16:55",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 2663,
+            "FullName": "VH1 (West)",
+            "Name": "VH1",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 8,
+                "CatId": 10,
+                "Title": "Growing Up Hip Hop",
+                "ProgramId": 31333074,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 8,
+                "CatId": 10,
+                "Title": "Growing Up Hip Hop",
+                "ProgramId": 31354059,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 2193,
+            "FullName": "Women's Entertainment Network (East)",
+            "Name": "WE",
+            "Number": ""
+        }
+    },
+    {
+        "ProgramSchedules": [
+            {
+                "AiringAttrib": 8,
+                "CatId": 5,
+                "Title": "Elementary",
+                "ProgramId": 28948296,
+                "StartTime": {
+                    "time": "16:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            },
+            {
+                "AiringAttrib": 8,
+                "CatId": 5,
+                "Title": "Elementary",
+                "ProgramId": 29097084,
+                "StartTime": {
+                    "time": "17:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                },
+                "EndTime": {
+                    "time": "18:00",
+                    "month": "12",
+                    "day": "01",
+                    "year": "2016"
+                }
+            }
+        ],
+        "Channel": {
+            "SourceId": 1280,
+            "FullName": "WGN America",
+            "Name": "WGNA",
+            "Number": ""
+        }
+    }
+]

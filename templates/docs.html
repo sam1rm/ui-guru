@@ -1,0 +1,57 @@
+
+<view layer="2" type='row' bg="stone" link-src-data="ui/static/data/docs.json" link-data-name="docs" class='full-xy'>
+
+    <item width="100" height="100" class="overflow-auto">
+		<div width="100" class="txt-center p05xy txt-16 semibold">v{{docs.version}}</div>
+	    <div>
+	        <ul bg="sienna" class='full-x p15-grid flex-wrap-center'>
+	            <li ng-repeat='(field, data) in docs'><div class="bg-stone p10y-p15x radius-2 txt-20 semibold">{{field}}</div></li>
+	        </ul>
+	        <div width='100'>
+				<ul class="p15-grid">
+                    <li class='flex-center-vertical' ng-repeat='(component_name, data) in docs.components'>
+                        <div width='20' class="txt-20 semibold">{{component_name}}</div>
+                        <div width='80' class="txt-16 semibold">{{data}}</div>
+                    </li>
+				</ul>
+				<div class="p15x">
+					<hr class="margin-none border-0 round" width="100%" height="2px" bg="white-50p"/>
+				</div>
+	            <div ng-repeat='(attr_name, attr_data) in docs.attr'>
+					<div class="flex-wrap-stretch">
+						<div width='30' class="p15y-p15left">
+							<div class="bg-white-25p radius-2">
+								<h1 class='txt-36 black p15x-p05top'>{{attr_name}}</h1>
+								<div class="opacity-50p semibold p15x txt-18 line-height-1-2">{{attr_data.info}}</div>
+								<ul class="flex-wrap p15-grid">
+									<li ng-repeat='tag in attr_data.tags'>
+										<span class='border-1 border-solid radius-2 p10x-p05y txt-1 semibold'>{{tag}}</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div width='70'>
+							<ul width='100' class='flex-wrap-start p15-grid'>
+								<li ng-repeat='(example_name, html) in attr_data.examples'>
+									<div width="200px" class='border-1 border-solid radius-2 flex-center-wrap'>
+										<div class="flex-center full-x bg-white semibold p05xy">
+											<span class="flex-center round width-24 height-24 bg-sienna txt-14">{{$index + 1}}</span>
+											<span class="m05left txt-16 txt-sienna">{{example_name}}</span>
+										</div>
+										<div width="196px" height="196px" class="flex overflow-hidden">
+											<html-snippet html='html' compile> </html-snippet>
+										</div>
+										<div class="bg-white p10x-p05y full-x">
+											<pre class="monospace txt-stone semibold full-x overflow-auto" style="max-height:100px; font-size:12px;line-height:1;" ng-bind="html"> </pre>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<hr class="margin-none border-0 round" width="100%" height="2px" bg="white-50p"/>
+	            </div>
+	        </div>
+	    </div>
+	</item>
+</view>

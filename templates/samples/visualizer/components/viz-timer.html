@@ -1,0 +1,9 @@
+<div abs bottom="0" left="0" bg="charcoal" flex p="2px 5px" f-s="14px" rad="2px">
+                            <span>
+                             <span u on-init="a:[counter:0:{{::content.track.duration/60000}}:{{::content.track.duration}}:easeOutCirc:0:1:f]">
+                                00</span>:<span u on-init="a:[counter:0:59:60000:easeOutCirc:0:4:f]">00</span>
+                            </span>
+                            <span>&nbsp;|&nbsp;</span>
+                            <span opacity="0.5" class="opacity-50p">{{(content.track.duration/60000).toFixed(0)}}:{{(content.track.duration%60).toFixed(0)}}</span>
+                            ->
+                        </div>

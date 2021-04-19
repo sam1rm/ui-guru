@@ -1,0 +1,100 @@
+<footer class="ui-gallery-single-footer">
+	<ul u when-popup-enter="s:[nav-enter:public:linear-150]:+1000">
+		<li u init-with="p:[op:0]"
+			when-nav-enter="a:[slideInUp-subtle:1000:linear:0:1:f]">
+			<a u on-click='s:[popup-closed:public]'>
+				<graphic url="shared/templates/components/svg/main/grid.html"></graphic>
+			</a>
+		</li>
+		<li u init-with="p:[op:0]"
+			when-nav-enter="a:[slideInUp-subtle:1000:linear:0:1:f]">
+			<a u on-click='s:[popup-prev:public]'>
+				<graphic url="shared/templates/components/svg/main/left.html"></graphic>
+			</a>
+		</li>
+		<li class="double" u init-with="p:[op:0]"
+			when-nav-enter="a:[slideInUp-subtle:1000:linear:0:1:f]">
+			<a u on-click='s:[popup-up:public]'>
+				<graphic url="shared/templates/components/svg/main/up.html"></graphic>
+			</a>
+			<a u on-click='s:[popup-down:public]'>
+				<graphic url="shared/templates/components/svg/main/down.html"></graphic>
+			</a>
+		</li>
+		<li u init-with="p:[op:0]"
+			when-nav-enter="a:[slideInUp-subtle:1000:linear:0:1:f]">
+			<a u on-click='s:[popup-next:public]'>
+				<graphic url="shared/templates/components/svg/main/right.html"></graphic>
+			</a>
+		</li>
+	</ul>
+
+	<div class="ui-gallery-single-switcher">
+		<div class="switcher-options"
+			u init-with="p:[op:0, tro:center bottom, tr:rotateX(-90deg), z-index:-1]"
+			when-option-switcher-open="p:[op:1, z-index:1] | a:[rotateX:-90deg:0deg:500:linear:0:1:f]"
+			when-option-switcher-close="a:[rotateX:0deg:-90deg:500:linear:0:1:f]">
+			<ul>
+				<li u init-with="p:[op:0]"
+					when-option-switcher-open="a:[slideInUp-subtle:1000:linear:0:1:f]:delay-50"
+					when-option-switcher-close="a:[opacity:1:0:50:linear:0:1:f]:delay-500">
+					<a u on-click='s:[option-switcher-close:public, aca-select:public]'>
+						<span class="color"><span class="bg-cerise border-glacier"></span></span>
+						<span>Academic</span>
+					</a>
+				</li>
+				<li u init-with="p:[op:0]"
+					when-option-switcher-open="a:[slideInUp-subtle:1000:linear:0:1:f]:delay-100"
+					when-option-switcher-close="a:[opacity:1:0:50:linear:0:1:f]:delay-500">
+					<a u on-click='s:[option-switcher-close:public, baking-select:public]'>
+						<span class="color"><span class="bg-gold border-glacier"></span></span>
+						<span>Baking</span>
+					</a>
+				</li>
+				<li u init-with="p:[op:0]"
+					when-option-switcher-open="a:[slideInUp-subtle:1000:linear:0:1:f]:delay-150"
+					when-option-switcher-close="a:[opacity:1:0:50:linear:0:1:f]:delay-500">
+					<a u on-click='s:[option-switcher-close:public, photo-select:public]'>
+						<span class="color"><span class="bg-moola border-glacier"></span></span>
+						<span>Photography</span>
+					</a>
+				</li>
+				<li u init-with="p:[op:0]"
+					when-option-switcher-open="a:[slideInUp-subtle:1000:linear:0:1:f]:delay-200"
+					when-option-switcher-close="a:[opacity:1:0:50:linear:0:1:f]:delay-500">
+					<a u on-click='s:[option-switcher-close:public, tech-select:public]'>
+						<span class="color"><span class="bg-azure border-glacier"></span></span>
+						<span>Tech</span>
+					</a>
+				</li>
+				<li u init-with="p:[op:0]"
+					when-option-switcher-open="a:[slideInUp-subtle:1000:linear:0:1:f]:delay-250"
+					when-option-switcher-close="a:[opacity:1:0:50:linear:0:1:f]:delay-500">
+					<a u on-click='s:[option-switcher-close:public, hh-select:public]'>
+						<span class="color"><span class="bg-cobalt border-glacier"></span></span>
+						<span>Household</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div>
+			<a u init-with="p:[op:0]"
+				on-click='s:[option-switcher-open:public]'
+				when-popup-enter="a:[slideInUp-subtle:1000:linear:0:1:f]:delay-1200">
+				<span class="color">
+					<span class="border-glacier"
+						u init-with="p:[bg:#e6389b, t:150ms all ease-out]"
+						when-aca-select="p:[bg:#e6389b]"
+						when-baking-select="p:[bg:#F6C64E]"
+						when-photo-select="p:[bg:#81B566]"
+						when-tech-select="p:[bg:#55A4B7]"
+						when-hh-select="p:[bg:#7872e3]"></span>
+				</span>
+				<graphic url="shared/templates/components/svg/main/down.html"
+					u init-with="p:[tro:center center]"
+					when-option-switcher-open="a:[rotate:0deg:180deg:200:easeOutSine:0:1:f]"
+					when-option-switcher-close="a:[rotate:180deg:0deg:200:easeInSine:0:1:f]"></graphic>
+			</a>
+		</div>
+	</div>
+</footer>

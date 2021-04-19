@@ -1,0 +1,44 @@
+<div class='ui-guru-loader loader-portal-outer flex-vertical-center absolute flex-wrap top-0 left-0' link-src-data="/ui/static/data/ui.json" link-data-name='ui'>
+
+    <!--  Stage One: Loader Dont render + import internally-->
+	<!-- <div ng-include="root.base_url + 'ui/templates/loader.html'"</div> -->
+
+    <main-view class='absolute full-xy perspective-container' u init-with='p:[z-index:0]'
+		ng-attr-accept-keys="esc"
+		on-key-up="s:[modal-docs-closed:public]">
+        <import class='absolute top-0 left-0 full-xy' url="ui.app.loader.url" ng-if='ui.app.loader.url'></import>
+
+		<div class="portal-page" style='z-index:-1'
+		    u init-with="p:[op:0, width:200px, height:200px, left:50%, top:50%, margin-left:-100px, margin-top:-100px, border-radius:100%, border-radius:0, tr:translateY(20.5%) translateZ(25px) rotateX(84deg)]"
+		    when-portal-transform="a:[opacity:0:1:250:easeOutSine:750:1:f, translateY:71.5%:0%:650:easeOutCirc:0:1:f, rotateX:84deg:0deg:650:easeOutSine:0:1:f] | s:[transition-start:public:500]"
+		    when-transition-start="p:[z-index:1000, width:100%, height:100%, left:0, top:0, margin-left:0, margin-top:0, border-radius:0]">
+		    <div class="bg-charcoal"
+		        u init-with="p:[-webkit-clip-path:circle(90px at 50% 50%), overflow:hidden]"
+		        when-transition-start="a:[-webkit-clip-path:circle(90px at 50% 50%):circle(1500px at 50% 50%):750:(1,0,1,0):0:1:f] | s:[transition-end:self:750]"
+		        when-transition-end="p:[-webkit-clip-path:none]">
+		        <main u init-with="p:[tro:center center,z-index:-1000]"
+		            when-transition-start="s:[page-enter:public:1000]">
+		            <section style='z-index:-1000 !important;' class="full-xy flex-center"
+		                u init-with="p:[background-color:#2B3234]"
+		                when-page-enter="a:[background-color:#2B3234:#fadab0:750:easeOutSine]">
+		            	<import url="ui.app.views.gallery.url" ng-if='ui.app.views.gallery'></import>
+		            </section>
+		        </main>
+		    </div>
+		</div>
+
+		<!-- <import url="ui.app.views.gallery.url" ng-if='ui.app.views.gallery'></import> -->
+
+    </main-view>
+
+    <!-- <ext-views> -->
+        <!-- <modal ng-repeat='ext_view in ui.views.external'> </modal> -->
+    <!-- <ext-views> -->
+
+    <!--  Stage Two: Access -->
+    <!-- <div init-after="ui-body-init" inner-src="'ui/templates/access.html'"></div> -->
+
+    <!--  Stage Three: UI Home -->
+    <!-- <div init-after="ui-body-init" inner-src="'ui/templates/home.html'"></div> -->
+
+</div>

@@ -1,0 +1,18 @@
+<view link-data="ui/templates/samples/visualizer/viz.sm.json" render-after-ext-scripts width="100" height="100" let="content=data.content">
+	<header abs top="0" left="0" p="15px"><h1 p="10px 15px" f-s="16px" f-w="600" bg="moxie" rad="2px">original edit</h1></header>
+    <div width="100" height="100" absolute y-center scroll-x
+		u on-init="s:[expand-post-render:depth(2):easeOutSine-500]:delay-2000">
+        <!-- u on-init="s:[expand-post-render:depth(2):easeInCirc-5000]" -->
+        <hr relative z="100" m="0" width="100%" height="5px" bg="sienna" border="0"/>
+            <!-- <viz-bar data="sample in data.content.viz.samples"></viz-bar> -->
+
+        <div viz-data="data.content.viz.samples.slice(0, 250)">
+            <div width='2px' rad="4px" m-x="1px" style="background:white;transform-origin:bottom center"
+				u when-expand-post-render="a:[scaleY:1:2:500:easeOutBack:0:1:f]">
+                <!-- when-expand-post-render="a:[scaleY:1:2:1000:easeOutCirc:0:1:f]" -->
+                <!-- when-bar-play="a:[background:rgba(255,255,255,1)::250:easeOutExpo:0:1:f, scaleY:1:0.8:125:easeOutExpo:0:1000:a]" -->
+                <div style="height:{{::sample}}px">&nbsp;</div>
+            </div>
+        </div>
+    </div>
+</view>

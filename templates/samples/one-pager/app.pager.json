@@ -1,0 +1,175 @@
+{
+    "vars": {
+
+        "editable": {
+            "defaults": {
+                "text": {
+                    "color": "charcoal"
+                },
+                "animations": {}
+            },
+            "nav": {
+                "header": {
+                    "logo": {"text":
+                        {"initial": "SM",
+                        "text": "agency"}
+                    },
+                    "tabs": ["tab 1", "tab 2", "tab 3", "tab 4", "tab 5", "tab6"],
+                    "menu_url": "ui/templates/samples/one-pager/static/icons/menu.tpl",
+                    "cta_button": "Action Button"
+                },
+                "footer": {
+                    "about": {
+                        "image_url": "",
+                        "name": "Your Name",
+                        "role": "your profession",
+                        "header": null
+                    },
+                    "connect": {
+                        "title": null,
+                        "icons": [
+                            {"graphic": "ui/templates/one-pager/static/icons/facebook.tpl", "url": "http://google.com"},
+                            {"graphic": "ui/templates/one-pager/static/icons/linked_in.tpl", "url": "http://google.com"},
+                            {"graphic": "ui/templates/one-pager/static/icons/instagram.tpl", "url": "http://google.com"},
+                            {"graphic": "ui/templates/one-pager/static/icons/twitter.tpl", "url": "http://google.com"}
+                        ]
+                    }
+                },
+                "sidebar": {
+                    "links": ["Link 1", "Link 2", "Link 3", "Link 4"]
+                }
+            },
+            "sections": {
+                "splash": {
+                    "title": {
+                        "header": "this is a header",
+                        "subheader": "this is a subheader"
+                    }
+                },
+                "lead_gen": {},
+                "programs": {},
+                "testimonials": {
+                    "header": "These are my testimonials",
+                    "reviews": [
+                        {"name": "Asif D.", "image_url": "ui/templates/samples/one-pager/static/avatars/1.tpl", "desc": "Skate ipsum dolor sit amet, grind mini ramp betty skate key hip Mark Gonzales. Heel flip casper Pushead casper slide transfer aerial. Lip John Cardiel frigid air betty masonite shinner. Rail slide cess slide stalefish..."},
+                        {"name": "Anita J.", "image_url": "ui/templates/samples/one-pager/static/avatars/2.tpl", "desc": "Skate ipsum dolor sit amet, grind mini ramp betty skate key hip Mark Gonzales. Heel flip casper Pushead casper slide transfer aerial. Lip John Cardiel frigid air betty masonite shinner. Rail slide cess slide stalefish...."},
+                        {"name": "Jay Zong.", "image_url": "ui/templates/samples/one-pager/static/avatars/3.tpl", "desc": "Skate ipsum dolor sit amet, grind mini ramp betty skate key hip Mark Gonzales. Heel flip casper Pushead casper slide transfer aerial. Lip John Cardiel frigid air betty masonite shinner. Rail slide cess slide stalefish...."},
+                        {"name": "Ashley S.", "image_url": "ui/templates/samples/one-pager/static/avatars/4.tpl", "desc": "Skate ipsum dolor sit amet, grind mini ramp betty skate key hip Mark Gonzales. Heel flip casper Pushead casper slide transfer aerial. Lip John Cardiel frigid air betty masonite shinner. Rail slide cess slide stalefish...."},
+                        {"name": "Mary k.", "image_url": "ui/templates/samples/one-pager/static/avatars/5.tpl", "desc": "Skate ipsum dolor sit amet, grind mini ramp betty skate key hip Mark Gonzales. Heel flip casper Pushead casper slide transfer aerial. Lip John Cardiel frigid air betty masonite shinner. Rail slide cess slide stalefish...."},
+                        {"name": "Lil b", "image_url": "ui/templates/samples/one-pager/static/avatars/6.tpl", "desc": "Skate ipsum dolor sit amet, grind mini ramp betty skate key hip Mark Gonzales. Heel flip casper Pushead casper slide transfer aerial. Lip John Cardiel frigid air betty masonite shinner. Rail slide cess slide stalefish...."}
+                    ]
+                },
+                "timeline": {}
+            },
+            "modals": {
+                "booking": {
+                    "my_availability": [
+                        {"day": 30, "month": "11", "hour_ranges": [15, 17]}
+                    ]
+                }
+            }
+
+        }
+    },
+    "config": {
+        "todo": ["item 1", "item 2", "item 3", "item 4"],
+        "pathParams": {},
+        "base_url": "^",
+        "parse": {},
+        "scripts": {
+            "base": "./ui/templates/samples/kicks/",
+            "queue": [
+                {
+                    "path": "shoes.json",
+                    "mappings": [
+                        {
+                            "to":"content.shoes"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "content": {},
+    "components": {
+        "loader": {
+            "template_url": "./ui/templates/samples/one-pager/components/loader.tpl"
+        },
+        "header": {
+            "data": {
+                "external": {
+                    "header": "var"
+                }
+            },
+            "template_url": "./ui/templates/samples/one-pager/containers/header.tpl"
+        },
+        "tab-links": {
+            "data": {
+                "external": {
+                    "tabInfo": "var",
+                    "activeTab": "var"
+                }
+            },
+            "template_url": "./ui/templates/samples/one-pager/containers/tab-links.tpl"
+        },
+        "todo-list": {
+            "data": {
+                "external": {
+                    "items": "var"
+                }
+            },
+            "template_url": "./ui/templates/samples/one-pager/components/todo-list.tpl"
+        },
+        "testimonials-section": {
+            "data": {
+                "external": {
+                    "info":"var"
+                }
+            },
+            "template_url": "./ui/templates/samples/one-pager/sections/testimonials.html"
+        },
+        "splash-section": {
+            "data": {
+                "external": {
+                    "splash":"var"
+                }
+            },
+            "template_url": "./ui/templates/samples/one-pager/sections/splash.html"
+        },
+        "testimonial": {
+            "data": {
+                "external": {
+                    "t":"var"
+                }
+            },
+            "template_url": "./ui/templates/samples/one-pager/components/testimonial.tpl"
+        },
+        "icon": {
+            "data": {
+                "external": {
+                    "nav": "var"
+                }
+            },
+            "template_url": "./ui/templates/samples/one-pager/components/icon.tpl"
+        },
+        "logo":
+        {
+            "data": {
+                "external": {
+                    "text": "string",
+                    "activeTab": "var"
+                }
+            },
+            "template_url": "./ui/templates/samples/one-pager/components/logo.tpl"
+        },
+
+        "section": {
+            "data": {
+                "external": {
+                    "info": "var"
+                }
+            },
+            "template_url": "./ui/templates/samples/one-pager/containers/section.tpl"
+        }
+    }
+}

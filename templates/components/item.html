@@ -1,0 +1,381 @@
+<modal fixed name='popup' scale-to='#profile-tile-id' class='ui-gallery-single top-0 left-0 full-xy perspective-container' bg='#C6DDD6'
+	u init-with='p:[opacity:0]'
+	when-popup-open='a:[scaleIn-subtle:1000:linear:0:1:f, z-index:-1:100:50:linear:0:1:f] | s:[popup-enter:public:1000]'
+	when-popup-closed="a:[opacity:1:0:500:easeOutExpo:0:1:f, z-index:100:-1:50:linear:450:1:f]">
+	<nav class="ui-nav">
+		<item>
+			<graphic url='ui/templates/components/svg/nav-logo.html' u on-click='s:[sidebar-modal-requested-left:public]'></graphic>
+		</item>
+		<item class="flex">
+			<fieldset class="search-bar"
+				u init-with="p:[op:1, width:48px]"
+				on-init="s:[search-bar-init:children] | a:[opacity:0:1:1500:easeOutQuint:0:1:f, translateX:500px:0px:250:easeInOutElastic:0:1:f]"
+				when-search-bar-clicked="a:[width:48px:500px:250:easeOutBack:0:1:f]"
+				on-click="s:[search-bar-clicked:depth(0), search-bar-icon:depth(1):250]"
+				on-exit="p:[opacity:1:0:250:easeOutSine]">
+				<div>
+					<label for="search-bar">
+						<svg viewBox="0 0 100 100">
+							<path d="M62.994485,62.994485 L85.6624699,85.6624699"
+								u init-with="p:[sda:32.06, sdo:32.06]"
+								when-search-bar-init="a:[stroke-dashoffset:32.06:0:200:easeOutSine:750:1:f]"></path>
+							<circle cx="42.5" cy="42.5" r="28.5"
+								u on-init="s:[init-with:self:700]"
+								init-with="p:[sda:179.07, sdo:179.07]"
+								when-search-bar-init="a:[stroke-dashoffset:179.07:0:200:easeOutSine:0:1:f]:delay-500"></circle>
+						</svg>
+					</label>
+
+					<input id="search-bar" placeholder="Filter"
+						u init-with="p:[op:0]"
+						ng-model="searchText"
+						when-search-bar-icon="p:[opacity:0:1:250:easeOutSine:0:1:f]"/>
+				</div>
+			</fieldset>
+
+			<div class="ui-menu-container"
+				u init-with="p:[op:1]"
+				when-login-modal-requested="a:[opacity:1:0:250:linear:0:1:f]"
+				when-login-modal-closed="a:[opacity:0:1:250:linear:0:1:f]">
+				<a class="ui-menu-icon"
+					u init-with="p:[z-index:-1, op:0]"
+					on-click='s:[sidebar-modal-requested:public]'
+					when-login-enter="p:[z-index:1, op:1]"
+					when-logout-exit="p:[z-index:-1, op:0]">
+					<graphic url="shared/templates/components/svg/main/menu.html"></graphic>
+				</a>
+				<a class="ui-menu-icon"
+					u init-with="p:[z-index:1, op:1]"
+					on-click='s:[login-modal-requested:public]'
+					when-login-enter="p:[z-index:-1, op:0]"
+					when-logout-exit="p:[z-index:1, op:1]">
+					<graphic url="shared/templates/components/svg/main/user.html"></graphic>
+				</a>
+			</div>
+		</item>
+	</nav>
+
+	<div class="ui-gallery-single-main">
+		<article>
+			<div>
+				<a class="ui-likes"
+					u on-click="c:[liked:add]">
+					<graphic url='shared/templates/components/svg/main/heart.html'></graphic>
+					<span class="block m05left txt-slate txt-18 semibold">2831</span>
+				</a>
+				<figure>
+					<div class="absolute top-0 right-0 bg-white flex-center-vertical p05xy" style="border-bottom-left-radius:2px">
+						<span class="stroke-rose svg-24 svg-stroke-6">
+							<graphic url="shared/templates/components/svg/main/heart.html"> </graphic>
+						</span>
+						<span u when-academic-tile-init="a:[counter:0:2831:2500:easeOutCirc:0:1:f, portal-progress-color:5000:linear:250:1:f, fill:#69B3A5:#F6C64E:5000:easeOutCirc:250:1:f]" class="block m05left txt-slate txt-18 semibold"></span>
+					</div>
+
+					<div class="pf-tile-container"
+						u init-with="p:[opacity:0, transform-origin:left top, transform:rotateX(30deg) rotateY(30deg) translateY(300px)]"
+						on-init="s:[academic-tile-init:public, aca-border:children:500, aca-top:children:500]"
+						when-academic-tile-init="a:[rotateX:30deg:0deg:1000:easeOutCubic:0:1:f, rotateY:30deg:0deg:1000:easeOutCubic:0:1:f, translateY:300px:0px:1000:easeOutCubic:0:1:f, opacity:0:1:10:linear:0:1:f]"
+						when-academic-tile-exit="p:[transform-origin:left bottom] | a:[opacity:1:0:500:easeOutSine:500:1:f, rotateX:0deg:-45deg:1000:easeOutCubic:0:1:f, rotateY:0deg:30deg:1000:easeOutCubic:0:1:f, translateY:0px:-300px:1000:easeOutCubic:0:1:f]">
+						<a></a><a></a><a></a><a></a>
+						<div class="pf-tile bg-academic">
+							<div class="pf-tile-border">
+								<div class="top"
+									u init-with="p:[transform-origin:left center, transform:scaleX(0)]"
+									when-aca-border="a:[scaleX:0:1:500:easeOutCubic:0:1:f]"
+									when-academic-tile-exit="a:[scaleX:1:0:500:easeOutCubic]"></div>
+								<div class="right"
+									u init-with="p:[transform-origin:center bottom, transform:scaleY(0)]"
+									when-aca-border="a:[scaleY:0:1:500:easeOutCubic:0:1:f]"
+									when-academic-tile-exit="p:[transform:scaleY(0)]"></div>
+								<div class="bot"
+									u init-with="p:[transform-origin:right center, transform:scaleX(0)]"
+									when-aca-border="a:[scaleX:0:1:500:easeOutCubic:0:1:f]"
+									when-academic-tile-exit="p:[scaleX:0]"></div>
+								<div class="left"
+									u init-with="p:[transform-origin:center top, transform:scaleY(0)]"
+									when-aca-border="a:[scaleY:0:1:500:easeOutCubic:0:1:f]"
+									when-academic-tile-exit="p:[transform:scaleY(0)]"></div>
+							</div>
+							<div class="pf-tile-top">
+								<div class="pf-pricing"
+									u init-with="p:[opacity:0, tro:left center]"
+									when-aca-top="a:[bounceIn-subtle:750:linear:375:1:f]">$10/hr</div>
+								<div u init-with="p:[transform:translateY(-80%), opacity:0]"
+									when-aca-top="a:[translateY:-100px:0px:750:easeOutCubic:500:1:f, opacity:0:1:250:linear:500:1:f]">
+									<div class="pf-tile-icon">
+										<svg viewBox="0 0 100 100">
+											<g>
+												<path d="M61.993,18 L25.006,18 C23.334,18 22,19.344 22,21.001 L22,30 L25.002,30 C26.658,30 28,31.346 28,33 C28,34.657 26.658,36 25.002,36 L22,36 L22,47 L25.002,47 C26.658,47 28,48.346 28,50 C28,51.657 26.658,53 25.002,53 L22,53 L22,64 L25.002,64 C26.658,64 28,65.346 28,67 C28,68.657 26.658,70 25.002,70 L22,70 L22,78.999 C22,80.663 23.346,82 25.006,82 L61.993,82 C63.666,82 65,80.656 65,78.999 L65,21.001 C65,19.337 63.654,18 61.993,18 L61.993,18 Z"></path>
+												<path d="M70,70 L74,77 L78,70 L78,17.9999998 L70,17.9999998 L70,70 Z"></path>
+												<path d="M70.4117647,81 L83.5882353,81"></path>
+												<rect x="16" y="64" width="12" height="6" rx="3"></rect>
+												<rect x="16" y="47" width="12" height="6" rx="3"></rect>
+												<rect x="16" y="30" width="12" height="6" rx="3"></rect>
+											</g>
+										</svg>
+									</div>
+								</div>
+								<h1 u init-with="p:[transform:translateY(-100px), opacity:0]"
+									when-aca-top="a:[translateY:-100px:0px:750:easeOutSine:0:1:f, opacity:0:1:750:easeOutSine:0:1:f]">Chem 133</h1>
+								<h2 u init-with="p:[transform:translateY(-100px), opacity:0]"
+									when-aca-top="a:[translateY:-100px:0px:750:easeOutSine:0:1:f, opacity:0:1:750:easeOutSine:0:1:f]">Organic Chemistry</h2>
+							</div>
+							<div class="pf-tile-bottom"
+								u init-with="p:[transform-origin:center bottom, opacity:0, transform:translateY(-100px) scaleY(3)]"
+								when-academic-tile-init="a:[translateY:-100px:0px:1000:easeInOutCubic:0:1:f, scaleY:3:1:1000:easeInOutCubic:0:1:f, opacity:0:1:250:easeOutSine:250:1:f]">
+								<ul class="rating-stars" data-rating="4" data-half="true"
+									u on-init="s:[academic-stars:c:easeInQuad-500]:+1400">
+									<li u init-with="p:[opacity:0]"
+										when-academic-stars="a:[bounceIn-rotate-subtle:500:easeOutSine:0:1:f]">
+										<svg viewBox="0 0 100 100">
+											<polygon points="50 68 28.8397309 79.1246118 32.8809827 55.5623059 15.7619654 38.8753882 39.4198655 35.4376941 50 14 60.5801345 35.4376941 84.2380346 38.8753882 67.1190173 55.5623059 71.1602691 79.1246118"></polygon>
+											<polygon points="50 68 28.8397309 79.1246118 32.8809827 55.5623059 15.7619654 38.8753882 39.4198655 35.4376941 50 14"></polygon>
+										</svg>
+									</li>
+									<li u init-with="p:[opacity:0]"
+										when-academic-stars="a:[pf-bounceIn-rotate:500:easeOutSine:0:1:f]">
+										<svg viewBox="0 0 100 100">
+											<polygon points="50 68 28.8397309 79.1246118 32.8809827 55.5623059 15.7619654 38.8753882 39.4198655 35.4376941 50 14 60.5801345 35.4376941 84.2380346 38.8753882 67.1190173 55.5623059 71.1602691 79.1246118"></polygon>
+											<polygon points="50 68 28.8397309 79.1246118 32.8809827 55.5623059 15.7619654 38.8753882 39.4198655 35.4376941 50 14"></polygon>
+										</svg>
+									</li>
+									<li u init-with="p:[opacity:0]"
+										when-academic-stars="a:[pf-bounceIn-rotate:500:easeOutSine:0:1:f]">
+										<svg viewBox="0 0 100 100">
+											<polygon points="50 68 28.8397309 79.1246118 32.8809827 55.5623059 15.7619654 38.8753882 39.4198655 35.4376941 50 14 60.5801345 35.4376941 84.2380346 38.8753882 67.1190173 55.5623059 71.1602691 79.1246118"></polygon>
+											<polygon points="50 68 28.8397309 79.1246118 32.8809827 55.5623059 15.7619654 38.8753882 39.4198655 35.4376941 50 14"></polygon>
+										</svg>
+									</li>
+									<li u init-with="p:[opacity:0]"
+										when-academic-stars="a:[pf-bounceIn-rotate:500:easeOutSine:0:1:f]">
+										<svg viewBox="0 0 100 100">
+											<polygon points="50 68 28.8397309 79.1246118 32.8809827 55.5623059 15.7619654 38.8753882 39.4198655 35.4376941 50 14 60.5801345 35.4376941 84.2380346 38.8753882 67.1190173 55.5623059 71.1602691 79.1246118"></polygon>
+											<polygon points="50 68 28.8397309 79.1246118 32.8809827 55.5623059 15.7619654 38.8753882 39.4198655 35.4376941 50 14"></polygon>
+										</svg>
+									</li>
+									<li u init-with="p:[opacity:0]"
+										when-academic-stars="a:[pf-bounceIn-rotate:500:easeOutSine:0:1:f]">
+										<svg viewBox="0 0 100 100">
+											<polygon points="50 68 28.8397309 79.1246118 32.8809827 55.5623059 15.7619654 38.8753882 39.4198655 35.4376941 50 14 60.5801345 35.4376941 84.2380346 38.8753882 67.1190173 55.5623059 71.1602691 79.1246118"></polygon>
+											<polygon points="50 68 28.8397309 79.1246118 32.8809827 55.5623059 15.7619654 38.8753882 39.4198655 35.4376941 50 14"></polygon>
+										</svg>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</figure>
+				<div class="ui-gallery-single-desc"
+					u init-with="p:[tro:top center, transform:rotateX(90deg), op:0]"
+					when-popup-enter="a:[rotateX:90deg:0deg:1000:easeOutExpo:0:1:f, opacity:0:1:100:linear:0:1:f]">
+					<header>
+						<h1 u init-with="p:[op:0]"
+							when-popup-enter="a:[bounceIn-subtle:1000:linear:0:1:f]">Profile Tile</h1>
+						<h4>
+							<span>by <a>Jeselle Obina</a></span>
+							<span class="user-icon-24 border-stone"></span>
+						</h4>
+						<h4>
+							<span>Last updated 11/07/16, <a>#028</a></span>
+						</h4>
+					</header>
+					<aside>
+						<hr/>
+						<pe u init-with="p:[op:0]"
+							when-popup-enter="a:[bounceIn-subtle:1000:linear:0:1:f]:delay-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</aside>
+					<footer class="width-100p">
+						<ul class="flex-wrap p15-grid"
+							u when-popup-enter="s:[tag-enter:public:linear-200]:+100">
+							<li u init-with="p:[op:0]"
+								when-tag-enter="p:[bounceIn-subtle:1000:linear:0:1:f]">
+								<a class="chip bg bg-stone">profile</a>
+							</li>
+							<li u init-with="p:[op:0]"
+								when-tag-enter="a:[bounceIn-subtle:1000:linear:0:1:f]">
+								<a class="chip bg bg-stone">tile</a>
+							</li>
+							<li u init-with="p:[op:0]"
+								when-tag-enter="a:[bounceIn-subtle:1000:linear:0:1:f]">
+								<a class="chip bg bg-stone">card</a>
+							</li>
+							<li u init-with="p:[op:0]"
+								when-tag-enter="a:[bounceIn-subtle:1000:linear:0:1:f]">
+								<a class="chip bg bg-stone">user</a>
+							</li>
+						</ul>
+					</footer>
+				</div>
+			</div>
+			<div class="ui-gallery-single-info">
+				<div class="ui-gallery-related">
+					<div>
+						<h2>Related</h2>
+						<ul class="p15-grid ugrid-2">
+							<li>
+								<a class="block radius-2 border-2 border-stone">
+									<figure class="bg-stone-25p margin-none p15xy">
+										<svg></svg>
+									</figure>
+									<div class="bg-white border-2-top border-stone">
+										<h4 class="txt-18 txt-stone semibold p10xy txt-center">Request Tile</h4>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a class="block radius-2 border-2 border-stone">
+									<figure class="bg-stone-25p margin-none p15xy">
+										<svg></svg>
+									</figure>
+									<div class="bg-white border-2-top border-stone">
+										<h4 class="txt-18 txt-stone semibold p10xy txt-center">Request Tile</h4>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a class="block radius-2 border-2 border-stone">
+									<figure class="bg-stone-25p margin-none p15xy">
+										<svg></svg>
+									</figure>
+									<div class="bg-white border-2-top border-stone">
+										<h4 class="txt-18 txt-stone semibold p10xy txt-center">Request Tile</h4>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a class="block radius-2 border-2 border-stone">
+									<figure class="bg-stone-25p margin-none p15xy">
+										<svg></svg>
+									</figure>
+									<div class="bg-white border-2-top border-stone">
+										<h4 class="txt-18 txt-stone semibold p10xy txt-center">Request Tile</h4>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<aside class="ui-gallery-styles">
+					<div>
+						<h2>Styles</h2>
+						<ul>
+							<li class="ui-gallery-colors">
+								<ul>
+									<li>
+										<div class="bg-cerise"></div>
+									</li>
+									<li>
+										<div class="bg-slate"></div>
+									</li>
+									<li>
+										<div class="bg-taupe"></div>
+									</li>
+									<li>
+										<div class="bg-gold"></div>
+									</li>
+									<li>
+										<div class="bg-white border-taupe"></div>
+									</li>
+								</ul>
+								<h3>Color Palette: <span>Academic</span></h3>
+							</li>
+							<li class="ui-gallery-fonts">
+								<h1>Aa Bb Cc</h1>
+								<h3>Font: <span>Source Sans Pro</span></h3>
+							</li>
+							<li class="ui-gallery-icon">
+								<ul>
+									<li>
+										<graphic url="shared/templates/components/svg/categories/academic-simple.html"></graphic>
+									</li>
+									<li>
+										<graphic url="shared/templates/components/svg/categories/academic.html"></graphic>
+									</li>
+									<li>
+										<graphic url="shared/templates/components/svg/categories/academic-bottom.html"></graphic>
+									</li>
+								</ul>
+								<h3>Icon: <span>Academic</span></h3>
+							</li>
+							<li class="ui-gallery-stroke-width">
+								<graphic class="svg-stroke-3 stroke-slate" url="shared/templates/components/svg/other/shapes.html"></graphic>
+								<h3>Stroke Width: <span>3px</span></h3>
+							</li>
+							<li class="ui-gallery-padding">
+								<div>
+									<svg viewbox="0 0 400 270">
+										<rect x="0" y="0" width="400" height="270" fill="none"></rect>
+									</svg>
+									<div class="margin" u init-with="p:[padding:5px, border-color:#40484b]"
+										when-padding-select="p:[border-color:#aaaaaa]"
+										when-padding-deselect="p:[border-color:#40484b]">
+										<div class="normal" u init-with="p:[padding:15px, border-color:#40484b]"
+											when-margin-select="p:[border-color:#aaaaaa]"
+											when-margin-deselect="p:[border-color:#40484b]"
+											when-padding-select="p:[border-color:#aaaaaa]"
+											when-padding-deselect="p:[border-color:#40484b]">
+											<span u init-with="p:[height:15px]">15</span>
+											<div class="padding" u init-with="p:[border-color:#40484b]"
+												u when-margin-select="p:[border-color:#aaaaaa]"
+												when-margin-deselect="p:[border-color:#40484b]"></div>
+											<span u init-with="p:[width:15px]">15</span>
+										</div>
+									</div>
+								</div>
+								<h3 u on-mouseenter="s:[padding-select:public]"
+									on-mouseleave="s:[padding-deselect:public]">Padding: <span>15px</span></h3>
+								<h3 u on-mouseenter="s:[margin-select:public]"
+									on-mouseleave="s:[margin-deselect:public]">Margin: <span>5px</span></h3>
+							</li>
+						</ul>
+					</div>
+				</aside>
+			</div>
+		</article>
+	</div>
+
+	<footer class="ui-gallery-single-footer">
+		<ul u when-popup-enter="s:[nav-enter:public:linear-150]:+1000">
+			<li u init-with="p:[op:0]"
+				when-nav-enter="a:[slideInUp-subtle:1000:linear:0:1:f]">
+				<a u on-click='s:[popup-closed:public]'>
+					<graphic url="shared/templates/components/svg/main/more.html"></graphic>
+				</a>
+			</li>
+			<li u init-with="p:[op:0]"
+				when-nav-enter="a:[slideInUp-subtle:1000:linear:0:1:f]">
+				<a u on-click='s:[popup-closed:public]'>
+					<graphic url="shared/templates/components/svg/main/left.html"></graphic>
+				</a>
+			</li>
+			<li class="double" u init-with="p:[op:0]"
+				when-nav-enter="a:[slideInUp-subtle:1000:linear:0:1:f]">
+				<a u on-click='s:[popup-closed:public]'>
+					<graphic url="shared/templates/components/svg/main/up.html"></graphic>
+				</a>
+				<a u on-click='s:[popup-closed:public]'>
+					<graphic url="shared/templates/components/svg/main/down.html"></graphic>
+				</a>
+			</li>
+			<li u init-with="p:[op:0]"
+				when-nav-enter="a:[slideInUp-subtle:1000:linear:0:1:f]">
+				<a u on-click='s:[popup-closed:public]'>
+					<graphic url="shared/templates/components/svg/main/right.html"></graphic>
+				</a>
+			</li>
+		</ul>
+
+		<div style="padding:2px">
+			<div class="height-48 flex-center p10x bg-white radius-2 txt-24 semibold" style="color:#9cbdbe"
+				u init-with="p:[op:0]"
+				when-popup-enter="a:[slideInUp-subtle:1000:linear:0:1:f]:delay-1200">
+				<span class="block height-24 width-24 round bg-cerise"></span>
+				<span class="block m10x">Academic</span>
+				<a class="flex-center svg-24 svg-stroke-6 stroke-aero"
+					u on-click='s:[popup-closed:public]'>
+					<graphic url="shared/templates/components/svg/main/down.html"></graphic>
+				</a>
+			</div>
+		</div>
+	</footer>
+</modal>

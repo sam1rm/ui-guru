@@ -1,0 +1,104 @@
+<view class="ui-submissions" layer="2" type='row' bg="rose" set="submissions = ui.app.views.submissions">
+	<item width="100" height="100" class="overflow-auto">
+		<import url="submissions.components.nav.url" class="gradient-rose-top"></import>
+
+		<main class="ui-collections-main"
+			u on-init="s:[collections-enter:public:1000]">
+			<import url="submissions.components.header.url"></import>
+			<ul class="ui-collections-lists">
+				<li class="ui-collections-list">
+					<header>
+						<a u when-collections-enter="s:[collections-header-enter:children:easeOutSine-300]">
+							<hr u init-with="p:[op:0, tro:left center, tr:scaleX(0)]"
+								when-collections-enter="a:[scaleX:0:1:200:easeOutBack:0:1:f] | p:[op:1]"/>
+							<h1 u init-with="p:[op:0]"
+								when-collections-enter="a:[slideInUp-subtle:1000:linear:0:1:f]">Drafts</h1>
+							<span u init-with="p:[op:0]"
+								when-collections-enter="a:[slideInUp-subtle:1000:linear:0:1:f]">View All</span>
+						</a>
+					</header>
+					<div>
+						<!-- <div class="gradient-rose-left"></div> -->
+						<ul u when-collections-enter="s:[collections-list-enter:children:easeOutSine-400]">
+							<li u init-with="p:[op:0]"
+								when-collections-list-enter="a:[bounceIn-subtle:1000:linear:0:1:f]">
+								<a class="ui-collections-list-item"></a>
+							</li>
+							<li u init-with="p:[op:0]"
+								when-collections-list-enter="a:[bounceInLeft-subtle:1000:linear:0:1:f]">
+								<a class="ui-collections-list-item"></a>
+							</li>
+							<li u init-with="p:[op:0]"
+								when-collections-list-enter="a:[bounceInLeft-subtle:1000:linear:0:1:f]">
+								<a class="ui-collections-list-item"></a>
+							</li>
+							<li u init-with="p:[op:0]"
+								when-collections-list-enter="a:[bounceInLeft-subtle:1000:linear:0:1:f]">
+								<a class="ui-collections-list-item"></a>
+							</li>
+						</ul>
+						<div class="gradient-rose-right"></div>
+					</div>
+				</li>
+
+				<li class="ui-collections-list">
+					<header>
+						<a>
+							<h1>Daily UI Challenge 📱</h1>
+							<span>View All</span>
+							<hr/>
+						</a>
+					</header>
+					<div>
+						<!-- <div class="gradient-rose-left"></div> -->
+						<ul>
+							<li>
+								<a class="ui-collections-list-item"></a>
+							</li>
+							<li>
+								<a class="ui-collections-list-item"></a>
+							</li>
+							<li>
+								<a class="ui-collections-list-item"></a>
+							</li>
+							<li>
+								<a class="ui-collections-list-item"></a>
+							</li>
+						</ul>
+						<div class="gradient-rose-right"></div>
+					</div>
+				</li>
+
+				<li class="ui-collections-list">
+					<header>
+						<a>
+							<h1>For My Portfolio</h1>
+							<span>View All</span>
+							<hr/>
+						</a>
+					</header>
+					<div>
+						<!-- <div class="gradient-rose-left"></div> -->
+						<ul>
+							<li>
+								<a class="ui-collections-list-item"></a>
+							</li>
+							<li>
+								<a class="ui-collections-list-item"></a>
+							</li>
+							<li>
+								<a class="ui-collections-list-item"></a>
+							</li>
+							<li>
+								<a class="ui-collections-list-item"></a>
+							</li>
+						</ul>
+						<div class="gradient-rose-right"></div>
+					</div>
+				</li>
+			</ul>
+		</main>
+
+		<footer class="ui-gradient-footer gradient-rose-bottom"></footer>
+	</item>
+</view>

@@ -1,0 +1,35 @@
+{
+    "vars": {
+		"kicksItem": {
+			"thumbnail": "test"
+		}
+	},
+    "config": {
+        "pathParams": {},
+        "base_url": "^",
+        "parse": {},
+        "scripts": {
+            "base": "./ui/templates/samples/kicks/",
+            "queue": [
+                {
+                    "path": "shoes.json",
+                    "mappings": [
+						{
+							"to":"content.shoes"
+						}
+					]
+                }
+            ]
+        }
+    },
+    "content": {},
+    "components": {
+		"rating-stars": {
+            "template_url": "./ui/templates/samples/kicks/components/rating.tpl"
+        },
+		"kicks-item": {
+            "template_url": "./ui/templates/samples/kicks/components/kicks-item.tpl",
+			"fields": ["thumbnail"]
+    	}
+	}
+}

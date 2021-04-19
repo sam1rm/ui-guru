@@ -1,0 +1,11 @@
+<view link-data="ui/templates/samples/visualizer/viz.sm.json"  render-after-ext-scripts width="100" height="100" let="content=data.content" >
+
+    <div width="100" height="100" y-center scroll-x>
+
+        <viz-bar u-list="sample in data.content.viz.samples" sample="sample"> </viz-bar>
+
+        <div width="25%" height="5px" bg="sienna"
+			u init-with="p:[transform:scaleX(4),tro:100% 0]" on-init="a:[scaleX:4:1:250:easeOutBounce:0:1:f]"></div>
+
+    </div>
+</view>

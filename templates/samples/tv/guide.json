@@ -1,0 +1,23 @@
+{
+    "vars": {},
+    "config": {
+        "pathParams": {},
+        "base_url": "^",
+        "parse": {},
+        "scripts": {
+            "base": "./ui/templates/samples/tv/",
+            "queue": [
+                {
+                    "path": "guide-data.json",
+                    "mappings": [
+	                    {
+	                        "to":"content.guide"
+	                    }
+                    ]
+                }
+            ]
+        }
+    },
+    "content": {},
+    "components": {}
+}

@@ -1,0 +1,162 @@
+{
+   "version":0.1,
+   "components":{
+      "modal":{
+         "attr":{
+            "name":"the name of the modal",
+            "when-name-modal-requested":"name of message to send publicly by any element ot activate the modal",
+            "when-name-modal-closed":"closes the name of the modal"
+         }
+      }
+   },
+   "attr":{
+      "jeselle":{
+         "info":"Jeselle's tests",
+         "tags":[
+            "css-related"
+         ],
+         "examples":{
+            "margin":"<div class='bg-white-20p radius-2'><div class='bg-cosmic radius-2 width-96 height-96' m-x='20px' m-y='60px'></div></div>",
+            "stretch-friends":"<div class='bg-sienna radius-2 width-96' stretch></div> <div class='bg-cosmic radius-2 width-96' stretch></div>",
+            "row":"<ul class='full-x txt-16 semibold' p='5px' space-around row align-items='flex-start'><li p='5px'><div class='flex-center bg-cosmic radius-2 width-24 height-24'>1</div></li><li p='5px' end><div class='flex-center bg-olive radius-2 width-24 height-24'>2</div></li><li p='5px'><div class='flex-center bg-cosmic radius-2 width-24 height-24'>3</div></li><li p='5px'><div class='flex-center bg-cosmic radius-2 width-24 height-24'>4</div></li></ul>",
+            "corners":"<ul class='full-x txt-16 semibold' p='5px' space-between align-items='flex-start'><li p='5px'><div class='flex-center bg-cosmic radius-2 width-24 height-24'>1</div></li><li p='5px' end><div class='flex-center bg-olive radius-2 width-24 height-24'>2</div></li></ul>",
+            "33-100 basis":"<ul class='full-x flex-start txt-16 semibold' p='5px' wrap row><li p='5px' basis='33%'><div class='flex-center bg-white-10p radius-2 height-24' width='100'>1</div></li><li p='5px' basis='33%'><div class='flex-center bg-white-20p radius-2 height-24' width='100'>2</div></li><li p='5px' basis='33%'><div class='flex-center bg-white-50p radius-2 height-24' width='100'>3</div></li><li p='5px' basis='100%'><div class='flex-center bg-cosmic radius-2 height-24' width='100'>4</div></li></ul>",
+            "grow":"<ul class='full-x flex-start txt-16 semibold' p='5px' wrap column><li p='5px' grow='1'><div class='flex-center bg-sienna radius-2 width-24'>1</div></li><li p='5px' grow='4'><div class='flex-center bg-sienna radius-2 width-24'>2</div></li><li p='5px' grow='3'><div class='flex-center bg-sienna radius-2 width-24'>3</div></li><li p='5px' grow='2'><div class='flex-center bg-sienna radius-2 width-24'>4</div></li></ul>",
+            "shrink":"<ul class='full-x flex-start txt-16 semibold' p='5px' wrap column><li p='5px' shrink='1'><div class='flex-center bg-sienna radius-2 width-24'>1</div></li><li p='5px' shrink='4'><div class='flex-center bg-sienna radius-2 width-24'>2</div></li><li p='5px' shrink='3'><div class='flex-center bg-sienna radius-2 width-24'>3</div></li><li p='5px' shrink='2'><div class='flex-center bg-sienna radius-2 width-24'>4</div></li></ul>",
+            "wrap-reverse":"<ul class='full-x txt-16 semibold' p='5px' wrap-reverse align-items='flex-start'><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>1</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>2</div></li><li p='5px' end><div class='flex-center bg-sienna radius-2 width-24 height-24'>3</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>4</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>5</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>6</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>7</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>8</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>9</div></li></ul>",
+            "2-3 split":"<div class='bg-sienna radius-2 width-33p' stretch></div><ul class='full-x flex-start txt-16 semibold width-66p' p='5px' wrap row center><li p='5px' basis='33%'><div class='flex-center bg-white-10p radius-2 height-24' width='100'>1</div></li><li p='5px' basis='33%'><div class='flex-center bg-white-20p radius-2 height-24' width='100'>2</div></li><li p='5px' basis='33%'><div class='flex-center bg-white-50p radius-2 height-24' width='100'>3</div></li><li p='5px' basis='33%'><div class='flex-center bg-white-10p radius-2 height-24' width='100'>1</div></li><li p='5px' basis='33%'><div class='flex-center bg-white-20p radius-2 height-24' width='100'>2</div></li><li p='5px' basis='33%'><div class='flex-center bg-white-50p radius-2 height-24' width='100'>3</div></li><li p='5px' basis='100%'><div class='flex-center bg-cosmic radius-2 height-24' width='100'>4</div></li><li p='5px' basis='33%'><div class='flex-center bg-white-10p radius-2 height-24' width='100'>1</div></li><li p='5px' basis='33%'><div class='flex-center bg-white-20p radius-2 height-24' width='100'>2</div></li><li p='5px' basis='33%'><div class='flex-center bg-white-50p radius-2 height-24' width='100'>3</div></li><li p='5px' basis='33%'><div class='flex-center bg-white-10p radius-2 height-24' width='100'>1</div></li><li p='5px' basis='33%'><div class='flex-center bg-white-20p radius-2 height-24' width='100'>2</div></li><li p='5px' basis='33%'><div class='flex-center bg-white-50p radius-2 height-24' width='100'>3</div></li></ul>"
+         }
+      },
+      "margin":{
+         "info":"margin css",
+         "tags":[
+            "css-related",
+            "position"
+         ],
+         "examples":{
+            "general":"<div class='bg-white-10p radius-2'><div class='bg-sienna radius-2 width-96 height-96' margin='50px 50px'></div></div>",
+            "condensed":"<div class='bg-white-10p radius-2'><div class='bg-sienna radius-2 width-96 height-96' m='60px 10px'></div></div>",
+            "x-only":"<div class='bg-white-10p radius-2'><div class='bg-sienna radius-2 width-96 height-96' margin-x='50px'></div></div>",
+            "x-only-condensed":"<div class='bg-white-10p radius-2'><div class='bg-sienna radius-2 width-96 height-96' m-x='20px'></div></div>",
+            "y-only":"<div class='bg-white-10p radius-2'><div class='bg-sienna radius-2 width-96 height-96' margin-y='30px'></div></div>",
+            "y-only-condensed":"<div class='bg-white-10p radius-2'><div class='bg-sienna radius-2 width-96 height-96' m-y='15px'></div></div>"
+         }
+      },
+      "padding":{
+         "info":"padding css",
+         "tags":[
+            "css-related",
+            "position"
+         ],
+         "examples":{
+            "general":"<div class='bg-white-10p radius-2 full-xy' padding='50px 50px'><div class='bg-sienna radius-2 full-xy'></div></div>",
+            "condensed":"<div class='bg-white-10p radius-2 full-xy' p='60px 10px'><div class='bg-sienna radius-2 full-xy'></div></div>",
+            "x-only":"<div class='bg-white-10p radius-2 full-xy' padding-x='50px'><div class='bg-sienna radius-2 full-xy'></div></div>",
+            "x-only-condensed":"<div class='bg-white-10p radius-2 full-xy' p-x='20px'><div class='bg-sienna radius-2 full-xy'></div></div>",
+            "y-only":"<div class='bg-white-10p radius-2 full-xy' padding-y='30px'><div class='bg-sienna radius-2 full-xy'></div></div>",
+            "y-only-condensed":"<div class='bg-white-10p radius-2 full-xy' p-y='15px'><div class='bg-sienna radius-2 full-xy'></div></div>"
+         }
+      },
+      "align-self":{
+         "info":"align-self properties",
+         "examples":{
+            "stretch[flex-stretch]":"<div class='bg-sienna radius-2 width-96' stretch></div>",
+            "center[flex-center]":"<div class='bg-sienna radius-2 width-96 height-96' center></div>",
+            "start[flex-start]":"<div class='bg-sienna radius-2 width-96 height-96' start></div>",
+            "end[flex-end]":"<div class='bg-sienna radius-2 width-96 height-96' end></div>"
+         },
+         "non-functional":{
+            "space-between":"<div class='bg-sienna radius-2 width-96 height-96' space-between></div>",
+            "space-between condensed":"<div class='bg-sienna radius-2 width-96 height-96' sb></div>",
+            "space-around":"<div class='bg-sienna radius-2 width-96 height-96' space-around></div>",
+            "space-around condensed":"<div class='bg-sienna radius-2 width-96 height-96' sa></div>",
+            "left[flex-start]":"<div class='bg-sienna radius-2 width-96 height-96' left></div>",
+            "right[flex-end]":"<div class='bg-sienna radius-2 width-96 height-96' right></div>"
+         }
+      },
+      "wrap":{
+         "info":"flex-wrap",
+         "examples":{
+            "wrap":"<ul class='full-x flex-start txt-16 semibold' p='5px' wrap><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>1</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>2</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>3</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>4</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>5</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>6</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>7</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>8</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>9</div></li></ul>",
+            "nowrap":"<ul class='full-x flex-start txt-16 semibold' p='5px' nowrap><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>1</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>2</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>3</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>4</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>5</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>6</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>7</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>8</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>9</div></li></ul>",
+            "wrap-reverse":"<ul class='full-x flex-start txt-16 semibold' p='5px' wrap-reverse><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>1</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>2</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>3</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>4</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>5</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>6</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>7</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>8</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>9</div></li></ul>"
+         }
+      },
+      "column":{
+         "info":"flex-direction",
+         "examples":{
+            "column":"<ul class='full-x flex-start txt-16 semibold' p='5px' wrap column><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>1</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>2</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>3</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>4</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>5</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>6</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>7</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>8</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>9</div></li></ul>",
+            "column-reverse":"<ul class='full-x flex-start txt-16 semibold' p='5px' wrap column-reverse><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>1</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>2</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>3</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>4</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>5</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>6</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>7</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>8</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>9</div></li></ul>"
+         }
+      },
+      "row":{
+         "info":"flex-direction",
+         "examples":{
+            "row":"<ul class='full-x flex-start txt-16 semibold' p='5px' wrap row><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>1</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>2</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>3</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>4</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>5</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>6</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>7</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>8</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>9</div></li></ul>",
+            "row-reverse":"<ul class='full-x flex-start txt-16 semibold' p='5px' wrap row-reverse><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>1</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>2</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>3</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>4</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>5</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>6</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>7</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>8</div></li><li p='5px'><div class='flex-center bg-sienna radius-2 width-24 height-24'>9</div></li></ul>"
+         }
+      },
+      "basis":{
+         "info":"https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-basics",
+         "examples":{
+            "25%":"<ul class='full-x flex-start txt-16 semibold' p='5px' wrap row><li p='5px' basis='25%'><div class='flex-center bg-sienna radius-2 height-24' width='100'>1</div></li><li p='5px' basis='25%'><div class='flex-center bg-sienna radius-2 height-24' width='100'>2</div></li><li p='5px' basis='25%'><div class='flex-center bg-sienna radius-2 height-24' width='100'>3</div></li><li p='5px' basis='25%'><div class='flex-center bg-sienna radius-2 height-24' width='100'>4</div></li></ul>",
+            "50%":"<ul class='full-x flex-start txt-16 semibold' p='5px' wrap row><li p='5px' basis='50%'><div class='flex-center bg-sienna radius-2 height-24' width='100'>1</div></li><li p='5px' basis='50%'><div class='flex-center bg-sienna radius-2 height-24' width='100'>2</div></li><li p='5px' basis='50%'><div class='flex-center bg-sienna radius-2 height-24' width='100'>3</div></li><li p='5px' basis='50%'><div class='flex-center bg-sienna radius-2 height-24' width='100'>4</div></li></ul>"
+         }
+      },
+      "grow":{
+         "info":"https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-basics",
+         "examples":{
+            "example":"<ul class='full-x flex-start txt-16 semibold' p='5px' wrap row><li p='5px' grow='1'><div class='flex-center bg-sienna radius-2 height-24' width='100'>1</div></li><li p='5px' grow='2'><div class='flex-center bg-sienna radius-2 height-24' width='100'>2</div></li><li p='5px' grow='3'><div class='flex-center bg-sienna radius-2 height-24' width='100'>3</div></li><li p='5px' grow='4'><div class='flex-center bg-sienna radius-2 height-24' width='100'>4</div></li></ul>"
+         }
+      },
+      "shrink":{
+         "info":"https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-basics",
+         "examples":{
+            "example":"<ul class='full-x flex-start txt-16 semibold' p='5px' wrap row><li p='5px' shrink='1'><div class='flex-center bg-sienna radius-2 height-24' width='100'>1</div></li><li p='5px' shrink='2'><div class='flex-center bg-sienna radius-2 height-24' width='100'>2</div></li><li p='5px' shrink='3'><div class='flex-center bg-sienna radius-2 height-24' width='100'>3</div></li><li p='5px' shrink='4'><div class='flex-center bg-sienna radius-2 height-24' width='100'>4</div></li></ul>"
+         }
+      },
+      "pointer":{
+         "info":"a shorter way to declare cursor:pointer",
+         "examples":{
+            "general":"<div pointer width='50px' height='50px' class='bg-cerise'></div>"
+         }
+      },
+      "set":{
+         "info":"a way to shorten nested data paths and re-name more relevant to local elements",
+         "tags":[
+            "data-related"
+         ]
+      }
+   },
+   "platform":{
+      "elements":{
+         "desktop-only":{
+            "syntax":"desktop",
+            "info":"add the attr desktop for desktop-specific cases"
+         },
+         "mobile-only":{
+            "syntax":"mobile",
+            "info":"add the attr mobile for mobile-specific cases"
+         },
+         "tablet-only":{
+            "syntax":"tablet",
+            "info":"add the attr tablet"
+         }
+      }
+   },
+   "best practices":{
+      "docs model":{
+         "examples":"examples come in a dictionary {} format because it forces you to think of a name/purpose of that example that distinguishes it from the rest.",
+         "info":"if you dont have time to write the docs, the writee should at least provide an external link for more info"
+      }
+   },
+   "upcoming":{
+      "mobile":[
+         "mobile-general",
+         "mobile-specific"
+      ],
+      "platform":[
+
+      ]
+   }
+}

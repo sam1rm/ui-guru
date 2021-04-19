@@ -1,0 +1,11 @@
+<div x='center' y='center' column wrap z='1000' bg='sienna-80p' u on-init="a:[scaleY:1:0.01:250:easeOutCirc:1750:1:f]">
+    <div width='10%' row y='end'>
+        <div width='4px' p-x="1px" grow='1' ng-repeat='sample in [20, 10, 13, 18, 19, 20, 13, 12, 9, 23, 20, 10, 13, 18, 19, 20, 13, 12, 9, 23] track by $index'>
+
+            <div u  width="2px" height="{{sample * 5}}px" bg='smoke-50p' rad="4px"
+                init-with="p:[tro:0 100%,transform:scaleY(0.5)]" on-init="a:[scaleY:0.5:1:250:bouncePast:5:a]:delay-{{$index * 20}}"  when-reverse-view="reverse:on-init"
+                >&nbsp;</div>
+        </div>
+    </div>
+
+</div>

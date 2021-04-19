@@ -1,0 +1,15 @@
+<div x='center' y='center' column height='100' width='100' wrap>
+    <div row grow='1' width='100'>
+        <h1 ng-repeat='title in dict.titles' grow='1' x='center' y='center' column >
+            {{title}}
+        </h1>
+    </div>
+    <div column grow='9' width='100' bg='slate' f-w='wrap' scroll-x>
+        <div row width='{{dict.arr.length * 100}}' y='center' x='center' grow='1'>
+            <div grow='1' x='center' y='center' ng-repeat='section in dict.arr' stretch>
+                {{section.contents}}
+            </div>
+        </div>
+
+    </div>
+</div>

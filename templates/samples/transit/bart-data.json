@@ -1,0 +1,245 @@
+{
+	"stop": "Montgomery",
+	"date": "12/01/2016",
+	"station": [
+		{
+			"abbreviation": "DALY",
+			"limited": "0",
+			"estimation": [
+				{
+					"direction": "South",
+					"bikeflag": "1",
+					"color": "GREEN",
+					"platform": "1",
+					"length": "5",
+					"hexcolor": "#81B566",
+					"minutes": "4"
+				},
+				{
+					"direction": "South",
+					"bikeflag": "1",
+					"color": "BLUE",
+					"platform": "1",
+					"length": "9",
+					"hexcolor": "#55A4B7",
+					"minutes": "10"
+				},
+				{
+					"direction": "South",
+					"bikeflag": "1",
+					"color": "GREEN",
+					"platform": "1",
+					"length": "10",
+					"hexcolor": "#81B566",
+					"minutes": "19"
+				}
+			],
+			"destination": "Daly City"
+		},
+		{
+			"abbreviation": "DUBL",
+			"limited": "0",
+			"estimation": [
+				{
+					"direction": "North",
+					"bikeflag": "1",
+					"color": "BLUE",
+					"platform": "2",
+					"length": "9",
+					"hexcolor": "#55A4B7",
+					"minutes": "3"
+				},
+				{
+					"direction": "North",
+					"bikeflag": "1",
+					"color": "BLUE",
+					"platform": "2",
+					"length": "4",
+					"hexcolor": "#55A4B7",
+					"minutes": "18"
+				},
+				{
+					"direction": "North",
+					"bikeflag": "1",
+					"color": "BLUE",
+					"platform": "2",
+					"length": "4",
+					"hexcolor": "#55A4B7",
+					"minutes": "33"
+				}
+			],
+			"destination": "Dublin/Pleasanton"
+		},
+		{
+			"abbreviation": "FRMT",
+			"limited": "0",
+			"estimation": [
+				{
+					"direction": "North",
+					"bikeflag": "1",
+					"color": "GREEN",
+					"platform": "2",
+					"length": "5",
+					"hexcolor": "#81B566",
+					"minutes": "10"
+				},
+				{
+					"direction": "North",
+					"bikeflag": "1",
+					"color": "GREEN",
+					"platform": "2",
+					"length": "4",
+					"hexcolor": "#81B566",
+					"minutes": "25"
+				},
+				{
+					"direction": "North",
+					"bikeflag": "1",
+					"color": "GREEN",
+					"platform": "2",
+					"length": "5",
+					"hexcolor": "#81B566",
+					"minutes": "40"
+				}
+			],
+			"destination": "Fremont"
+		},
+		{
+			"abbreviation": "MLBR",
+			"limited": "0",
+			"estimation": [
+				{
+					"direction": "South",
+					"bikeflag": "1",
+					"color": "RED",
+					"platform": "1",
+					"length": "5",
+					"hexcolor": "#D3242C",
+					"minutes": "Leaving"
+				},
+				{
+					"direction": "South",
+					"bikeflag": "1",
+					"color": "RED",
+					"platform": "1",
+					"length": "5",
+					"hexcolor": "#D3242C",
+					"minutes": "14"
+				},
+				{
+					"direction": "South",
+					"bikeflag": "1",
+					"color": "RED",
+					"platform": "1",
+					"length": "5",
+					"hexcolor": "#D3242C",
+					"minutes": "29"
+				}
+			],
+			"destination": "Millbrae"
+		},
+		{
+			"abbreviation": "PITT",
+			"limited": "0",
+			"estimation": [
+				{
+					"direction": "North",
+					"bikeflag": "1",
+					"color": "YELLOW",
+					"platform": "2",
+					"length": "10",
+					"hexcolor": "#F6C64E",
+					"minutes": "6"
+				},
+				{
+					"direction": "North",
+					"bikeflag": "1",
+					"color": "YELLOW",
+					"platform": "2",
+					"length": "10",
+					"hexcolor": "#F6C64E",
+					"minutes": "20"
+				},
+				{
+					"direction": "North",
+					"bikeflag": "1",
+					"color": "YELLOW",
+					"platform": "2",
+					"length": "10",
+					"hexcolor": "#F6C64E",
+					"minutes": "35"
+				}
+			],
+			"destination": "Pittsburg/Bay Point"
+		},
+		{
+			"abbreviation": "RICH",
+			"limited": "0",
+			"estimation": [
+				{
+					"direction": "North",
+					"bikeflag": "1",
+					"color": "RED",
+					"platform": "2",
+					"length": "5",
+					"hexcolor": "#D3242C",
+					"minutes": "14"
+				},
+				{
+					"direction": "North",
+					"bikeflag": "1",
+					"color": "RED",
+					"platform": "2",
+					"length": "4",
+					"hexcolor": "#D3242C",
+					"minutes": "27"
+				},
+				{
+					"direction": "North",
+					"bikeflag": "1",
+					"color": "RED",
+					"platform": "2",
+					"length": "4",
+					"hexcolor": "#D3242C",
+					"minutes": "42"
+				}
+			],
+			"destination": "Richmond"
+		},
+		{
+			"abbreviation": "SFIA",
+			"limited": "0",
+			"estimation": [
+				{
+					"direction": "South",
+					"bikeflag": "1",
+					"color": "YELLOW",
+					"platform": "1",
+					"length": "10",
+					"hexcolor": "#F6C64E",
+					"minutes": "7"
+				},
+				{
+					"direction": "South",
+					"bikeflag": "1",
+					"color": "YELLOW",
+					"platform": "1",
+					"length": "10",
+					"hexcolor": "#F6C64E",
+					"minutes": "22"
+				},
+				{
+					"direction": "South",
+					"bikeflag": "1",
+					"color": "YELLOW",
+					"platform": "1",
+					"length": "10",
+					"hexcolor": "#F6C64E",
+					"minutes": "37"
+				}
+			],
+			"destination": "SF Airport"
+		}
+	],
+	"time": "02:20:17 PM PST"
+}

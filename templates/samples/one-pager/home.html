@@ -1,0 +1,20 @@
+<view link-data="ui/templates/samples/one-pager/app.pager.json" render-after-ext-scripts let="vars=data.vars"
+	bg='white' class='txt-charcoal'>
+    <!-- must use no variables since that is what is being loaded at this time.-->
+    <!-- <loader min-ms="3000" import="ui/templates/samples/one-pager/containers/loader.tpl"> </loader> -->
+    <div width='100' height='100' scroll-y class="overflow-auto">
+
+        <header  header="vars.editable.nav.header" width='100' fixed z='10' bg='smoke-20p' class='txt-azure'>
+        </header>
+
+
+        <main relative column top='10%' height='auto'  width='100' left='0'>
+            <splash-section height='90%'>
+            </splash-section>
+            <testimonials-section info="vars.editable.sections.testimonials" bg-smoke column height="90" width='100'>
+            </testimonials-section>
+        </main>
+
+        <footer footer-data="vars.editable.nav.footer"></footer>
+    </div>
+</view>

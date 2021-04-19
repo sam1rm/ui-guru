@@ -1,0 +1,24 @@
+<footer s-b y-center fixed z="100" bottom="0" left="0" width="100%">
+        <ul row p="13px">
+            <li p="1px">
+                <a flex y-center rad="2px" p="2px 5px" bg="charcoal-90p" class="svg-24 svg-white svg-stroke-6"
+                    u on-click="s:[heart-it:public]">
+                    <graphic url='shared/templates/components/svg/main/heart.html'
+                        u when-heart-it="p:[fill:#e28797]"> </graphic>
+
+                    <span f-s="16" f-w="600" m-left="2px">{{content.track.likes_count}}</span>
+                </a>
+            </li>
+            <li p="1px">
+                <a flex y-center rad="2px" p="2px 5px" bg="charcoal-90p" class="svg-24 svg-white svg-stroke-6">
+                    <graphic url="shared/templates/components/svg/main/share.html"> </graphic>
+                </a>
+            </li>
+            <li p="1px">
+                <a flex y-center rad="2px" p="2px 5px" bg="charcoal-90p" class="svg-24 svg-white svg-stroke-6">
+                    <graphic url='shared/templates/components/svg/main/more.html'> </graphic>
+                </a>
+            </li>
+        </ul>
+        <a flex f-s="16px" f-w="600" m-right="15px">Hide</a>
+    </footer>

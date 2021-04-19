@@ -1,0 +1,7 @@
+<div size='100'>
+    <ul u on-init="send:[start-welcome-text:depth(1)]" size='100' row x='center' y='center'>
+        <li u-list="letter in 'Welcome&nbsp;to&nbsp;VIZ&nbsp;World'" when-start-welcome-text="a:[opacity:0:{{ 0.5 + (index*2) }}:250:easeOutCirc:{{ 2500 + ( 50*index ) }}:1:a]" u on-init='p:[opacity:0]'>
+            {{letter}}
+        </li>
+    </ul>
+</div>

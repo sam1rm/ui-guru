@@ -1,0 +1,146 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title></title>
+    </head>
+
+
+    <body animation="slide-left-right-ios7"  ng-app="uguru">
+        <!-- <ion-nav-view id='root-nav' animation="slide-left-right" u> -->
+        <script type="text/ng-template" id="view.index.html">
+
+            <view size='100' abs top='0' left='0' width='100%' height='100%'>
+    <imports>
+            <import-dict>
+                {
+                    "_type": "fake_auth_code",
+                    "info": {
+                        "profile": {
+                            "name": {
+                                "first": "Samir"
+                            }
+
+                        }
+                    },
+                    "components": {},
+                    "projects": [
+                        {
+                            name: "releases",
+                            last_updated: ""
+                        },
+                        {
+                            name: "todo",
+                            projects: [
+                            {name: "timer"},
+                            {name: "codepen",ideas: { "cb comperators": [] }}
+                            ]
+                        }
+
+                    ]
+                }
+
+            </import-dict>
+    </imports>
+    <components>
+        <header-text header="string">
+            <div>
+                {{header}}
+            </div>
+        </header-text>
+    </components>
+    <main>
+        <content u>
+            <ul x='center' y='center' size='100' u init-with="p:[opacity:0]" on-init="s:[enter-card:public:linear-1000]|p:[opacity:1]" column>
+                <li>
+                    <header-text header="{{view.data.info.profile.name.first}}'s Updates"> </header-text>
+                </li>
+                <li  size='250px' m='20px' u-list="project in view.data.projects" x='center' column wrap class='border-dashed border-1 border-smoke' u pointer init-with="p:[transition:transform 500ms ease]" on-mouseleave="p:[transform:scale(1)]|s:[scale-back-normal:depth(-0)]" when-scale-smaller="p:[transform:scale(0)]" when-scale-back-normal="p:[transform:unset]" on-mouseenter="p:[transform:scale(1.5)]|s:[scale-smaller:public]:+100" >
+                    <div column grow='1' u when-enter-card="a:[translateX:-100%:0%:1000:linear:0:1:f]">
+                        <div grow='2.5'  column f-s='24px' x='center' y='center' f-w='900' class='uppercase' op='0.8'>
+                            {{project.name}}
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </content>
+    </main>
+</view>
+
+        </script>
+        <ui-view id="uguru-view" class='full-xy absolute top-0 left-0' ng-controller='RootController as root'>
+
+
+
+
+
+
+          <!-- </ion-nav-view> -->
+        </ui-view>
+
+    </body>
+</html>
+<footer>
+
+    <script>
+
+        var files = [
+            'app.css:async',
+            'app.js'
+
+        ];
+        var fileInitCB = {
+            'app.js': function(e) {console.log('page is ready', e)}
+        }
+        var globalLoader;
+        for (var i = 0; i < files.length; i++) {
+            if (files[i].split('.js').length > 1) {
+                var new_script = initScriptElem(files[i])
+
+            } else if (files[i].split('.css').length > 1) {
+                var new_script = initLinkElem(files[i]);
+            }
+        }
+
+
+        function initLinkElem(src_path) {
+            var new_link = document.createElement('link');
+            new_link.async = src_path.split('async').length > 1;
+            new_link.type = "text/css";
+            new_link.rel = "stylesheet";
+            new_link.href = src_path.replace(':async', '');
+            document.getElementsByTagName("head")[0].appendChild(new_link);
+        }
+
+        function initEventFromName(event_name) {
+            var newEvent = document.createEvent('Event');
+            newEvent.initEvent(event_name, true, true);
+            return newEvent;
+        }
+
+
+
+        function initScriptElem(src_path) {
+            var new_script = document.createElement('script');
+            new_script.type = 'text/javascript';
+            new_script.async = src_path.split('async').length > 1;
+
+            new_script.src = src_path.replace(':async', '');
+            document.getElementsByTagName('head')[0].appendChild(new_script);
+            if (src_path in fileInitCB) {
+                fileInitCB[src_path](new_script);
+            } else {
+                new_script.onload = function(file_name) {
+                  console.log(file_name)
+                    return function() {
+                        // timer[file_name.split('/').reverse()[0]] = new Date().getTime();
+                    };
+                }(src_path);
+            }
+            return new_script
+        }
+    </script>
+</footer>
+
+</html>
+

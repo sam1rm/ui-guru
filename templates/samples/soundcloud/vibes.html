@@ -1,0 +1,11 @@
+<view link-data="ui/templates/samples/soundcloud/app.json" render-after-ext-scripts let="content=data.content"
+	row class="docs" type='row' bg="stone" width="100" height="100">
+    <!-- <div>
+        {{content.sc.collection[0].track}}
+    </div> -->
+
+	<replace with="ui/templates/samples/soundcloud/vibes-elements.tpl"></replace>
+	<vibes-data></vibes-data>
+	<replace with="ui/templates/samples/soundcloud/vibes-menu.tpl"></replace>
+    <inspect-data data/>
+</view>

@@ -1,0 +1,56 @@
+<nav class="ui-nav">
+	<div u init-with="p:[transform:translateY(-250px)]"
+		on-init="a:[translateY:-250px:0px:500:easeOutBack:0:1:f]">
+		<graphic url='ui/templates/components/svg/nav-logo.html'></graphic>
+	</div>
+	<div class="flex">
+		<fieldset class="search-bar"
+			u init-with="p:[tr:translateX(250px), width:48px]"
+			on-init="a:[translateX:250px:0px:250:easeOutBack:0:1:f] | s:[search-bar-init:children, search-bar-enter:public:1000]"
+			on-click="a:[width:48px:300px:250:easeOutBack:0:1:f] | s:[search-bar-clicked:depth(0), search-bar-icon:children:250]"
+			on-exit="a:[opacity:1:0:250:easeOutSine:0:1:f]">
+			<div>
+				<label for="search-bar">
+					<svg viewBox="0 0 100 100">
+						<path d="M62.994485,62.994485 L85.6624699,85.6624699"
+							u init-with="p:[sda:32.06, sdo:32.06]"
+							when-search-bar-init="a:[stroke-dashoffset:32.06:0:200:easeOutSine:750:1:f]"></path>
+						<circle cx="42.5" cy="42.5" r="28.5"
+							u on-init="s:[init-with:self:700]"
+							init-with="p:[sda:179.07, sdo:179.07]"
+							when-search-bar-init="a:[stroke-dashoffset:179.07:0:200:easeOutSine:0:1:f]:delay-500"></circle>
+					</svg>
+				</label>
+
+				<input id="search-bar" placeholder="Filter" value=""
+					u init-with="p:[op:0]"
+					when-search-bar-icon="a:[opacity:0:1:250:easeOutSine:0:1:f]"/>
+			</div>
+		</fieldset>
+
+		<div class="ui-menu-container"
+			u init-with="p:[op:1, tr:translateX(500px)]"
+			on-init="a:[translateX:250px:0px:250:easeOutBack:250:1:f]"
+			when-login-modal-requested="a:[opacity:1:0:250:linear:0:1:f]"
+			when-login-modal-closed="a:[opacity:0:1:250:linear:0:1:f]">
+			<a class="ui-menu-icon"
+				u init-with="p:[z-index:-1, op:0]"
+				on-click='s:[sidebar-modal-requested:public]'
+				when-login-enter="p:[z-index:1] | a:[bounceInRight-subtle:1000:linear:1250:1:f]"
+				when-logout-exit="p:[z-index:-1, op:0]">
+				<graphic url="shared/templates/components/svg/main/menu.html"></graphic>
+			</a>
+			<a class="ui-menu-icon"
+				u init-with="p:[z-index:1, op:1]"
+				on-click='s:[login-modal-requested:public]'
+				when-login-enter="p:[z-index:-1, op:0]"
+				when-logout-exit="p:[z-index:1] | a:[bounceInRight-subtle:1000:linear:250:1:f]">
+				<svg viewBox="0 0 100 100">
+					<path d="M12.25,86.0083097 C13.8333581,72.3337258 21.9190399,60.8279905 33.7287799,55.4065725 C29.0701886,51.032282 26.1399206,44.8395927 26.1399206,37.9600779 C26.1399206,24.7485382 36.8884588,14 50.0999985,14 C63.3115381,14 74.0600763,24.7485382 74.0600763,37.9600779 C74.0600763,44.8395927 71.1298084,51.032282 66.4712171,55.4065725 C78.2809571,60.8279905 86.3666389,72.3337258 87.9499969,86.0083097" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+						u init-with="p:[sdo:192.575, sda:192.575]"
+						on-init="a:[stroke-dashoffset:192.575:0:200:easeOutSine:1000:1:f]"></path>
+				</svg>
+			</a>
+		</div>
+	</div>
+</nav>

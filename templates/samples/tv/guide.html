@@ -1,0 +1,29 @@
+<view link-data="ui/templates/samples/tv/guide.json" render-after-ext-scripts bg="slate">
+	<!-- {{data.content.guide}} -->
+	<div w="100%" h="100%" p="12px" class="overflow-auto">
+		<ul w="100%" border="1px solid white" rad="2px" class="overflow-hidden">
+			<li row stretch u-list="channel in data.content.guide" channel="channel">
+				<h1 y-center w="120px" p="12px" border="1px solid white" rad="1px" f-s="18px" f-w="600">{{channel.Channel.Name}}</h1>
+				<ul row>
+					<li row u-list="program in channel.ProgramSchedules">
+						<div y-center wrap border="1px solid white" p="12px 16px">
+							<a m-left="-3px" m-right="12px" class="block svg-24 svg-stroke-6"
+								u on-click="s:[heart-it:public]">
+								<!-- <graphic url='shared/templates/components/svg/main/heart.html'
+									u when-heart-it="p:[fill:#e28797]"> </graphic> -->
+								<svg viewBox="0 0 100 100">
+									<path d="M30.5307935,20.4928007 C26.3063917,20.4928007 22.0809823,22.1374151 18.849194,25.3409869 C12.383602,31.8055712 12.383602,42.2385939 18.849194,48.6749618 L27.2425724,57.0663247 L49.4146352,79.2948203 C49.7270313,79.5779923 50.2661665,79.5779923 50.5493385,79.2948203 L72.7788419,57.065317 L81.1712125,48.673954 C87.6095958,42.2375862 87.6095958,31.8045635 81.1712125,25.3399792 C74.707636,18.9046191 64.301822,18.9046191 57.83623,25.3399792 L50.0102033,33.1932146 L42.1841765,25.3399792 C38.9523883,22.1374151 34.756203,20.4928007 30.5307935,20.4928007 L30.5307935,20.4928007 L30.5307935,20.4928007 Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"
+										u when-heart-it="p:[fill:#e28797]"></path>
+								</svg>
+							</a>
+							<div>
+								<h2 f-s="18px" f-w="600">{{program.Title}}</h2>
+								<h3 f-s="14px" m="0"><span>{{program.StartTime.time}}</span> - <span>{{program.EndTime.time}}</span></h3>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</view>

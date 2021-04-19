@@ -1,0 +1,24 @@
+<header class="ui-pf-header"
+	u init-with="p:[op:0, tr:scaleY(0), tro:center top]"
+	on-init="a:[scaleInY-subtle:500:linear:0:1:f] | s:[header-enter:public]">
+	<div>
+		<div class="ui-pf-info"
+			u when-header-enter="s:[header-info-enter:children:easeOutSine-200]">
+			<span class="user-icon-72" style="background-image: url('/shared/images/jeselle.jpg')"
+				u init-with="p:[op:0, tro:center center]"
+				when-header-info-enter="a:[bounceIn-rotate-subtle:1000:linear:0:1:f]"></span>
+			<h1 u init-with="p:[op:0]"
+				when-header-info-enter="a:[bounceInUp-subtle:500:linear:0:1:f]">Jeselle Obina</h1>
+			<span u init-with="p:[op:0, tro:right center]"
+				when-header-info-enter="a:[bounceInRight-subtle:500:linear:0:1:f]">San Francisco, CA</span>
+			<a u init-with="p:[op:0, tro:left center]"
+				when-header-info-enter="a:[bounceInLeft-subtle:500:linear:0:1:f]">jeselleobina.com</a>
+		</div>
+		<div class="ui-pf-desc">
+			<hr u init-with="p:[op:0, tro:center top, tr:scaleY(0)]"
+				when-header-enter="a:[opacity:0:1:100:linear:250:1:f, scaleY:0:1:200:easeOutBack:250:1:f]"/>
+			<p u init-with="p:[op:0]"
+				when-header-enter="a:[bounceInUp-subtle:1000:linear:300:1:f]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cum sociis natoque penatibus et magnis dis parturient.</p>
+		</div>
+	</div>
+</header>

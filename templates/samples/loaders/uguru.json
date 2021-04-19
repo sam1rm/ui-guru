@@ -1,0 +1,41 @@
+{
+    "vars": {},
+    "config": {
+        "pathParams": {},
+        "base_url": "^",
+        "parse": {}
+	},
+    "content": {},
+    "components": {
+		"warp-tunnel": {
+            "template_url": "./ui/templates/samples/loaders/components/warp-tunnel.tpl"
+        },
+		"warp-items": {
+            "template_url": "./ui/templates/samples/loaders/components/warp-items.tpl"
+        },
+		"warp-page": {
+            "template_url": "./ui/templates/samples/loaders/components/warp-page.tpl"
+        },
+		"warp-madlib": {
+            "template_url": "./ui/templates/samples/loaders/components/warp-madlib.tpl"
+        },
+		"guru-head": {
+            "template_url": "./ui/templates/samples/loaders/components/guru-head.tpl"
+        },
+		"category-tile": {
+            "template_url": "./ui/templates/samples/loaders/components/obj-category-tile.tpl"
+        },
+		"profile-thumb": {
+            "template_url": "./ui/templates/samples/loaders/components/obj-profile-thumb.tpl"
+        },
+		"student-card": {
+            "template_url": "./ui/templates/samples/loaders/components/obj-student-card.tpl"
+        },
+		"pricing-tile": {
+            "template_url": "./ui/templates/samples/loaders/components/obj-pricing-tile.tpl"
+        },
+		"credit-card": {
+            "template_url": "./ui/templates/samples/loaders/components/obj-credit-card.tpl"
+        }
+	}
+}

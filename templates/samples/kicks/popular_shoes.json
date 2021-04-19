@@ -1,0 +1,58 @@
+[
+    {
+        "shoe_rating": "4.66", 
+        "release_date": "11.23.16", 
+        "shoe_name": "Nike Air Foamposite Pro Dr. Doom", 
+        "shoes_img": "https://s3.amazonaws.com/images.kicksfinder.com/products/thumbs/590955040b3a4a05f94f4257fafc5cfb_1476297106.png  ", 
+        "shoe_url": "http://sneakernews.com/2016/09/15/nike-air-foamposite-pro-dr-doom-releasing-black-friday/"
+    }, 
+    {
+        "shoe_rating": "4.53", 
+        "release_date": "11.25.16", 
+        "shoe_name": "adidas NMD XR1 Duck Camo", 
+        "shoes_img": "https://s3.amazonaws.com/images.kicksfinder.com/products/thumbs/78de6aa9e4fe4bf992c721ff57ef05d1_1476295219.png  ", 
+        "shoe_url": "http://sneakernews.com/2016/09/16/adidas-nmd-xr1-duck-camo-pack/"
+    }, 
+    {
+        "shoe_rating": "4.61", 
+        "release_date": "11.26.16", 
+        "shoe_name": "A Bathing Ape x adidas NMD R1", 
+        "shoes_img": "https://s3.amazonaws.com/images.kicksfinder.com/products/thumbs/3bb3e8ef165334d64a3c6e70cf1fdfd8_1476293218.png  ", 
+        "shoe_url": "http://sneakernews.com/2016/07/29/bape-adidas-nmd-first-look/"
+    }, 
+    {
+        "shoe_rating": "4.61", 
+        "release_date": "11.26.16", 
+        "shoe_name": "A Bathing Ape x adidas NMD R1", 
+        "shoes_img": "https://s3.amazonaws.com/images.kicksfinder.com/products/thumbs/b98fd7869a69f2513c80c58654350b67_1470065074.png  ", 
+        "shoe_url": "http://sneakernews.com/2016/07/29/bape-adidas-nmd-first-look/"
+    }, 
+    {
+        "shoe_rating": "4.66", 
+        "release_date": "12.01.16", 
+        "shoe_name": "adidas Ultra Boost Triple Black", 
+        "shoes_img": "https://s3.amazonaws.com/images.kicksfinder.com/products/thumbs/39c1dc66186f2be76d0552ac01ef2b26_1476296526.png  ", 
+        "shoe_url": "http://sneakernews.com/2016/10/03/adidas-ultra-boost-triple-black-release-date/"
+    }, 
+    {
+        "shoe_rating": "4.38", 
+        "release_date": "12.01.16", 
+        "shoe_name": "adidas Ultra Boost Triple White", 
+        "shoes_img": "https://s3.amazonaws.com/images.kicksfinder.com/products/thumbs/112c72822d7c44f854547aed90a2ff61_1476744964.png  ", 
+        "shoe_url": "http://sneakernews.com/2016/10/12/adidas-ultra-boost-3-0-triple-white/"
+    }, 
+    {
+        "shoe_rating": "4.43", 
+        "release_date": "12.01.16", 
+        "shoe_name": "Nike Hyperadapt 1.0", 
+        "shoes_img": "https://s3.amazonaws.com/images.kicksfinder.com/products/thumbs/5220ac561090434e36c1b7a08302cf3a_1474930027.png  ", 
+        "shoe_url": "http://sneakernews.com/2016/09/20/nike-hyperadapt-1-0-power-lacing-sneaker-ultimate-guide-release-details-images/"
+    }, 
+    {
+        "shoe_rating": "3.98", 
+        "release_date": "12.03.16", 
+        "shoe_name": "adidas Harden Vol. 1 Pioneer", 
+        "shoes_img": "https://s3.amazonaws.com/images.kicksfinder.com/products/thumbs/bc122ea31307f4ce06b06137146fdad9_1477673000.png  ", 
+        "shoe_url": "http://sneakernews.com/2016/10/22/adidas-basketball-unveils-harden-vol-1/"
+    }
+]

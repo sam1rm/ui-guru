@@ -1,0 +1,75 @@
+<view link-data="ui/templates/samples/soundcloud/app.json" render-after-ext-scripts row class="docs" type='row' bg="stone" width="100" height="100" let="content=data.content">
+    <!-- <div>
+        {{content.sc.collection[0].track}}
+    </div> -->
+
+	<view layer="1" type='row' bg="#619BB4"
+	    u on-init="s:[record-start:children:4400]">
+	    <div x-center y-center width='100' height='100'
+			u init-with="p:[tro:center center]"
+			when-record-start="a:[rotate:0deg:360deg:10000:linear:0:i:f]">
+	        <svg class="absolute" width="640px" height="640px" viewBox="0 0 640 640">
+	            <circle stroke="none" fill="#2D2D2D" fill-rule="evenodd" cx="320" cy="320" r="320"></circle>
+	            <circle fill="#FFFFFF" opacity="0.2" cx="319.665001" cy="319.665001" r="106.665001"></circle>
+	        </svg>
+
+	        <div relative x-center y-center rad="100%" width="215px" height="215px" bg="#619BB4" style="overflow:hidden">
+				<img flex m-left="362px" m-top="-60px" ng-src="{{content.track.visuals.visuals[0].visual_url}}" u init-with="p:[op:0.3]"/>
+			</div>
+	    </div>
+	</view>
+
+	<view layer="2" type='row'>
+	    <div x-center y-center wrap width="100" height="100">
+			<h2 p="20px 30px" border="5px solid white" font-size="36px" f-w="900" letter-spacing='0.3em' line-height='1.2' class="line-height-1-2" style="letter-spacing:0.3em">VIBES.CLUB</h2>
+
+		    <div width="100" m-top="100px" class="txt-center">
+		        <h3 font-size="28px" f-w='600' line-height="1.2" class="line-height-1-2">LIVE</h3>
+
+				<!-- @warning line-height-1-2 has important attributes so itll override these attributes since I dont do important when I apply attr-->
+				<h1 font-size="72px" f-w="700" l-h="1.2" l-s='0.3em' class="caps">{{content.track.genre}}</h1>
+
+				<div y-center x-center wrap>
+		            <h3 font-size="28px" f-w='600' line-height="1.2" class='line-height-1-2'>Now Playing: {{content.track.publisher_metadata.artist}} -
+			            <a t-d="underline" style='text-decoration:underline' href="{{content.track.permalink_url}} ">{{content.track.title}}
+			            </a>
+					</h3>
+		        </div>
+		    </div>
+
+		    <item m-bg="gold" class='uppercase' width='100' height='15' align='center top'>
+		        <item align="center top" padding="15" class='border-2-top border-2-left border-2-bottom border-1-right'
+		            u on-mouseenter="s:[ff-hover:self]"
+		            init-with="p:[fill:none]"
+		            when-ff-hover="p:[fill:RGBA(1, 47, 161, 1.00)]">
+		            <svg class="absolute" width="90px" height="90px" viewBox="0 0 90 90">
+		                <rect x="550" y="500" width="90" height="90"/>
+		            </svg>
+		            <graphic class='relative svg-stroke-3 stroke-white' height="60"
+						url='shared/templates/components/svg/main/play-basic.html'> </graphic>
+		        </item>
+		        <item align="center top" padding="15" class='border-2-top border-2-right border-2-bottom border-1-left'
+		            u on-mouseenter="s:[ff-hover:self]"
+		            init-with="p:[fill:none]"
+		            when-ff-hover="p:[fill:RGBA(1, 47, 161, 1.00)]">
+		            <svg class="absolute" width="90px" height="90px" viewBox="0 0 90 90">
+		                <rect x="550" y="500" width="90" height="90"/>
+		            </svg>
+		            <graphic class='relative svg-stroke-3 stroke-white' height="60"
+						url='shared/templates/components/svg/main/fast-forward.html'> </graphic>
+		        </item>
+		    </item>
+
+		    <item m-bg="gold" class='uppercase' width='100' height='15' align='center center' align-self="bottom center">
+		        <item align="center center" padding="15" class='border-2 radius-2' u on-click="s:[switch-vibes:public]" id='switch-vibes-btn' public-attr="coords">
+					<!-- " -->
+		            <txt class='weight-500 margin-0 txt-center' font-size="28px" letter-spacing='1px' line-height='1.2'>
+		                Switch Vibes
+		            </txt>
+		        </item>
+		    </item>
+		</div>
+	</view>
+
+    <inspect-data data/>
+</view>

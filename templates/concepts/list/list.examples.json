@@ -1,0 +1,161 @@
+{
+    "vars": {
+        "components": {
+            "columns": ["Html", "output"]
+        },
+        "examples": {
+            "list": [
+                {
+                    "title": "List o' numbers",
+                    "html": "<orange-box u-list='num in [1,2,3,4,5]' contents='num'></orange-box>"
+                },
+                {
+                    "title": "List o' reversed letters",
+                    "html": "<orange-box u-list=\"num in ['a','b','c','d','e']:reverse\" contents='num'></orange-box>"
+                },
+                {
+                    "title": "List of ordered letters, formerly 'gabrielle'",
+                    "html": "<orange-box u-list=\"num in ['g','a','b','r','i','e', 'l', 'l', 'e']:up\" contents='num'></orange-box>"
+                },
+                {
+                    "title": "Laziest alphabet, no list just strings ",
+                    "html": "<orange-box u-list=\"letter in 'abcdefghijkl....z'\" contents='letter'></orange-box>"
+                },
+                {
+                    "title": "Sanitizing 'gabrielle', round 2",
+                    "html": "<orange-box u-list=\"letter in 'gabrielle':up\" contents='letter'></orange-box>"
+                },
+                {
+                    "title": "List o' ordered numbers",
+                    "html": "<orange-box u-list='num in [28,1,39,15,28,12,18]:up' contents='num'></orange-box>"
+                },
+                {
+                    "title": "List o' reversed ordered numbers",
+                    "html": "<orange-box u-list='num in [28,1,39,15,28,12,18]:down' contents='num'></orange-box>"
+                },
+                {
+                    "title": "Cut the list from 1st item up until the 3rd item",
+                    "html": "<orange-box u-list='num in [1,2,3,4,5,6,7,8,9,10]:trim(0, 3)' contents='num'></orange-box>"
+                },
+                {
+                    "title": "Cut the list from 1st item up until the 3rd item [shortcut]",
+                    "html": "<orange-box u-list='num in [1,2,3,4,5,6,7,8,9,10]:trim(3)' contents='num'></orange-box>"
+                },
+                {
+                    "title": "Cut the list from 3rd item up until the 7th item",
+                    "html": "<orange-box u-list='num in [1,2,3,4,5,6,7,8,9,10]:trim(3, 7)' contents='num'></orange-box>"
+                },
+                {
+                    "title": "List o' strings",
+                    "html": "<div u-list=\"person in ['sam', 'nate', 'mary', 'kate']\" x-center y-center p-x='12px' h='48px' m='6px' bg='sienna' border='2px solid white' rad='2px' f-s='24px' f-w='600'>{{person}}</div>"
+                },
+                {
+                    "title": "List o' dictionaries",
+                    "html": "<div u-list='rgba_item in [{rgb:\"255, 255, 255\", opacity: 0.5}, {rgb:\"0, 0, 0\", opacity: 0.8}]' row y-center h='48px' p='12px' m='6px' bg='sienna' border='2px solid white' rad='2px' f-s='24px' f-w='600' width='100'><div class='width-24 height-24 radius-2' style='background-color:rgba({{rgba_item.rgb}},{{rgba_item.opacity}})'></div><div width='calc(100% - 48px)' m-left='12px' f-s='14px' f-w='600'>rgb({{rgba_item.rgb}}), opacity: {{rgba_item.opacity}}</div></div>"
+                },
+                {
+                    "title": "Nested List - 4×3 grid",
+                    "html": "<div row><div u-list='y in [1,2,3,4]'><orange-box u-list='x in [1,2,3,4]' contents='y + \",\" + x'></orange-box></div></div>"
+                },
+                {
+                    "title": "List o' Ordered Objects/Friends",
+                    "html": "<example/>"
+                },
+                {
+                    "title": "Extra Index Variable",
+                    "html": "<div f-w='600' u-list='num in [10,9,8,7,6,5,4,3,2,1]'>{{$index}},</div>"
+                },
+                {
+                    "title": "List o' ordered numbers under 10",
+                    "html": "<example/>"
+                },
+                {
+                    "title": "Random",
+                    "html": "<example/>"
+                },
+                {
+                    "title": "Lorem Ipsum",
+                    "html": "<example/>"
+                },
+                {
+                    "title": "Alphabet",
+                    "html": "<example/>"
+                },
+                {
+                    "title": "Filter",
+                    "html": "<example/>"
+                },
+                {
+                    "title": "Order",
+                    "html": "<example/>"
+                }
+
+            ]
+        }
+    },
+    "config": {
+        "pathParams": {},
+        "base_url": "^",
+        "parse": {
+            "float": ["content.track.duration"]
+        },
+        "scripts": {
+            "base": "https://",
+            "queue": [
+                {
+                    "path": "s3-us-west-1.amazonaws.com/ui-guru/samples/soundcloud.json",
+                    "mappings": [
+                    {
+                        "from": "collection[1].track",
+                        "to":"content.track"
+                    }
+                    ]
+                },
+                {
+                    "path": "wis.sndcdn.com/xeXS8StuaDqa_m.json",
+                    "mappings": [
+                        {
+                            "to":"content.viz"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "content": {
+        "client": {
+            "setup": {},
+            "components": {}
+        },
+        "examples": [{
+                    "html": "<div u-list='rgba_item in [{rgb:(255, 255, 255), opacity: 0.5}]>"
+                }]
+    },
+    "components": {
+        "orange-box": {
+            "template_url": "./ui/templates/concepts/list/components/orange-box.tpl",
+            "data": {
+                "external": {
+                    "contents": "var"
+                }
+            }
+        },
+        "list-item-example-one": {
+            "template_url": "./ui/templates/concepts/list/components/list-item-example.tpl",
+            "data": {
+                "external": {
+                    "example": "var"
+                }
+            }
+        },
+        "list-item-example-two": {
+            "template_url": "./ui/templates/concepts/list/components/list-item-example.tpl",
+            "data": {
+                "external": {
+                    "html": "var",
+                    "title": "var"
+                }
+            }
+        }
+    }
+}

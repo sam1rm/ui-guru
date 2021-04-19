@@ -1,0 +1,62 @@
+<view class="ui-settings" layer="2" type='row' bg="stone" set="settings = ui.app.views.settings">
+	<item width="100" height="100" class="overflow-auto">
+		<import url="settings.components.nav.url" class="gradient-stone-top"></import>
+
+		<main class="ui-settings-main">
+			<nav class="ui-settings-nav">
+				<ul u on-init="s:[setting-filter:children:easeInCirc-450]">
+					<li u init-with="p:[tr:translateX(-60px), op:0]"
+					   when-setting-filter="a:[opacity:0:1:400:linear:0:1:f, translateX:-60px:0px:600:bouncePast:0:1:f]">
+						<a u on-click="s:[account-link-clicked:public]">
+							<span u init-with="p:[font-weight:700]"
+								when-account-link-clicked="p:[font-weight:700]"
+								when-editor-link-clicked="p:[font-weight:600]"
+								when-customize-link-clicked="p:[font-weight:600]">Account</span>
+							<hr u init-with="p:[op:1]"
+								when-account-link-clicked="p:[op:1]"
+								when-editor-link-clicked="p:[op:0]"
+								when-customize-link-clicked="p:[op:0]"/>
+						</a>
+					</li>
+					<li u init-with="p:[tr:translateX(-60px), op:0]"
+					   when-setting-filter="a:[opacity:0:1:400:linear:0:1:f, translateX:-60px:0px:600:bouncePast:0:1:f]">
+						<a u on-click="s:[editor-link-clicked:public]">
+							<span u init-with="p:[font-weight:600]"
+								when-account-link-clicked="p:[font-weight:600]"
+								when-editor-link-clicked="p:[font-weight:700]"
+								when-customize-link-clicked="p:[font-weight:600]">Editor</span>
+							<hr u init-with="p:[op:0]"
+								when-account-link-clicked="p:[op:0]"
+								when-editor-link-clicked="p:[op:1]"
+								when-customize-link-clicked="p:[op:0]"/>
+						</a>
+					</li>
+					<li  u init-with="p:[tr:translateX(-60px), op:0]"
+					   when-setting-filter="a:[opacity:0:1:400:linear:0:1:f, translateX:-60px:0px:600:bouncePast:0:1:f]">
+						<a u on-click="s:[customize-link-clicked:public]">
+							<span u init-with="p:[font-weight:600]"
+								when-account-link-clicked="p:[font-weight:600]"
+								when-editor-link-clicked="p:[font-weight:600]"
+								when-customize-link-clicked="p:[font-weight:700]">Customize</span>
+							<hr u init-with="p:[op:0]"
+								when-account-link-clicked="p:[op:0]"
+								when-editor-link-clicked="p:[op:0]"
+								when-customize-link-clicked="p:[op:1]"/>
+						</a>
+					</li>
+				</ul>
+				<div u init-with="p:[tr:scale(0) translateY(-200px), tro:center center]"
+					on-init="a:[scale:0:1:1000:bouncePast:600:1:f, translateY:-200px:0px:1000:easeOutExpo:600:1:f]">
+					<button class="bg-rose">Save All Settings</button>
+				</div>
+			</nav>
+
+			<div class="ui-settings-container">
+				<import url="settings.components.customize.url"></import>
+				<import url="settings.components.account.url"></import>
+			</div>
+		</main>
+
+		<footer class="ui-gradient-footer gradient-stone-bottom"></footer>
+	</item>
+</view>

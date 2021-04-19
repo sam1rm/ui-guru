@@ -1,0 +1,561 @@
+<ul class="ui-settings-tiles ui-settings-section"
+	u init-with="p:[position:relative, left:0, top:0, z-index:1, op:1]"
+	when-account-link-clicked="a:[z-index:-1:1:50:linear:0:1:f, opacity:0:1:500:easeOutSine:0:1:f] | p:[position:relative, top:auto, left:auto]"
+	when-customize-link-clicked="a:[z-index:1:-1:50:linear:450:1:f, opacity:1:0:500:easeInSine:0:1:f] | p:[position:absolute, left:0, top:0]"
+	on-init="s:[account-email:depth(1), account-pword:depth(1):500, account-avatar:depth(1):1000]">
+	<li>
+		<div class="ui-settings-tile">
+			<header>
+				<hr u init-with="p:[tr:scaleX(0), tro:left center]"
+					when-account-email="a:[scaleX:0:1:150:easeOutCubic:200:1:f]"/>
+				<h1 u init-with="p:[tr:rotateX(90deg) translateY(-10px), op:0]"
+				when-account-email="a:[rotateX:90deg:0deg:250:easeOutCirc:100:1:f, translateY:-10px:0px:250:easeInCirc:150:1:f]:delay-200 | p:[op:1:900]">Email</h1>
+				<!-- Want to hide init with -->
+				<hr u init-with="p:[tr:scaleX(0), tro:right center]"
+					when-account-email="a:[scaleX:0:1:150:easeOutCubic:200:1:f]"/>
+			</header>
+			<div class="borders">
+				<hr u init-with="p:[tr:scaleY(0), tro:bottom center]"
+					when-account-email="a:[scaleY:0:1:150:easeOutCubic:50:1:f]"/>
+				<hr u init-with="p:[tr:scaleX(0), tro:center center]"
+					when-account-email="a:[scaleX:0:1:150:easeOutCubic:0:1:f]"/>
+				<hr u init-with="p:[tr:scaleY(0), tro:bottom center]"
+					when-account-email="a:[scaleY:0:1:150:easeOutCubic:50:1:f]"/>
+			</div>
+			<div class="ui-settings-tile-content">
+				<ul>
+					<li u init-with="p:[op:0]"
+						when-account-email="a:[fadeInDown:750:easeOutCubic:500:1:f]">
+						<div class="input-border no-label"
+							u on-init="s:[input-border-enter:depth(>2)]"
+							when-input-invalid="a:[translateY:0px:10px:100:linear:0:6:a]">
+							<input class="input-border light" type="email" required placeholder="" disabled
+								u on-valid="s:[input-valid:>children]"
+								on-invalid="s:[input-invalid:>children]"/>
+							<label u init-with="p:[opacity:0]"
+								on-init="a:[opacity:0.0:1.0:1000:linear:0:1:f]">
+								<svg class="input-icon email-icon" viewBox="0 0 100 100">
+									<g fill="none" stroke-linecap="round" stroke-linejoin="round" u
+										when-input-valid="s:[input-valid-stroke:self]"
+										when-input-invalid="s:[input-invalid-stroke:self]"
+										when-input-valid-stroke="p:[s:#43cb9d]:delay-125"
+										when-input-invalid-stroke="p:[s:#d3242c]:delay-125">
+										<path d="M63.9709069,63.9709069 C60.39544,67.5463738 55.4559785,69.757846 50,69.757846 C39.088043,69.757846 30.242154,60.911957 30.242154,50 C30.242154,39.088043 39.088043,30.242154 50,30.242154 C55.4732289,30.242154 60.4266694,32.4676325 64.00478,36.063048 C66.4130625,38.4829778 68.1983075,41.5235021 69.0996581,44.9237641 C69.5290494,46.5436031 69.757846,48.2450824 69.757846,50 C69.757846,53.9347216 69.2262746,59.3417259 73.4417381,62.5812267 C77.4282262,65.6447644 82.9286479,65.1002753 85.6110917,62.5812267 C88.2935356,60.0621781 89.2868458,57.3718152 89.8060548,53.9347216 C91.7706634,31.4800197 75.4920198,12.0798877 53.4860197,10.1546122 C31.4800197,8.22933664 12.0798877,24.5079802 10.1546122,46.5139803 C8.22933664,68.5199803 24.5079802,87.9201123 46.5139803,89.8453878 C57.5169803,90.8080256 67.8685133,87.2196836 75.7099557,80.6399321" class="email"
+											u init-with="p:[sdo:365.6]"
+											when-input-border-enter="a:[stroke-dashoffset:365.6:0:150:easeOutExpo:0:1:f]:delay-100"
+											when-input-valid="p:[sdo:-145.3, tr:rotate(-67.5deg)]"
+											when-input-invalid="p:[sdo:-145.3, tr:rotate(-67.5deg)]"></path>
+										<path d="M24.18272,71.5721092 C24.4439592,69.3159316 24.9647013,67.1463112 25.7181261,65.1010462 C26.4973699,62.9856927 27.5255171,61.0033636 28.7728947,59.1958778 C31.3054434,55.5261424 34.7416842,52.5771306 38.83328,50.6988292 C35.65568,47.7151492 33.65696,43.4911492 33.65696,38.7986692 C33.65696,29.7871492 40.98848,22.4556292 50,22.4556292 C59.01152,22.4556292 66.34304,29.7871492 66.34304,38.7986692 C66.34304,43.4911492 64.34432,47.7151492 61.16672,50.6988292 C63.2270545,51.6446532 65.2045108,52.7827477 66.8690034,54.2723156 C70.4316406,57.4605484 70.9115219,61.4646492 75.1875,63.7439461 C78.8737891,65.708911 83.2367172,64.6296883 85.6110917,62.5812267 C88.397258,60.177497 89.2868458,57.3718152 89.8060548,53.9347216 C91.7706634,31.4800197 75.4920198,12.0798877 53.4860197,10.1546122 C31.4800197,8.22933664 12.0798877,24.5079802 10.1546122,46.5139803 C8.22933664,68.5199803 24.5079802,87.9201123 46.5139803,89.8453878 C57.5169803,90.8080256 67.8685133,87.2196836 75.7099557,80.6399321" class="name"
+											u init-with="p:[sdo:365.6]"
+											when-input-border-enter="a:[stroke-dashoffset:365.6:0:150:easeOutExpo:0:1:f]:delay-100"
+											when-input-valid="p:[sdo:-145.3, tr:rotate(-67.5deg)]"
+											when-input-invalid="p:[sdo:-145.3, tr:rotate(-67.5deg)]"></path>
+										<path d="M47,61 L81.5,24.5" class="success-2"
+											u init-with="p:[op:0, sdo:50.3]"
+											when-input-valid="p:[op:1, sdo:4]:delay-375"
+											when-input-invalid="p:[op:0:delay-250, sdo:50.3]"></path>
+										<path d="M32.5,47.5 L47,61" class="success-1"
+											u init-with="p:[op:0, sdo:19.9]"
+											when-input-valid="p:[op:1, sdo:0]:delay-250"
+											when-input-invalid="p:[op:0:delay-125, sdo:19.8]:delay-250"></path>
+										<path d="M36,36 L64,64" class="error-1"
+											u init-with="p:[op:0, sdo:39.6]"
+											when-input-invalid="p:[op:1, sdo:0]:delay-250"
+											when-input-valid="p:[op:0:delay-175, sdo:39.6]"></path>
+										<path d="M64,36 L36,64" class="error-2"
+											u init-with="p:[op:0, sdo:39.6]"
+											when-input-invalid="p:[op:1, sdo:0]:delay-375"
+											when-input-valid="p:[op:0:delay-175, sdo:39.6]:delay-250"></path>
+									</g>
+								</svg>
+								<span class="label"
+									u init-with="p:[op:0, tr:rotateX(90deg), tro:bottom center]"
+									when-input-border-enter="a:[opacity:0:1:250:easeOutExpo:0:1:f, rotateX:90deg:0deg:250:easeOutExpo:0:1:f]:delay-200">jeselle@uguru.me</span>
+								<span class="input"
+									u init-with="p:[op:0]">Lorem&nbsp;ipsum&nbsp;dolor&nbsp;sit&nbsp;amet|</span>
+								<div class="underline">
+									<div u init-with="p:[tr:scaleX(0)]"
+										when-input-border-enter="a:[scaleX:0:1:250:easeOutExpo:0:1:f]"></div>
+									<div></div>
+								</div>
+								<div class="borders">
+									<div>
+										<div u when-input-valid="p:[bg:#43cb9d]:delay-500"
+											when-input-invalid="p:[bg:#d3242c]:delay-500"></div>
+										<div u when-input-valid="p:[bg:#43cb9d, tr:scale(1), op:1]"
+											when-input-invalid="p:[bg:#d3242c, tr:scale(1), op:1]"></div>
+									</div>
+									<div>
+										<div u when-input-valid="p:[bg:#43cb9d]:delay-500"
+											when-input-invalid="p:[bg:#d3242c]:delay-500"></div>
+										<div u when-input-valid="p:[bg:#43cb9d, tr:scale(1), op:1]"
+											when-input-invalid="p:[bg:#d3242c, tr:scale(1), op:1]"></div>
+									</div>
+									<div>
+										<div u when-input-valid="p:[bg:#43cb9d]:delay-500"
+											when-input-invalid="p:[bg:#d3242c]:delay-500"></div>
+										<div u when-input-valid="p:[bg:#43cb9d, tr:scale(1), op:1]"
+											when-input-invalid="p:[bg:#d3242c, tr:scale(1), op:1]"></div>
+									</div>
+									<div>
+										<div u when-input-valid="p:[bg:#43cb9d]:delay-500"
+											when-input-invalid="p:[bg:#d3242c]:delay-500"></div>
+										<div u when-input-valid="p:[bg:#43cb9d, tr:scale(1), op:1]"
+											when-input-invalid="p:[bg:#d3242c, tr:scale(1), op:1]"></div>
+									</div>
+								</div>
+								<a>
+									<svg viewBox="0 0 100 100">
+										<circle cx="50" cy="50" r="36"
+											u when-input-valid="p:[s:#43cb9d, f:#43cb9d]:delay-500"
+											when-input-invalid="p:[s:#d3242c, f:#d3242c]:delay-500"></circle>
+										<path d="M62.7279221,37.2720779 L37.2720779,62.7279221"
+											u when-input-valid="p:[s:white]:delay-500"
+											when-input-invalid="p:[s:white]:delay-500"></path>
+										<path d="M37.2720779,37.2720779 L62.7279221,62.7279221"
+											u when-input-valid="p:[s:white]:delay-500"
+											when-input-invalid="p:[s:white]:delay-500"></path>
+									</svg>
+								</a>
+							</label>
+						</div>
+					</li>
+					<li u init-with="p:[op:0]"
+						when-account-email="a:[fadeInDown:750:easeOutCubic:650:1:f]">
+						<div class="input-border no-label"
+							u on-init="s:[input-border-enter:depth(>2)]"
+							when-input-invalid="a:[translateY:0px:10px:100:linear:0:6:a]">
+							<input class="input-border light" type="email" required placeholder=""
+								u on-valid="s:[input-valid:>children]"
+								on-invalid="s:[input-invalid:>children]"/>
+							<label u init-with="p:[opacity:0]"
+								on-init="a:[opacity:0.0:1.0:1000:linear:0:1:f]">
+								<svg class="input-icon email-icon" viewBox="0 0 100 100">
+									<g fill="none" stroke-linecap="round" stroke-linejoin="round" u
+										when-input-valid="s:[input-valid-stroke:self]"
+										when-input-invalid="s:[input-invalid-stroke:self]"
+										when-input-valid-stroke="p:[s:#43cb9d]:delay-125"
+										when-input-invalid-stroke="p:[s:#d3242c]:delay-125">
+										<path d="M63.9709069,63.9709069 C60.39544,67.5463738 55.4559785,69.757846 50,69.757846 C39.088043,69.757846 30.242154,60.911957 30.242154,50 C30.242154,39.088043 39.088043,30.242154 50,30.242154 C55.4732289,30.242154 60.4266694,32.4676325 64.00478,36.063048 C66.4130625,38.4829778 68.1983075,41.5235021 69.0996581,44.9237641 C69.5290494,46.5436031 69.757846,48.2450824 69.757846,50 C69.757846,53.9347216 69.2262746,59.3417259 73.4417381,62.5812267 C77.4282262,65.6447644 82.9286479,65.1002753 85.6110917,62.5812267 C88.2935356,60.0621781 89.2868458,57.3718152 89.8060548,53.9347216 C91.7706634,31.4800197 75.4920198,12.0798877 53.4860197,10.1546122 C31.4800197,8.22933664 12.0798877,24.5079802 10.1546122,46.5139803 C8.22933664,68.5199803 24.5079802,87.9201123 46.5139803,89.8453878 C57.5169803,90.8080256 67.8685133,87.2196836 75.7099557,80.6399321" class="email"
+											u init-with="p:[sdo:365.6]"
+											when-input-border-enter="a:[stroke-dashoffset:365.6:0:150:easeOutExpo:0:1:f]:delay-100"
+											when-input-valid="p:[sdo:-145.3, tr:rotate(-67.5deg)]"
+											when-input-invalid="p:[sdo:-145.3, tr:rotate(-67.5deg)]"></path>
+										<path d="M24.18272,71.5721092 C24.4439592,69.3159316 24.9647013,67.1463112 25.7181261,65.1010462 C26.4973699,62.9856927 27.5255171,61.0033636 28.7728947,59.1958778 C31.3054434,55.5261424 34.7416842,52.5771306 38.83328,50.6988292 C35.65568,47.7151492 33.65696,43.4911492 33.65696,38.7986692 C33.65696,29.7871492 40.98848,22.4556292 50,22.4556292 C59.01152,22.4556292 66.34304,29.7871492 66.34304,38.7986692 C66.34304,43.4911492 64.34432,47.7151492 61.16672,50.6988292 C63.2270545,51.6446532 65.2045108,52.7827477 66.8690034,54.2723156 C70.4316406,57.4605484 70.9115219,61.4646492 75.1875,63.7439461 C78.8737891,65.708911 83.2367172,64.6296883 85.6110917,62.5812267 C88.397258,60.177497 89.2868458,57.3718152 89.8060548,53.9347216 C91.7706634,31.4800197 75.4920198,12.0798877 53.4860197,10.1546122 C31.4800197,8.22933664 12.0798877,24.5079802 10.1546122,46.5139803 C8.22933664,68.5199803 24.5079802,87.9201123 46.5139803,89.8453878 C57.5169803,90.8080256 67.8685133,87.2196836 75.7099557,80.6399321" class="name"
+											u init-with="p:[sdo:365.6]"
+											when-input-border-enter="a:[stroke-dashoffset:365.6:0:150:easeOutExpo:0:1:f]:delay-100"
+											when-input-valid="p:[sdo:-145.3, tr:rotate(-67.5deg)]"
+											when-input-invalid="p:[sdo:-145.3, tr:rotate(-67.5deg)]"></path>
+										<path d="M47,61 L81.5,24.5" class="success-2"
+											u init-with="p:[op:0, sdo:50.3]"
+											when-input-valid="p:[op:1, sdo:4]:delay-375"
+											when-input-invalid="p:[op:0:delay-250, sdo:50.3]"></path>
+										<path d="M32.5,47.5 L47,61" class="success-1"
+											u init-with="p:[op:0, sdo:19.9]"
+											when-input-valid="p:[op:1, sdo:0]:delay-250"
+											when-input-invalid="p:[op:0:delay-125, sdo:19.8]:delay-250"></path>
+										<path d="M36,36 L64,64" class="error-1"
+											u init-with="p:[op:0, sdo:39.6]"
+											when-input-invalid="p:[op:1, sdo:0]:delay-250"
+											when-input-valid="p:[op:0:delay-175, sdo:39.6]"></path>
+										<path d="M64,36 L36,64" class="error-2"
+											u init-with="p:[op:0, sdo:39.6]"
+											when-input-invalid="p:[op:1, sdo:0]:delay-375"
+											when-input-valid="p:[op:0:delay-175, sdo:39.6]:delay-250"></path>
+									</g>
+								</svg>
+								<span class="label"
+									u init-with="p:[op:0, tr:rotateX(90deg), tro:bottom center]"
+									when-input-border-enter="a:[opacity:0:1:250:easeOutExpo:0:1:f, rotateX:90deg:0deg:250:easeOutExpo:0:1:f]:delay-200">New email</span>
+								<span class="input"
+									u init-with="p:[op:0]">Lorem&nbsp;ipsum&nbsp;dolor&nbsp;sit&nbsp;amet|</span>
+								<div class="underline">
+									<div u init-with="p:[tr:scaleX(0)]"
+										when-input-border-enter="a:[scaleX:0:1:250:easeOutExpo:0:1:f]"></div>
+									<div></div>
+								</div>
+								<div class="borders">
+									<div>
+										<div u when-input-valid="p:[bg:#43cb9d]:delay-500"
+											when-input-invalid="p:[bg:#d3242c]:delay-500"></div>
+										<div u when-input-valid="p:[bg:#43cb9d, tr:scale(1), op:1]"
+											when-input-invalid="p:[bg:#d3242c, tr:scale(1), op:1]"></div>
+									</div>
+									<div>
+										<div u when-input-valid="p:[bg:#43cb9d]:delay-500"
+											when-input-invalid="p:[bg:#d3242c]:delay-500"></div>
+										<div u when-input-valid="p:[bg:#43cb9d, tr:scale(1), op:1]"
+											when-input-invalid="p:[bg:#d3242c, tr:scale(1), op:1]"></div>
+									</div>
+									<div>
+										<div u when-input-valid="p:[bg:#43cb9d]:delay-500"
+											when-input-invalid="p:[bg:#d3242c]:delay-500"></div>
+										<div u when-input-valid="p:[bg:#43cb9d, tr:scale(1), op:1]"
+											when-input-invalid="p:[bg:#d3242c, tr:scale(1), op:1]"></div>
+									</div>
+									<div>
+										<div u when-input-valid="p:[bg:#43cb9d]:delay-500"
+											when-input-invalid="p:[bg:#d3242c]:delay-500"></div>
+										<div u when-input-valid="p:[bg:#43cb9d, tr:scale(1), op:1]"
+											when-input-invalid="p:[bg:#d3242c, tr:scale(1), op:1]"></div>
+									</div>
+								</div>
+								<a>
+									<svg viewBox="0 0 100 100">
+										<circle cx="50" cy="50" r="36"
+											u when-input-valid="p:[s:#43cb9d, f:#43cb9d]:delay-500"
+											when-input-invalid="p:[s:#d3242c, f:#d3242c]:delay-500"></circle>
+										<path d="M62.7279221,37.2720779 L37.2720779,62.7279221"
+											u when-input-valid="p:[s:white]:delay-500"
+											when-input-invalid="p:[s:white]:delay-500"></path>
+										<path d="M37.2720779,37.2720779 L62.7279221,62.7279221"
+											u when-input-valid="p:[s:white]:delay-500"
+											when-input-invalid="p:[s:white]:delay-500"></path>
+									</svg>
+								</a>
+							</label>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="ui-settings-tile">
+			<header>
+				<hr u init-with="p:[tr:scaleX(0), tro:left center]"
+					when-account-pword="a:[scaleX:0:1:150:easeOutCubic:200:1:f]"/>
+				<h1 u init-with="p:[tr:rotateX(90deg) translateY(-10px), op:0]"
+				when-account-pword="a:[rotateX:90deg:0deg:250:easeOutCirc:100:1:f, translateY:-10px:0px:250:easeInCirc:150:1:f]:delay-200 | p:[op:1:900]">Password</h1>
+				<hr u init-with="p:[tr:scaleX(0), tro:right center]"
+					when-account-pword="a:[scaleX:0:1:150:easeOutCubic:200:1:f]"/>
+			</header>
+			<div class="borders">
+				<hr u init-with="p:[tr:scaleY(0), tro:bottom center]"
+					when-account-pword="a:[scaleY:0:1:150:easeOutCubic:50:1:f]"/>
+				<hr u init-with="p:[tr:scaleX(0), tro:center center]"
+					when-account-pword="a:[scaleX:0:1:150:easeOutCubic:0:1:f]"/>
+				<hr u init-with="p:[tr:scaleY(0), tro:bottom center]"
+					when-account-pword="a:[scaleY:0:1:150:easeOutCubic:50:1:f]"/>
+			</div>
+			<div class="ui-settings-tile-content">
+				<ul>
+					<li u init-with="p:[op:0]"
+						when-account-pword="a:[fadeInDown:750:easeOutCubic:500:1:f]">
+						<div class="input-border no-label"
+							u on-init="s:[input-border-enter:depth(>2)]"
+							when-input-invalid="a:[translateY:0px:10px:100:linear:0:6:a]">
+							<input class="input-border light" type="password" required placeholder=""
+								u on-valid="s:[input-valid:>children]"
+								on-invalid="s:[input-invalid:>children]"/>
+							<label u init-with="p:[opacity:0]"
+								on-init="a:[opacity:0.0:1.0:1000:linear:0:1:f]">
+								<svg class="input-icon email-icon" viewBox="0 0 100 100">
+									<g fill="none" stroke-linecap="round" stroke-linejoin="round" u
+										when-input-valid="s:[input-valid-stroke:self]"
+										when-input-invalid="s:[input-invalid-stroke:self]"
+										when-input-valid-stroke="p:[s:#43cb9d]:delay-125"
+										when-input-invalid-stroke="p:[s:#d3242c]:delay-125">
+										<path d="M63.9709069,63.9709069 C60.39544,67.5463738 55.4559785,69.757846 50,69.757846 C39.088043,69.757846 30.242154,60.911957 30.242154,50 C30.242154,39.088043 39.088043,30.242154 50,30.242154 C55.4732289,30.242154 60.4266694,32.4676325 64.00478,36.063048 C66.4130625,38.4829778 68.1983075,41.5235021 69.0996581,44.9237641 C69.5290494,46.5436031 69.757846,48.2450824 69.757846,50 C69.757846,53.9347216 69.2262746,59.3417259 73.4417381,62.5812267 C77.4282262,65.6447644 82.9286479,65.1002753 85.6110917,62.5812267 C88.2935356,60.0621781 89.2868458,57.3718152 89.8060548,53.9347216 C91.7706634,31.4800197 75.4920198,12.0798877 53.4860197,10.1546122 C31.4800197,8.22933664 12.0798877,24.5079802 10.1546122,46.5139803 C8.22933664,68.5199803 24.5079802,87.9201123 46.5139803,89.8453878 C57.5169803,90.8080256 67.8685133,87.2196836 75.7099557,80.6399321" class="email"
+											u init-with="p:[sdo:365.6]"
+											when-input-border-enter="a:[stroke-dashoffset:365.6:0:150:easeOutExpo:0:1:f]:delay-100"
+											when-input-valid="p:[sdo:-145.3, tr:rotate(-67.5deg)]"
+											when-input-invalid="p:[sdo:-145.3, tr:rotate(-67.5deg)]"></path>
+										<path d="M24.18272,71.5721092 C24.4439592,69.3159316 24.9647013,67.1463112 25.7181261,65.1010462 C26.4973699,62.9856927 27.5255171,61.0033636 28.7728947,59.1958778 C31.3054434,55.5261424 34.7416842,52.5771306 38.83328,50.6988292 C35.65568,47.7151492 33.65696,43.4911492 33.65696,38.7986692 C33.65696,29.7871492 40.98848,22.4556292 50,22.4556292 C59.01152,22.4556292 66.34304,29.7871492 66.34304,38.7986692 C66.34304,43.4911492 64.34432,47.7151492 61.16672,50.6988292 C63.2270545,51.6446532 65.2045108,52.7827477 66.8690034,54.2723156 C70.4316406,57.4605484 70.9115219,61.4646492 75.1875,63.7439461 C78.8737891,65.708911 83.2367172,64.6296883 85.6110917,62.5812267 C88.397258,60.177497 89.2868458,57.3718152 89.8060548,53.9347216 C91.7706634,31.4800197 75.4920198,12.0798877 53.4860197,10.1546122 C31.4800197,8.22933664 12.0798877,24.5079802 10.1546122,46.5139803 C8.22933664,68.5199803 24.5079802,87.9201123 46.5139803,89.8453878 C57.5169803,90.8080256 67.8685133,87.2196836 75.7099557,80.6399321" class="name"
+											u init-with="p:[sdo:365.6]"
+											when-input-border-enter="a:[stroke-dashoffset:365.6:0:150:easeOutExpo:0:1:f]:delay-100"
+											when-input-valid="p:[sdo:-145.3, tr:rotate(-67.5deg)]"
+											when-input-invalid="p:[sdo:-145.3, tr:rotate(-67.5deg)]"></path>
+										<path d="M47,61 L81.5,24.5" class="success-2"
+											u init-with="p:[op:0, sdo:50.3]"
+											when-input-valid="p:[op:1, sdo:4]:delay-375"
+											when-input-invalid="p:[op:0:delay-250, sdo:50.3]"></path>
+										<path d="M32.5,47.5 L47,61" class="success-1"
+											u init-with="p:[op:0, sdo:19.9]"
+											when-input-valid="p:[op:1, sdo:0]:delay-250"
+											when-input-invalid="p:[op:0:delay-125, sdo:19.8]:delay-250"></path>
+										<path d="M36,36 L64,64" class="error-1"
+											u init-with="p:[op:0, sdo:39.6]"
+											when-input-invalid="p:[op:1, sdo:0]:delay-250"
+											when-input-valid="p:[op:0:delay-175, sdo:39.6]"></path>
+										<path d="M64,36 L36,64" class="error-2"
+											u init-with="p:[op:0, sdo:39.6]"
+											when-input-invalid="p:[op:1, sdo:0]:delay-375"
+											when-input-valid="p:[op:0:delay-175, sdo:39.6]:delay-250"></path>
+									</g>
+								</svg>
+								<span class="label"
+									u init-with="p:[op:0, tr:rotateX(90deg), tro:bottom center]"
+									when-input-border-enter="a:[opacity:0:1:250:easeOutExpo:0:1:f, rotateX:90deg:0deg:250:easeOutExpo:0:1:f]:delay-200">Current password</span>
+								<span class="input"
+									u init-with="p:[op:0]">Lorem&nbsp;ipsum&nbsp;dolor&nbsp;sit&nbsp;amet|</span>
+								<div class="underline">
+									<div u init-with="p:[tr:scaleX(0)]"
+										when-input-border-enter="a:[scaleX:0:1:250:easeOutExpo:0:1:f]"></div>
+									<div></div>
+								</div>
+								<div class="borders">
+									<div>
+										<div u when-input-valid="p:[bg:#43cb9d]:delay-500"
+											when-input-invalid="p:[bg:#d3242c]:delay-500"></div>
+										<div u when-input-valid="p:[bg:#43cb9d, tr:scale(1), op:1]"
+											when-input-invalid="p:[bg:#d3242c, tr:scale(1), op:1]"></div>
+									</div>
+									<div>
+										<div u when-input-valid="p:[bg:#43cb9d]:delay-500"
+											when-input-invalid="p:[bg:#d3242c]:delay-500"></div>
+										<div u when-input-valid="p:[bg:#43cb9d, tr:scale(1), op:1]"
+											when-input-invalid="p:[bg:#d3242c, tr:scale(1), op:1]"></div>
+									</div>
+									<div>
+										<div u when-input-valid="p:[bg:#43cb9d]:delay-500"
+											when-input-invalid="p:[bg:#d3242c]:delay-500"></div>
+										<div u when-input-valid="p:[bg:#43cb9d, tr:scale(1), op:1]"
+											when-input-invalid="p:[bg:#d3242c, tr:scale(1), op:1]"></div>
+									</div>
+									<div>
+										<div u when-input-valid="p:[bg:#43cb9d]:delay-500"
+											when-input-invalid="p:[bg:#d3242c]:delay-500"></div>
+										<div u when-input-valid="p:[bg:#43cb9d, tr:scale(1), op:1]"
+											when-input-invalid="p:[bg:#d3242c, tr:scale(1), op:1]"></div>
+									</div>
+								</div>
+								<a>
+									<svg viewBox="0 0 100 100">
+										<circle cx="50" cy="50" r="36"
+											u when-input-valid="p:[s:#43cb9d, f:#43cb9d]:delay-500"
+											when-input-invalid="p:[s:#d3242c, f:#d3242c]:delay-500"></circle>
+										<path d="M62.7279221,37.2720779 L37.2720779,62.7279221"
+											u when-input-valid="p:[s:white]:delay-500"
+											when-input-invalid="p:[s:white]:delay-500"></path>
+										<path d="M37.2720779,37.2720779 L62.7279221,62.7279221"
+											u when-input-valid="p:[s:white]:delay-500"
+											when-input-invalid="p:[s:white]:delay-500"></path>
+									</svg>
+								</a>
+							</label>
+						</div>
+					</li>
+					<li u init-with="p:[op:0]"
+						when-account-pword="a:[fadeInDown:750:easeOutCubic:650:1:f]">
+						<div class="input-border no-label"
+							u on-init="s:[input-border-enter:depth(>2)]"
+							when-input-invalid="a:[translateY:0px:10px:100:linear:0:6:a]">
+							<input class="input-border light" type="password" required placeholder=""
+								u on-valid="s:[input-valid:>children]"
+								on-invalid="s:[input-invalid:>children]"/>
+							<label u init-with="p:[opacity:0]"
+								on-init="a:[opacity:0.0:1.0:1000:linear:0:1:f]">
+								<svg class="input-icon email-icon" viewBox="0 0 100 100">
+									<g fill="none" stroke-linecap="round" stroke-linejoin="round" u
+										when-input-valid="s:[input-valid-stroke:self]"
+										when-input-invalid="s:[input-invalid-stroke:self]"
+										when-input-valid-stroke="p:[s:#43cb9d]:delay-125"
+										when-input-invalid-stroke="p:[s:#d3242c]:delay-125">
+										<path d="M63.9709069,63.9709069 C60.39544,67.5463738 55.4559785,69.757846 50,69.757846 C39.088043,69.757846 30.242154,60.911957 30.242154,50 C30.242154,39.088043 39.088043,30.242154 50,30.242154 C55.4732289,30.242154 60.4266694,32.4676325 64.00478,36.063048 C66.4130625,38.4829778 68.1983075,41.5235021 69.0996581,44.9237641 C69.5290494,46.5436031 69.757846,48.2450824 69.757846,50 C69.757846,53.9347216 69.2262746,59.3417259 73.4417381,62.5812267 C77.4282262,65.6447644 82.9286479,65.1002753 85.6110917,62.5812267 C88.2935356,60.0621781 89.2868458,57.3718152 89.8060548,53.9347216 C91.7706634,31.4800197 75.4920198,12.0798877 53.4860197,10.1546122 C31.4800197,8.22933664 12.0798877,24.5079802 10.1546122,46.5139803 C8.22933664,68.5199803 24.5079802,87.9201123 46.5139803,89.8453878 C57.5169803,90.8080256 67.8685133,87.2196836 75.7099557,80.6399321" class="email"
+											u init-with="p:[sdo:365.6]"
+											when-input-border-enter="a:[stroke-dashoffset:365.6:0:150:easeOutExpo:0:1:f]:delay-100"
+											when-input-valid="p:[sdo:-145.3, tr:rotate(-67.5deg)]"
+											when-input-invalid="p:[sdo:-145.3, tr:rotate(-67.5deg)]"></path>
+										<path d="M24.18272,71.5721092 C24.4439592,69.3159316 24.9647013,67.1463112 25.7181261,65.1010462 C26.4973699,62.9856927 27.5255171,61.0033636 28.7728947,59.1958778 C31.3054434,55.5261424 34.7416842,52.5771306 38.83328,50.6988292 C35.65568,47.7151492 33.65696,43.4911492 33.65696,38.7986692 C33.65696,29.7871492 40.98848,22.4556292 50,22.4556292 C59.01152,22.4556292 66.34304,29.7871492 66.34304,38.7986692 C66.34304,43.4911492 64.34432,47.7151492 61.16672,50.6988292 C63.2270545,51.6446532 65.2045108,52.7827477 66.8690034,54.2723156 C70.4316406,57.4605484 70.9115219,61.4646492 75.1875,63.7439461 C78.8737891,65.708911 83.2367172,64.6296883 85.6110917,62.5812267 C88.397258,60.177497 89.2868458,57.3718152 89.8060548,53.9347216 C91.7706634,31.4800197 75.4920198,12.0798877 53.4860197,10.1546122 C31.4800197,8.22933664 12.0798877,24.5079802 10.1546122,46.5139803 C8.22933664,68.5199803 24.5079802,87.9201123 46.5139803,89.8453878 C57.5169803,90.8080256 67.8685133,87.2196836 75.7099557,80.6399321" class="name"
+											u init-with="p:[sdo:365.6]"
+											when-input-border-enter="a:[stroke-dashoffset:365.6:0:150:easeOutExpo:0:1:f]:delay-100"
+											when-input-valid="p:[sdo:-145.3, tr:rotate(-67.5deg)]"
+											when-input-invalid="p:[sdo:-145.3, tr:rotate(-67.5deg)]"></path>
+										<path d="M47,61 L81.5,24.5" class="success-2"
+											u init-with="p:[op:0, sdo:50.3]"
+											when-input-valid="p:[op:1, sdo:4]:delay-375"
+											when-input-invalid="p:[op:0:delay-250, sdo:50.3]"></path>
+										<path d="M32.5,47.5 L47,61" class="success-1"
+											u init-with="p:[op:0, sdo:19.9]"
+											when-input-valid="p:[op:1, sdo:0]:delay-250"
+											when-input-invalid="p:[op:0:delay-125, sdo:19.8]:delay-250"></path>
+										<path d="M36,36 L64,64" class="error-1"
+											u init-with="p:[op:0, sdo:39.6]"
+											when-input-invalid="p:[op:1, sdo:0]:delay-250"
+											when-input-valid="p:[op:0:delay-175, sdo:39.6]"></path>
+										<path d="M64,36 L36,64" class="error-2"
+											u init-with="p:[op:0, sdo:39.6]"
+											when-input-invalid="p:[op:1, sdo:0]:delay-375"
+											when-input-valid="p:[op:0:delay-175, sdo:39.6]:delay-250"></path>
+									</g>
+								</svg>
+								<span class="label"
+									u init-with="p:[op:0, tr:rotateX(90deg), tro:bottom center]"
+									when-input-border-enter="a:[opacity:0:1:250:easeOutExpo:0:1:f, rotateX:90deg:0deg:250:easeOutExpo:0:1:f]:delay-200">New password</span>
+								<span class="input"
+									u init-with="p:[op:0]">Lorem&nbsp;ipsum&nbsp;dolor&nbsp;sit&nbsp;amet|</span>
+								<div class="underline">
+									<div u init-with="p:[tr:scaleX(0)]"
+										when-input-border-enter="a:[scaleX:0:1:250:easeOutExpo:0:1:f]"></div>
+									<div></div>
+								</div>
+								<div class="borders">
+									<div>
+										<div u when-input-valid="p:[bg:#43cb9d]:delay-500"
+											when-input-invalid="p:[bg:#d3242c]:delay-500"></div>
+										<div u when-input-valid="p:[bg:#43cb9d, tr:scale(1), op:1]"
+											when-input-invalid="p:[bg:#d3242c, tr:scale(1), op:1]"></div>
+									</div>
+									<div>
+										<div u when-input-valid="p:[bg:#43cb9d]:delay-500"
+											when-input-invalid="p:[bg:#d3242c]:delay-500"></div>
+										<div u when-input-valid="p:[bg:#43cb9d, tr:scale(1), op:1]"
+											when-input-invalid="p:[bg:#d3242c, tr:scale(1), op:1]"></div>
+									</div>
+									<div>
+										<div u when-input-valid="p:[bg:#43cb9d]:delay-500"
+											when-input-invalid="p:[bg:#d3242c]:delay-500"></div>
+										<div u when-input-valid="p:[bg:#43cb9d, tr:scale(1), op:1]"
+											when-input-invalid="p:[bg:#d3242c, tr:scale(1), op:1]"></div>
+									</div>
+									<div>
+										<div u when-input-valid="p:[bg:#43cb9d]:delay-500"
+											when-input-invalid="p:[bg:#d3242c]:delay-500"></div>
+										<div u when-input-valid="p:[bg:#43cb9d, tr:scale(1), op:1]"
+											when-input-invalid="p:[bg:#d3242c, tr:scale(1), op:1]"></div>
+									</div>
+								</div>
+								<a>
+									<svg viewBox="0 0 100 100">
+										<circle cx="50" cy="50" r="36"
+											u when-input-valid="p:[s:#43cb9d, f:#43cb9d]:delay-500"
+											when-input-invalid="p:[s:#d3242c, f:#d3242c]:delay-500"></circle>
+										<path d="M62.7279221,37.2720779 L37.2720779,62.7279221"
+											u when-input-valid="p:[s:white]:delay-500"
+											when-input-invalid="p:[s:white]:delay-500"></path>
+										<path d="M37.2720779,37.2720779 L62.7279221,62.7279221"
+											u when-input-valid="p:[s:white]:delay-500"
+											when-input-invalid="p:[s:white]:delay-500"></path>
+									</svg>
+								</a>
+							</label>
+						</div>
+					</li>
+					<li u init-with="p:[op:0]"
+						when-account-pword="a:[fadeInDown:750:easeOutCubic:750:1:f]">
+						<div class="input-border no-label"
+							u on-init="s:[input-border-enter:depth(>2)]"
+							when-input-invalid="a:[translateY:0px:10px:100:linear:0:6:a]">
+							<input class="input-border light" type="password" required placeholder=""
+								u on-valid="s:[input-valid:>children]"
+								on-invalid="s:[input-invalid:>children]"/>
+							<label u init-with="p:[opacity:0]"
+								on-init="a:[opacity:0.0:1.0:1000:linear:0:1:f]">
+								<svg class="input-icon email-icon" viewBox="0 0 100 100">
+									<g fill="none" stroke-linecap="round" stroke-linejoin="round" u
+										when-input-valid="s:[input-valid-stroke:self]"
+										when-input-invalid="s:[input-invalid-stroke:self]"
+										when-input-valid-stroke="p:[s:#43cb9d]:delay-125"
+										when-input-invalid-stroke="p:[s:#d3242c]:delay-125">
+										<path d="M63.9709069,63.9709069 C60.39544,67.5463738 55.4559785,69.757846 50,69.757846 C39.088043,69.757846 30.242154,60.911957 30.242154,50 C30.242154,39.088043 39.088043,30.242154 50,30.242154 C55.4732289,30.242154 60.4266694,32.4676325 64.00478,36.063048 C66.4130625,38.4829778 68.1983075,41.5235021 69.0996581,44.9237641 C69.5290494,46.5436031 69.757846,48.2450824 69.757846,50 C69.757846,53.9347216 69.2262746,59.3417259 73.4417381,62.5812267 C77.4282262,65.6447644 82.9286479,65.1002753 85.6110917,62.5812267 C88.2935356,60.0621781 89.2868458,57.3718152 89.8060548,53.9347216 C91.7706634,31.4800197 75.4920198,12.0798877 53.4860197,10.1546122 C31.4800197,8.22933664 12.0798877,24.5079802 10.1546122,46.5139803 C8.22933664,68.5199803 24.5079802,87.9201123 46.5139803,89.8453878 C57.5169803,90.8080256 67.8685133,87.2196836 75.7099557,80.6399321" class="email"
+											u init-with="p:[sdo:365.6]"
+											when-input-border-enter="a:[stroke-dashoffset:365.6:0:150:easeOutExpo:0:1:f]:delay-100"
+											when-input-valid="p:[sdo:-145.3, tr:rotate(-67.5deg)]"
+											when-input-invalid="p:[sdo:-145.3, tr:rotate(-67.5deg)]"></path>
+										<path d="M24.18272,71.5721092 C24.4439592,69.3159316 24.9647013,67.1463112 25.7181261,65.1010462 C26.4973699,62.9856927 27.5255171,61.0033636 28.7728947,59.1958778 C31.3054434,55.5261424 34.7416842,52.5771306 38.83328,50.6988292 C35.65568,47.7151492 33.65696,43.4911492 33.65696,38.7986692 C33.65696,29.7871492 40.98848,22.4556292 50,22.4556292 C59.01152,22.4556292 66.34304,29.7871492 66.34304,38.7986692 C66.34304,43.4911492 64.34432,47.7151492 61.16672,50.6988292 C63.2270545,51.6446532 65.2045108,52.7827477 66.8690034,54.2723156 C70.4316406,57.4605484 70.9115219,61.4646492 75.1875,63.7439461 C78.8737891,65.708911 83.2367172,64.6296883 85.6110917,62.5812267 C88.397258,60.177497 89.2868458,57.3718152 89.8060548,53.9347216 C91.7706634,31.4800197 75.4920198,12.0798877 53.4860197,10.1546122 C31.4800197,8.22933664 12.0798877,24.5079802 10.1546122,46.5139803 C8.22933664,68.5199803 24.5079802,87.9201123 46.5139803,89.8453878 C57.5169803,90.8080256 67.8685133,87.2196836 75.7099557,80.6399321" class="name"
+											u init-with="p:[sdo:365.6]"
+											when-input-border-enter="a:[stroke-dashoffset:365.6:0:150:easeOutExpo:0:1:f]:delay-100"
+											when-input-valid="p:[sdo:-145.3, tr:rotate(-67.5deg)]"
+											when-input-invalid="p:[sdo:-145.3, tr:rotate(-67.5deg)]"></path>
+										<path d="M47,61 L81.5,24.5" class="success-2"
+											u init-with="p:[op:0, sdo:50.3]"
+											when-input-valid="p:[op:1, sdo:4]:delay-375"
+											when-input-invalid="p:[op:0:delay-250, sdo:50.3]"></path>
+										<path d="M32.5,47.5 L47,61" class="success-1"
+											u init-with="p:[op:0, sdo:19.9]"
+											when-input-valid="p:[op:1, sdo:0]:delay-250"
+											when-input-invalid="p:[op:0:delay-125, sdo:19.8]:delay-250"></path>
+										<path d="M36,36 L64,64" class="error-1"
+											u init-with="p:[op:0, sdo:39.6]"
+											when-input-invalid="p:[op:1, sdo:0]:delay-250"
+											when-input-valid="p:[op:0:delay-175, sdo:39.6]"></path>
+										<path d="M64,36 L36,64" class="error-2"
+											u init-with="p:[op:0, sdo:39.6]"
+											when-input-invalid="p:[op:1, sdo:0]:delay-375"
+											when-input-valid="p:[op:0:delay-175, sdo:39.6]:delay-250"></path>
+									</g>
+								</svg>
+								<span class="label"
+									u init-with="p:[op:0, tr:rotateX(90deg), tro:bottom center]"
+									when-input-border-enter="a:[opacity:0:1:250:easeOutExpo:0:1:f, rotateX:90deg:0deg:250:easeOutExpo:0:1:f]:delay-200">Confirm password</span>
+								<span class="input"
+									u init-with="p:[op:0]">Lorem&nbsp;ipsum&nbsp;dolor&nbsp;sit&nbsp;amet|</span>
+								<div class="underline">
+									<div u init-with="p:[tr:scaleX(0)]"
+										when-input-border-enter="a:[scaleX:0:1:250:easeOutExpo:0:1:f]"></div>
+									<div></div>
+								</div>
+								<div class="borders">
+									<div>
+										<div u when-input-valid="p:[bg:#43cb9d]:delay-500"
+											when-input-invalid="p:[bg:#d3242c]:delay-500"></div>
+										<div u when-input-valid="p:[bg:#43cb9d, tr:scale(1), op:1]"
+											when-input-invalid="p:[bg:#d3242c, tr:scale(1), op:1]"></div>
+									</div>
+									<div>
+										<div u when-input-valid="p:[bg:#43cb9d]:delay-500"
+											when-input-invalid="p:[bg:#d3242c]:delay-500"></div>
+										<div u when-input-valid="p:[bg:#43cb9d, tr:scale(1), op:1]"
+											when-input-invalid="p:[bg:#d3242c, tr:scale(1), op:1]"></div>
+									</div>
+									<div>
+										<div u when-input-valid="p:[bg:#43cb9d]:delay-500"
+											when-input-invalid="p:[bg:#d3242c]:delay-500"></div>
+										<div u when-input-valid="p:[bg:#43cb9d, tr:scale(1), op:1]"
+											when-input-invalid="p:[bg:#d3242c, tr:scale(1), op:1]"></div>
+									</div>
+									<div>
+										<div u when-input-valid="p:[bg:#43cb9d]:delay-500"
+											when-input-invalid="p:[bg:#d3242c]:delay-500"></div>
+										<div u when-input-valid="p:[bg:#43cb9d, tr:scale(1), op:1]"
+											when-input-invalid="p:[bg:#d3242c, tr:scale(1), op:1]"></div>
+									</div>
+								</div>
+								<a>
+									<svg viewBox="0 0 100 100">
+										<circle cx="50" cy="50" r="36"
+											u when-input-valid="p:[s:#43cb9d, f:#43cb9d]:delay-500"
+											when-input-invalid="p:[s:#d3242c, f:#d3242c]:delay-500"></circle>
+										<path d="M62.7279221,37.2720779 L37.2720779,62.7279221"
+											u when-input-valid="p:[s:white]:delay-500"
+											when-input-invalid="p:[s:white]:delay-500"></path>
+										<path d="M37.2720779,37.2720779 L62.7279221,62.7279221"
+											u when-input-valid="p:[s:white]:delay-500"
+											when-input-invalid="p:[s:white]:delay-500"></path>
+									</svg>
+								</a>
+							</label>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class="ui-settings-tile">
+			<header>
+				<hr u init-with="p:[tr:scaleX(0), tro:left center]"
+					when-account-avatar="a:[scaleX:0:1:150:easeOutCubic:200:1:f]"/>
+				<h1 u init-with="p:[tr:rotateX(90deg) translateY(-10px), op:0]"
+				when-account-avatar="a:[rotateX:90deg:0deg:250:easeOutCirc:100:1:f, translateY:-10px:0px:250:easeInCirc:150:1:f]:delay-200 | p:[op:1:900]">Avatar</h1>
+				<hr u init-with="p:[tr:scaleX(0), tro:right center]"
+					when-account-avatar="a:[scaleX:0:1:150:easeOutCubic:200:1:f]"/>
+			</header>
+			<div class="borders">
+				<hr u init-with="p:[tr:scaleY(0), tro:bottom center]"
+					when-account-avatar="a:[scaleY:0:1:150:easeOutCubic:50:1:f]"/>
+				<hr u init-with="p:[tr:scaleX(0), tro:center center]"
+					when-account-avatar="a:[scaleX:0:1:150:easeOutCubic:0:1:f]"/>
+				<hr u init-with="p:[tr:scaleY(0), tro:bottom center]"
+					when-account-avatar="a:[scaleY:0:1:150:easeOutCubic:50:1:f]"/>
+			</div>
+			<div class="ui-settings-tile-content">
+				<a class="ui-settings-avatar-upload">
+					<graphic url='ui/templates/components/svg/upload-avatar.html'></graphic>
+				</a>
+				<h2 u style="opacity:0"
+					when-account-avatar="a:[opacity:0:1:450:linear:300:1:f]">We suggest a 400 x 400 px jpeg.</h2>
+			</div>
+		</div>
+	</li>
+</ul>

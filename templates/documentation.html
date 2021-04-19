@@ -1,0 +1,939 @@
+<view class="docs" type='row' bg="stone" width="100" height="100">
+	<aside class="docs-nav overflow-y no-scrollbar" width="25" height="100">
+		<nav>
+			<ul class="docs-nav-list">
+				<li>
+					<h1><a u on-click="c:[selected:add]">Attributes</a></h1>
+				</li>
+				<li>
+					<h1><a u on-click="c:[selected:add]">Directives</a></h1>
+					<ul>
+						<li>
+							<h2><a u on-click="c:[selected:add]">Send</a></h2>
+							<ul>
+								<li>
+									<h3><a u on-click="c:[selected:add]">Structure</a></h3>
+								</li>
+								<li>
+									<h3><a u on-click="c:[selected:add]">:public</a></h3>
+								</li>
+								<li>
+									<h3><a u on-click="c:[selected:add]">:self</a></h3>
+								</li>
+								<li>
+									<h3><a u on-click="c:[selected:add]">:children</a></h3>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h1><a u on-click="c:[selected:add]">CSS</a></h1>
+				</li>
+				<li>
+					<h1><a u on-click="c:[selected:add]">HTML</a></h1>
+				</li>
+				<li>
+					<h1><a u on-click="c:[selected:add]">Bug List</a></h1>
+				</li>
+				<li>
+					<h1><a u on-click="c:[selected:add]">Style Guide</a></h1>
+				</li>
+			</ul>
+		</nav>
+	</aside>
+	<main class="docs-main overflow-y no-scrollbar" width="75" height="100">
+		<header>
+			<fieldset class="docs-omnibar">
+				<div>
+					<nav class="docs-omnibar-actions">
+						<a>
+							<graphic url='shared/templates/components/svg/main/search-circle.html'></graphic>
+						</a>
+					</nav>
+					<!-- <span>Bug:</span> -->
+					<input placeholder="Get Started"/>
+				</div>
+			</fieldset>
+			<ul class="docs-actions">
+				<li>
+					<a class="docs-action-link" u on-click="c:[selected:add]">
+						<graphic url='shared/templates/components/svg/main/search-circle.html'></graphic>
+						<h2>Search</h2>
+						<div>
+							<kbd>Ctrl</kbd>
+							<span>&nbsp;+&nbsp;</span>
+							<kbd>S</kbd>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a class="docs-action-link" u on-click="c:[selected:add]">
+						<graphic url='shared/templates/components/svg/docs/bug.html'></graphic>
+						<h2>Report Bug</h2>
+						<div>
+							<kbd>Ctrl</kbd>
+							<span>&nbsp;+&nbsp;</span>
+							<kbd>B</kbd>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a class="docs-action-link" u on-click="c:[selected:add]">
+						<graphic url='shared/templates/components/svg/docs/add-doc.html'></graphic>
+						<h2>Search</h2>
+						<div>
+							<kbd>Ctrl</kbd>
+							<span>&nbsp;+&nbsp;</span>
+							<kbd>D</kbd>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a class="docs-action-link" u on-click="c:[selected:add]">
+						<graphic url='shared/templates/components/svg/docs/add-ft.html'></graphic>
+						<h2>Add Feature</h2>
+						<div>
+							<kbd>Ctrl</kbd>
+							<span>&nbsp;+&nbsp;</span>
+							<kbd>F</kbd>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</header>
+		<section class="docs-form">
+			<form>
+				<div flex w="100%" p="7.5px">
+					<ul w="50%">
+						<li p="7.5px">
+							<fieldset rad="2px" border="2px solid white" class="placeholder-stone-white">
+								<label p="3px 15px" font-size="12" f-w="600" bg="white-25p" border-bottom="2px solid white" class="border-white border-2-bottom">Title</label>
+								<div>
+									<input type="text" value="Lorem Ipsum" p="10px 15px" font-size="28" bg="white-10p" color="white"
+										u on-mouseenter="p:[background:#777E93]"
+										on-mouseleave="p:[background:#5D657E]"
+										on-focus="p:[background:#ffffff, color:#757575]"
+										on-blur="p:[background:#5D657E, color:#ffffff]"/>
+								</div>
+							</fieldset>
+						</li>
+						<li p="7.5px">
+							<fieldset rad="2px" border="2px solid white" class="placeholder-stone-white">
+								<label p="3px 15px" font-size="12" f-w="600" bg="white-25p" border-bottom="2px solid white" class="border-white border-2-bottom">Description</label>
+								<div>
+									<textarea placeholder="Describe your problem" p="10px 15px" font-size="16" bg="white-10p" color="white" border="0" rad="0"
+										u on-mouseenter="p:[background:#777E93]"
+										on-mouseleave="p:[background:#5D657E]"
+										on-focus="p:[background:#ffffff, color:#757575]"
+										on-blur="p:[background:#5D657E, color:#ffffff]"></textarea>
+								</div>
+							</fieldset>
+						</li>
+						<li p="7.5px">
+							<div relative rad="2px">
+								<a stretch s-b bg="white-10p" border="2px solid white"
+									u on-mouseenter="p:[background:#777E93]"
+									on-mouseleave="p:[background:#5D657E]"
+									on-click="s:[report-dd-open:public]">
+									<span y-center p-x="15px" f-w="600">
+										<span u init-with="p:[op:0.5]"
+											when-dd-open="p:[op:1]">Reported By</span>
+									</span>
+									<div border-left="2px solid white" bg="white-20p" class="svg-48-36 border-2-left border-white">
+										<svg viewBox="0 0 100 100"
+											u init-with="p:[tro:center center, tr:rotateX(0deg)]"
+											when-report-dd-open="a:[rotateX:0deg:180deg:150:easeOutBack:0:1:f]"
+											when-report-dd-blur="a:[rotateX:180deg:0deg:150:easeInBack:0:1:f]">
+											<path d="M14,32 L50,68 L86,32" stroke="#ffffff" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+									</div>
+								</a>
+								<ul absolute left="0" width="calc(100% - 48px)"
+									u init-with="p:[z-index:-1, op:0]"
+									when-report-dd-open="p:[z-index:11, op:1] | s:[report-dd-stagger:children:linear-400]"
+									when-report-dd-blur="p:[z-index:-1, op:0]">
+									<li bg="stone" border="2px solid white" m-top="-2px"
+										u init-with="p:[tro:center top, op:0, tr:rotateX(90deg) translateZ(0px)]"
+										when-report-dd-stagger="a:[opacity:0:1:250:easeInOutSine:0:1:f, rotateX:90deg:0deg:250:easeInOutCubic:0:1:f, translateZ:0px:0px:250:easeInOutCubic:0:1:f]"
+										on-click="s:[report-dd-blur:public]">
+										<span y-center p-x="15px" p-y="10px" f-w="600" bg="white-20p"
+											u on-mouseenter="p:[background:#C4C7D0, color:#4A556F]"
+											on-mouseleave="p:[background:#777E93, color:#ffffff]">
+											<span class="user-icon-28" m-right="10"></span>
+											<span>Jeselle Obina</span>
+										</span>
+									</li>
+									<li bg="stone" border="2px solid white" m-top="-2px"
+										u init-with="p:[tro:center top, op:0, tr:rotateX(-90deg) translateZ(0px)]"
+										when-report-dd-stagger="a:[opacity:0:1:250:easeInOutSine:0:1:f, rotateX:-90deg:0deg:250:easeInOutCubic:0:1:f, translateZ:0px:0px:250:easeInOutCubic:0:1:f]"
+										on-click="s:[report-dd-blur:public]">
+										<span y-center p-x="15px" p-y="10px" f-w="600" bg="white-20p"
+											u on-mouseenter="p:[background:#C4C7D0, color:#4A556F]"
+											on-mouseleave="p:[background:#777E93, color:#ffffff]">
+											<span class="user-icon-28" m-right="10"></span>
+											<span>Samir Makhani</span>
+										</span>
+									</li>
+									<li bg="stone" border="2px solid white" m-top="-2px" rad="0 0 2px 2px"
+										u init-with="p:[tro:center top, op:0, tr:rotateX(90deg) translateZ(0px)]"
+										when-report-dd-stagger="a:[opacity:0:1:250:easeInOutSine:0:1:f, rotateX:90deg:0deg:250:easeInOutCubic:0:1:f, translateZ:0px:0px:250:easeInOutCubic:0:1:f]"
+										on-click="s:[report-dd-blur:public]">
+										<span y-center p-x="15px" p-y="10px" f-w="600" bg="white-20p"
+											u on-mouseenter="p:[background:#C4C7D0, color:#4A556F]"
+											on-mouseleave="p:[background:#777E93, color:#ffffff]">
+											<span class="user-icon-28" m-right="10"></span>
+											<span>Gabrielle Wee</span>
+										</span>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li p="7.5px">
+							<fieldset rad="2px" border="2px solid white" class="placeholder-stone-white">
+								<label p="3px 15px" font-size="12" f-w="600" bg="white-25p" border-bottom="2px solid white" class="border-white border-2-bottom">Severity</label>
+								<div p="15px">
+									<div relative>
+										<hr absolute top="50%" left="0" m="-1px 0 0" width="100" height="2px" border="0" bg="white" rad="4px"/>
+										<ul s-b nowrap y-center>
+											<li relative>
+												<input type="radio" absolute top="0" left="0" z-index="10" w="100" h="100" pointer style="cursor:pointer;"
+													u on-click="s:[sev-1:public]"/>
+												<div x-center y-center relative z="9">
+													<div bg="white" rad="100%" width="32px" height="32px" p="3px">
+														<div bg="moola-25p" width="100" height="100" rad="100%">
+															<div relative z="1" bg="moola" width="100" height="100" rad="100%"
+																u init-with="p:[tr:scale(0)]"
+																when-sev-2="p:[tr:scale(0)]"
+																when-sev-3="p:[tr:scale(0)]"
+																when-sev-4="p:[tr:scale(0)]"
+																when-sev-5="p:[tr:scale(0)]"
+																when-sev-1="p:[tr:scale(1)]">
+															</div>
+															<span absolute z="0" top="0" left="0" width="100" height="100" x-center y-center font-size="18" f-w="600" color="#77a562" style="color:#77a562">1</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li relative>
+												<input type="radio" absolute top="0" left="0" z-index="10" w="100" h="100" pointer style="cursor:pointer;"
+													u on-click="s:[sev-2:public]"/>
+												<div x-center y-center relative z="9">
+													<div bg="white" rad="100%" width="28px" height="28px" p="3px">
+														<div bg="rgba(188,190,90,0.25)" width="100" height="100" rad="100%">
+															<div relative z="1" bg="#bcbe5a" width="100" height="100" rad="100%"
+																u init-with="p:[tr:scale(0)]"
+																when-sev-1="p:[tr:scale(0)]"
+																when-sev-3="p:[tr:scale(0)]"
+																when-sev-4="p:[tr:scale(0)]"
+																when-sev-5="p:[tr:scale(0)]"
+																when-sev-2="p:[tr:scale(1)]">
+															</div>
+															<span absolute z="0" top="0" left="0" width="100" height="100" x-center y-center font-size="16" f-w="700" color="#a9ac58" style="color:#a9ac58;">2</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li relative>
+												<input type="radio" absolute top="0" left="0" z-index="10" w="100" h="100" pointer style="cursor:pointer;"
+													u on-click="s:[sev-3:public]"/>
+												<div x-center y-center relative z="9">
+													<div bg="white" rad="100%" width="26px" height="26px" p="3px">
+														<div bg="gold-25p" width="100" height="100" rad="100%">
+															<div relative z="1" bg="gold" width="100" height="100" rad="100%"
+																u init-with="p:[tr:scale(0)]"
+																when-sev-1="p:[tr:scale(0)]"
+																when-sev-2="p:[tr:scale(0)]"
+																when-sev-4="p:[tr:scale(0)]"
+																when-sev-5="p:[tr:scale(0)]"
+																when-sev-3="p:[tr:scale(1)]">
+															</div>
+															<span absolute z="0" top="0" left="0" width="100" height="100" x-center y-center font-size="14" f-w="800" color="#dbb34e" style="color:#dbb34e;">3</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li relative>
+												<input type="radio" absolute top="0" left="0" z-index="10" w="100" h="100" pointer style="cursor:pointer;"
+													u on-click="s:[sev-4:public]"/>
+												<div x-center y-center relative z="9">
+													<div bg="white" rad="100%" width="28px" height="28px" p="3px">
+														<div bg="rgba(243,139,81,0.25)" width="100" height="100" rad="100%">
+															<div relative z="1" bg="#f38b51" width="100" height="100" rad="100%"
+																u init-with="p:[tr:scale(0)]"
+																when-sev-1="p:[tr:scale(0)]"
+																when-sev-2="p:[tr:scale(0)]"
+																when-sev-3="p:[tr:scale(0)]"
+																when-sev-5="p:[tr:scale(0)]"
+																when-sev-4="p:[tr:scale(1)]">
+															</div>
+															<span absolute z="0" top="0" left="0" width="100" height="100" x-center y-center font-size="16" f-w="700" color="#d88150" style="color:#d88150;">4</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li relative>
+												<input type="radio" absolute top="0" left="0" z-index="10" w="100" h="100" pointer style="cursor:pointer;"
+													u on-click="s:[sev-5:public]"/>
+												<div x-center y-center relative z="9">
+													<div bg="white" rad="100%" width="32px" height="32px" p="3px">
+														<div bg="auburn-25p" width="100" height="100" rad="100%">
+															<div relative z="1" bg="auburn" width="100" height="100" rad="100%"
+																u init-with="p:[tr:scale(0)]"
+																when-sev-1="p:[tr:scale(0)]"
+																when-sev-2="p:[tr:scale(0)]"
+																when-sev-3="p:[tr:scale(0)]"
+																when-sev-4="p:[tr:scale(0)]"
+																when-sev-5="p:[tr:scale(1)]">
+															</div>
+															<span absolute z="0" top="0" left="0" width="100" height="100" x-center y-center font-size="18" f-w="600" color="#d64e53" style="color:#d64e53">5</span>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</fieldset>
+						</li>
+					</ul>
+					<ul w="50%">
+						<li p="7.5px" flex>
+							<fieldset rad="2px" border="2px solid white" class="placeholder-stone-white" w="calc(75% - 7.5px)" m-right="7.5px">
+								<label p="3px 15px" font-size="12" f-w="600" bg="white-25p" border-bottom="2px solid white" class="border-white border-2-bottom">File</label>
+								<div>
+									<input type="text" value="lorem.html" p="10px 15px" font-size="28" bg="white-10p" color="white"
+										u on-mouseenter="p:[background:#777E93]"
+										on-mouseleave="p:[background:#5D657E]"
+										on-focus="p:[background:#ffffff, color:#757575]"
+										on-blur="p:[background:#5D657E, color:#ffffff]"/>
+								</div>
+							</fieldset>
+							<fieldset rad="2px" border="2px solid white" class="placeholder-stone-white" w="calc(25% - 7.5px)" m-left="7.5px">
+								<label p="3px 15px" font-size="12" f-w="600" bg="white-25p" border-bottom="2px solid white" class="border-white border-2-bottom">Line</label>
+								<div>
+									<input type="text" placeholder="01" p="10px 15px" font-size="28" bg="white-10p" color="white"
+										u on-mouseenter="p:[background:#777E93]"
+										on-mouseleave="p:[background:#5D657E]"
+										on-focus="p:[background:#ffffff, color:#757575]"
+										on-blur="p:[background:#5D657E, color:#ffffff]"/>
+								</div>
+							</fieldset>
+						</li>
+						<li p="7.5px">
+							<fieldset rad="2px" border="2px solid white" class="placeholder-stone-white">
+								<label p="3px 15px" font-size="12" f-w="600" bg="white-25p" border-bottom="2px solid white" class="border-white border-2-bottom">Snippet</label>
+								<div>
+									<textarea placeholder="Describe your problem" p="10px 15px" font-size="16" bg="white-10p" color="white" border="0" rad="0"
+										u on-mouseenter="p:[background:#777E93]"
+										on-mouseleave="p:[background:#5D657E]"
+										on-focus="p:[background:#ffffff, color:#757575]"
+										on-blur="p:[background:#5D657E, color:#ffffff]"></textarea>
+								</div>
+							</fieldset>
+						</li>
+						<li p="7.5px" flex>
+							<div relative rad="2px" w="calc(50% - 7.5px)" m-right="7.5px">
+								<a stretch s-b bg="white-10p" border="2px solid white"
+									u on-mouseenter="p:[background:#777E93]"
+									on-mouseleave="p:[background:#5D657E]"
+									on-click="s:[browser-dd-open:public]">
+									<span y-center p-x="15px" f-w="600">
+										<span u init-with="p:[op:0.5]">Browser</span>
+									</span>
+									<div border-left="2px solid white" bg="white-20p" class="svg-48-36 border-2-left border-white">
+										<svg viewBox="0 0 100 100"
+											u init-with="p:[tro:center center, tr:rotateX(0deg)]"
+											when-browser-dd-open="a:[rotateX:0deg:180deg:150:easeOutBack:0:1:f]"
+											when-browser-dd-blur="a:[rotateX:180deg:0deg:150:easeOutBack:0:1:f]">
+											<path d="M14,32 L50,68 L86,32" stroke="#ffffff" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+									</div>
+								</a>
+								<ul absolute left="0" width="calc(100% - 48px)"
+									u init-with="p:[z-index:-1, op:0]"
+									when-browser-dd-open="p:[z-index:11, op:1] | s:[browser-dd-stagger:children:linear-400]"
+									when-browser-dd-blur="p:[z-index:-1, op:0]">
+									<li m-top="-2px" bg="stone" border="2px solid white"
+										u init-with="p:[tro:center top, op:0, tr:rotateX(90deg) translateZ(0px)]"
+										when-browser-dd-stagger="a:[opacity:0:1:250:easeInOutSine:0:1:f, rotateX:90deg:0deg:250:easeInOutCubic:0:1:f, translateZ:0px:0px:250:easeInOutCubic:0:1:f]"
+										on-click="s:[browser-dd-blur:public]">
+										<span y-center p-x="15px" p-y="10px" f-w="600" bg="white-20p"
+											u on-mouseenter="p:[background:#C4C7D0, color:#4A556F]"
+											on-mouseleave="p:[background:#777E93, color:#ffffff]">
+											<span>Chrome</span>
+										</span>
+									</li>
+									<li m-top="-2px" bg="stone" border="2px solid white"
+										u init-with="p:[tro:center top, op:0, tr:rotateX(-90deg) translateZ(0px)]"
+										when-browser-dd-stagger="a:[opacity:0:1:250:easeInOutSine:0:1:f, rotateX:-90deg:0deg:250:easeInOutCubic:0:1:f, translateZ:0px:0px:250:easeInOutCubic:0:1:f]"
+										on-click="s:[browser-dd-blur:public]">
+										<span y-center p-x="15px" p-y="10px" f-w="600" bg="white-20p"
+											u on-mouseenter="p:[background:#C4C7D0, color:#4A556F]"
+											on-mouseleave="p:[background:#777E93, color:#ffffff]">
+											<span>IE 7</span>
+										</span>
+									</li>
+									<li m-top="-2px" bg="stone" border="2px solid white"
+										u init-with="p:[tro:center top, op:0, tr:rotateX(90deg) translateZ(0px)]"
+										when-browser-dd-stagger="a:[opacity:0:1:250:easeInOutSine:0:1:f, rotateX:90deg:0deg:250:easeInOutCubic:0:1:f, translateZ:0px:0px:250:easeInOutCubic:0:1:f]"
+										on-click="s:[browser-dd-blur:public]">
+										<span y-center p-x="15px" p-y="10px" f-w="600" bg="white-20p"
+											u on-mouseenter="p:[background:#C4C7D0, color:#4A556F]"
+											on-mouseleave="p:[background:#777E93, color:#ffffff]">
+											<span>Safari</span>
+										</span>
+									</li>
+								</ul>
+							</div>
+							<div relative rad="2px" w="calc(50% - 7.5px)" m-left="7.5px">
+								<a stretch s-b relative bg="white-10p" border="2px solid white"
+									u init-with="p:[z-index:1, op:1]"
+									on-mouseenter="p:[background:#777E93]"
+									on-mouseleave="p:[background:#5D657E]"
+									on-click="s:[vp-dd-open:public]"
+									when-vp-dd-custom-open="p:[z-index:-1, op:0]"
+									when-vp-dd-custom-close="p:[z-index:1, op:1]">
+									<span y-center p-x="15px" f-w="600">
+										<span u init-with="p:[op:0.5]"
+										when-vp-dd-open="p:[op:1]">Viewport</span>
+									</span>
+									<div border-left="2px solid white" bg="white-20p" class="svg-48-36 border-2-left border-white">
+										<svg viewBox="0 0 100 100"
+											u init-with="p:[tro:center center, tr:rotateX(0deg)]"
+											when-vp-dd-open="a:[rotateX:0deg:180deg:150:easeOutBack:0:1:f]"
+											when-vp-dd-blur="a:[rotateX:180deg:0deg:150:easeOutBack:0:1:f]">
+											<path d="M14,32 L50,68 L86,32" stroke="#ffffff" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+									</div>
+								</a>
+								<span stretch s-b abs top="0" left="0" width="100" height="100" bg="#5D657E" border="2px solid white"
+									u init-with="p:[z-index:-1, op:0]"
+									on-mouseenter="p:[background:#777E93]"
+									on-mouseleave="p:[background:#5D657E]"
+									when-vp-dd-custom-open="p:[z-index:1, op:1]"
+									when-vp-dd-custom-close="p:[z-index:-1, op:0]">
+									<span y-center p-x="15px" f-w="600" width="calc(100% - 48px)">
+										<span class="block" width="calc(100% - 11px)">
+											<input bg="transparent" value="1280" type="tel" font-size="24" f-w="600" color="white" class="txt-white txt-center" width="100"/>
+											<hr m="0" border="0" width="100" height="2px" r="4px" bg="white"/>
+										</span>
+										<span>&nbsp;&times;&nbsp;</span>
+										<span class="block" width="calc(100% - 11px)">
+											<input bg="transparent" value="800" type="tel" font-size="24" f-w="600" color="white" class="txt-white txt-center" width="100"/>
+											<hr m="0" border="0" width="100" height="2px" r="4px" bg="white"/>
+										</span>
+										<!-- <span>px</span> -->
+									</span>
+									<a border-left="2px solid white" bg="white-20p" class="svg-48-36 border-2-left border-white"
+										u on-click="s:[vp-dd-custom-close:public]">
+										<svg viewBox="0 0 100 100"
+											u init-with="p:[tro:center center, tr:rotateX(0deg)]"
+											when-vp-dd-open="a:[rotateX:0deg:180deg:150:easeOutBack:0:1:f]">
+											<path d="M50,50 L75.4558441,24.5441559 L50,50 L24.5441559,24.5441559 L50,50 L50,50 Z M50,50 L24.5441559,75.4558441 L50,50 L75.4558441,75.4558441 L50,50 L50,50 Z" stroke="#ffffff" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+									</a>
+								</span>
+								<ul absolute left="0" width="calc(100% - 48px)"
+									u init-with="p:[z-index:-1, op:0]"
+									when-vp-dd-open="p:[z-index:11, op:1] | s:[vp-stagger:children:linear-400]"
+									when-vp-dd-blur="p:[z-index:-1, op:0]">
+									<li bg="stone" border="2px solid white" m-top="-2px"
+										u init-with="p:[tro:center top, op:0, tr:rotateX(90deg) translateZ(0px)]"
+										when-vp-stagger="a:[opacity:0:1:250:easeInOutSine:0:1:f, rotateX:90deg:0deg:250:easeInOutCubic:0:1:f, translateZ:0px:0px:250:easeInOutCubic:0:1:f]"
+										on-click="s:[vp-dd-blur:public]">
+										<a x-center y-center p-x="15px" p-y="10px" f-w="600" bg="white-20p"
+											u on-mouseenter="p:[background:#C4C7D0, color:#4A556F]"
+											on-mouseleave="p:[background:#777E93, color:#ffffff]">
+											<span>1440 &times; 1024</span>
+										</a>
+									</li>
+									<li bg="stone" border="2px solid white" m-top="-2px"
+										u init-with="p:[tro:center top, op:0, tr:rotateX(-90deg) translateZ(0px)]"
+										when-vp-stagger="a:[opacity:0:1:250:easeInOutSine:0:1:f, rotateX:-90deg:0deg:250:easeInOutCubic:0:1:f, translateZ:0px:0px:250:easeInOutCubic:0:1:f]"
+										on-click="s:[vp-dd-blur:public]">
+										<a x-center y-center p-x="15px" p-y="10px" f-w="600" bg="white-20p"
+											u on-mouseenter="p:[background:#C4C7D0, color:#4A556F]"
+											on-mouseleave="p:[background:#777E93, color:#ffffff]">
+											<span>1280 &times; 800</span>
+										</a>
+									</li>
+									<li bg="stone" border="2px solid white" m-top="-2px"
+										u init-with="p:[tro:center top, op:0, tr:rotateX(90deg) translateZ(0px)]"
+										when-vp-stagger="a:[opacity:0:1:250:easeInOutSine:0:1:f, rotateX:90deg:0deg:250:easeInOutCubic:0:1:f, translateZ:0px:0px:250:easeInOutCubic:0:1:f]"
+										on-click="s:[vp-dd-blur:public]">
+										<a x-center y-center p-x="15px" p-y="10px" f-w="600" bg="white-20p"
+											u on-mouseenter="p:[background:#C4C7D0, color:#4A556F]"
+											on-mouseleave="p:[background:#777E93, color:#ffffff]">
+											<span>414 &times; 736</span>
+										</a>
+									</li>
+									<li bg="stone" border="2px solid white" m-top="-2px"
+										u init-with="p:[tro:center top, op:0, tr:rotateX(-90deg) translateZ(0px)]"
+										when-vp-stagger="a:[opacity:0:1:250:easeInOutSine:0:1:f, rotateX:-90deg:0deg:250:easeInOutCubic:0:1:f, translateZ:0px:0px:250:easeInOutCubic:0:1:f]"
+										on-click="s:[vp-dd-blur:public]">
+										<a x-center y-center p-x="15px" p-y="10px" f-w="600" bg="white-20p"
+											u on-mouseenter="p:[background:#C4C7D0, color:#4A556F]"
+											on-mouseleave="p:[background:#777E93, color:#ffffff]"
+											on-click="s:[vp-dd-custom-open:public]">
+											<span>Custom</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li p="7.5px">
+							<div rad="2px" border="2px solid white" w="100%">
+								<header p="3px 15px" font-size="12" f-w="600" bg="white-25p" border-bottom="2px solid white" class="border-white border-2-bottom">Tags</header>
+								<div>
+									<ul flex wrap p="7.5px">
+										<li p="7.5px"><a x-center y-center height="32px" p-x="15px" rad="32px" bg="robin" font-size="14" f-w="600">tag</a></li>
+										<li p="7.5px"><a x-center y-center height="32px" p-x="15px" rad="32px" bg="robin" font-size="14" f-w="600">tag</a></li>
+										<li p="7.5px"><a x-center y-center height="32px" p-x="15px" rad="32px" bg="robin" font-size="14" f-w="600">tag</a></li>
+										<li p="7.5px">
+											<span x-center y-center height="32px" p-left="13px" p-right="15px" rad="32px" bg="robin" font-size="14" f-w="600">
+												<div w="14px" h="14px" p-right="3px" class="svg-white svg-stroke-9">
+													<graphic url='shared/templates/components/svg/main/plus.html'></graphic>
+												</div>
+												<input placeholder="add tag" value="add tag" size="8" bg="transparent" color="white" class="txt-white"/>
+											</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="docs-form-grid">
+					<ul>
+						<li>
+							<fieldset class="docs-form-section">
+								<label class="docs-form-section-title">Title</label>
+								<div>
+									<input type="text" value="Lorem Ipsum"/>
+								</div>
+							</fieldset>
+						</li>
+						<li>
+							<fieldset class="docs-form-section">
+								<label class="docs-form-section-title">Description</label>
+								<div>
+									<textarea placeholder="Describe your problem"></textarea>
+								</div>
+							</fieldset>
+						</li>
+						<li>
+							<div class="docs-form-section">
+								<div class="dropdown auto">
+									<div u on-init="s:[dropdown-draw:children:linear-1500, dropdown-load-end:children:1500]">
+										<span class="txt-20"
+											u init-with="p-op"
+											when-dropdown-draw="a:[opacity:0:1:500:easeOutSine:0:1:f]">Gabrielle Wee</span>
+										<a init-with="p-op"
+											u when-dropdown-draw="a:[opacity:0:1:500:easeOutSine:0:1:f]"
+											on-click="s:[dropdown-open:public]">
+											<svg viewBox="0 0 100 50">
+												<path d="M14,32 L50,68 L86,32"
+													u init-with="p:[op:0, tr:none, sdo:102, sda:102]"
+													on-init="a:[opacity:0:1:150:linear:0:1:f] | s:[draw-arrow:depth(0):1000]"
+													when-draw-arrow="a:[stroke-dashoffset:102:0:450:easeInQuint:0:1:f]"
+													when-dropdown-open="a:[rotate:0deg:180deg:150:easeOutBack:0:1:f]"
+													when-dropdown-close="a:[rotate:180deg:0deg:150:easeOutBack:0:1:f]"></path>
+													<!-- When state bug -->
+											</svg>
+										</a>
+									</div>
+									<ul class="perspective-container"
+										u init-with="p:[z-index:-1]"
+										when-dropdown-open="p:[z-index:99]"
+										when-dropdown-close="p:[z-index:-1]">
+										<li tabindex
+											u init-with="p:[op:0, tr:rotateX(90deg) translateZ(0px)]"
+											when-dropdown-open="a:[opacity:0:1:250:easeInOutSine:0:1:f, rotateX:90deg:0deg:250:easeInOutCubic:0:1:f, translateZ:0px:0px:250:easeInOutCubic:0:1:f]:delay-150"
+											when-dropdown-close="a:[opacity:1:0:250:easeInOutSine:250:1:f, rotateX:0deg:90deg:250:easeInOutCubic:0:1:f,translateZ:0px:0px:250:easeInOutCubic:0:1:f]:delay-450"
+											on-click="s:[dropdown-close:public]">
+											<span>Jeselle Obina</span>
+										</li>
+										<li tabindex
+											u init-with="p:[op:0, tr:rotateX(-90deg) translateZ(0)]"
+											when-dropdown-open="a:[opacity:0:1:250:easeInOutSine:0:1:f, rotateX:-90deg:0deg:250:easeInOutCubic:0:1:f, translateZ:0px:0px:250:easeInOutCubic:0:1:f]:delay-300"
+											when-dropdown-close="a:[opacity:1:0:250:easeInOutSine:250:1:f, rotateX:0deg:90deg:250:easeInOutCubic:0:1:f, translateZ:0px:0px:250:easeInOutCubic:0:1:f]:delay-300"
+											on-click="s:[dropdown-close:public]">
+											<span>Samir Makhani</span>
+										</li>
+										<li tabindex
+											u init-with="p:[op:0, tr:rotateX(90deg) translateZ(0)]"
+											when-dropdown-open="a:[opacity:0:1:250:easeInOutSine:0:1:f, rotateX:90deg:0deg:250:easeInOutCubic:0:1:f, translateZ:0px:0px:250:easeInOutCubic:0:1:f]:delay-450"
+											when-dropdown-close="a:[opacity:1:0:250:easeInOutSine:0:1:f, rotateX:0deg:90deg:250:easeInOutCubic:250:1:f,translateZ:0px:0px:250:easeInOutCubic:0:1:f]:delay-150"
+											on-click="s:[dropdown-close:public]">
+											<span>Gabrielle Wee</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<fieldset class="docs-form-section">
+								<label class="docs-form-section-title">Severity</label>
+								<div class="docs-form-severity">
+									<div>
+										<hr/>
+										<ul>
+											<li>
+												<input type="radio"
+													u on-click="s:[sev-1:public]"/>
+												<div>
+													<div class="docs-radio">
+														<div>
+															<div u init-with="p:[tr:scale(0)]"
+																when-sev-2="p:[tr:scale(0)]"
+																when-sev-3="p:[tr:scale(0)]"
+																when-sev-4="p:[tr:scale(0)]"
+																when-sev-5="p:[tr:scale(0)]"
+																when-sev-1="p:[tr:scale(1)]">
+															</div>
+															<span>1</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<input type="radio"
+													u on-click="s:[sev-2:public]"/>
+												<div>
+													<div class="docs-radio">
+														<div>
+															<div u init-with="p:[tr:scale(0)]"
+																when-sev-1="p:[tr:scale(0)]"
+																when-sev-3="p:[tr:scale(0)]"
+																when-sev-4="p:[tr:scale(0)]"
+																when-sev-5="p:[tr:scale(0)]"
+																when-sev-2="p:[tr:scale(1)]">
+															</div>
+															<span>2</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<input type="radio"
+													u on-click="s:[sev-3:public]"/>
+												<div>
+													<div class="docs-radio">
+														<div>
+															<div u init-with="p:[tr:scale(0)]"
+																when-sev-1="p:[tr:scale(0)]"
+																when-sev-2="p:[tr:scale(0)]"
+																when-sev-4="p:[tr:scale(0)]"
+																when-sev-5="p:[tr:scale(0)]"
+																when-sev-3="p:[tr:scale(1)]">
+															</div>
+															<span>3</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<input type="radio"
+													u on-click="s:[sev-4:public]"/>
+												<div>
+													<div class="docs-radio">
+														<div>
+															<div u init-with="p:[tr:scale(0)]"
+																when-sev-1="p:[tr:scale(0)]"
+																when-sev-2="p:[tr:scale(0)]"
+																when-sev-3="p:[tr:scale(0)]"
+																when-sev-5="p:[tr:scale(0)]"
+																when-sev-4="p:[tr:scale(1)]">
+															</div>
+															<span>4</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<input type="radio"
+													u on-click="s:[sev-5:public]"/>
+												<div>
+													<div class="docs-radio">
+														<div>
+															<div u init-with="p:[tr:scale(0)]"
+																when-sev-1="p:[tr:scale(0)]"
+																when-sev-2="p:[tr:scale(0)]"
+																when-sev-3="p:[tr:scale(0)]"
+																when-sev-4="p:[tr:scale(0)]"
+																when-sev-5="p:[tr:scale(1)]">
+															</div>
+															<span>5</span>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</fieldset>
+						</li>
+					</ul>
+					<ul>
+						<li class="double">
+							<fieldset class="docs-form-section">
+								<label class="docs-form-section-title">File</label>
+								<div>
+									<input type="text" value="lorem.html"/>
+								</div>
+							</fieldset>
+							<fieldset class="docs-form-section">
+								<label class="docs-form-section-title">Line</label>
+								<div>
+									<input type="text" placeholder="01"/>
+								</div>
+							</fieldset>
+						</li>
+						<li>
+							<fieldset class="docs-form-section">
+								<label class="docs-form-section-title">Snippet</label>
+								<div>
+									<textarea placeholder="Describe your problem"/>
+								</div>
+							</fieldset>
+						</li>
+						<li>
+							<div class="docs-form-section">
+								<header class="docs-form-section-title">Tags</header>
+								<div class="docs-form-tags">
+									<ul>
+										<li><a class="chip bg bg-robin">tag</a></li>
+										<li><a class="chip bg bg-robin">tag</a></li>
+										<li><a class="chip bg bg-robin">tag</a></li>
+										<li><input class="chip bg bg-robin" placeholder="add tag"/></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</form>
+		</section>
+		<section class="docs-results">
+			<ul>
+				<li>
+					<div class="docs-result">
+						<a></a>
+						<div>
+							<h1>flex-direction</h1>
+							<div>
+								<hr class="docs-article-gradient"/>
+								<article class="docs-article">
+									<div class="docs-article-main">
+										<p>Lorem ipsum <b class="highlight">dolor sit amet</b>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo <b class="highlight">consequat</b>.</p>
+										<!-- <ol>
+											<li>Lorem ipsum dolor sit amet</li>
+											<li>Lorem ipsum dolor sit amet</li>
+											<li>Lorem ipsum dolor sit amet</li>
+										</ol>
+										<p>Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+										<ul>
+											<li>Lorem ipsum dolor sit amet</li>
+											<li>Lorem ipsum dolor sit amet</li>
+											<li>Lorem ipsum dolor sit amet</li>
+										</ul> -->
+									</div>
+									<aside class="docs-options">
+										<ul>
+											<li>
+												<h3>Options:</h3>
+											</li>
+											<li>
+												<a class="chip bg bg-robin"
+													u on-click="s:[flex-dir-r:public]">row</a>
+											</li>
+											<li>
+												<a class="chip bg bg-robin"
+													u on-click="s:[flex-dir-rr:public]">row-reverse</a>
+											</li>
+											<li>
+												<a class="chip bg bg-sienna"
+													u on-click="s:[flex-dir-c:public]">column</a>
+											</li>
+											<li>
+												<a class="chip bg bg-robin"
+													u on-click="s:[flex-dir-cr:public]"><b class="highlight">column-reverse</b></a>
+											</li>
+										</ul>
+									</aside>
+									<div class="docs-example">
+										<div>
+											<nav>
+												<ul>
+													<li>
+														<a class="selected" u on-click="c:[selected:add] | s:[docs-preview:public]">Example</a>
+													</li>
+													<li>
+														<a u on-click="c:[selected:add] | s:[docs-html:public]">HTML</a>
+													</li>
+													<li>
+														<a u on-click="c:[selected:add] | s:[docs-css:public]">CSS</a>
+													</li>
+												</ul>
+												<a class="docs-example-run">Run</a>
+											</nav>
+											<section>
+												<div class="docs-example-preview"
+													u init-with="p:[z-index:-10, op:0]"
+													when-docs-preview="p:[z-index:10, op:1]"
+													when-docs-html="p:[z-index:-10, op:0]"
+													when-docs-css="p:[z-index:-10, op:0]">
+													<ul class="p15-grid" style="display:flex"
+														u init-with="p:[flex-direction:column]"
+														when-flex-dir-r="p:[flex-direction:row]"
+														when-flex-dir-rr="p:[flex-direction:row-reverse]"
+														when-flex-dir-c="p:[flex-direction:column]"
+														when-flex-dir-cr="p:[flex-direction:column-reverse]">
+														<li><div class="flex-center width-48 height-48 bg-stone border-2 radius-2 txt-24 semibold">1</div></li>
+														<li><div class="flex-center width-48 height-48 bg-cobalt border-2 radius-2 txt-24 semibold">2</div></li>
+														<li><div class="flex-center width-48 height-48 bg-eggplant border-2 radius-2 txt-24 semibold">3</div></li>
+													</ul>
+												</div>
+												<div class="docs-example-html"
+													u init-with="p:[z-index:-10, op:0]"
+													when-docs-preview="p:[z-index:-10, op:0]"
+													when-docs-html="p:[z-index:10, op:1]"
+													when-docs-css="p:[z-index:-10, op:0]">
+													<textarea>&lt;ul class="p15-grid"&gt;
+														&lt;li&gt;&lt;div class="bg-stone"&gt;1&lt;/div&gt;&lt;/li&gt;
+														&lt;li&gt;&lt;div class="bg-cobalt"&gt;1&lt;/div&gt;&lt;/li&gt;
+														&lt;li&gt;&lt;div class="bg-eggplant"&gt;1&lt;/div&gt;&lt;/li&gt;
+													&lt;/ul&gt;</textarea>
+												</div>
+												<div class="docs-example-css"
+													u init-with="p:[z-index:10, op:1]"
+													when-docs-preview="p:[z-index:-10, op:0]"
+													when-docs-html="p:[z-index:-10, op:0]"
+													when-docs-css="p:[z-index:10, op:1]">
+													<pre>ul {
+														<b class="highlight">display: flex;</b>
+														flex-direction: column;
+													}</pre>
+													<!-- u init-with="p:[z-index:10, op:1]"
+													when-flex-dir-r="p:[z-index:-10, op:0]"
+													when-flex-dir-rr="p:[z-index:-10, op:0]"
+													when-flex-dir-c="p:[z-index:10, op:1]"
+													when-flex-dir-cr="p:[z-index:-10, op:0]"" -->
+												</div>
+											</section>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<section class="docs-articles">
+			<article class="docs-article">
+				<header><h1 class="code">flex-direction</h1></header>
+				<div class="docs-article-main">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<!-- <ol>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+					</ol>
+					<p>Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+					<ul>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+					</ul> -->
+				</div>
+				<aside class="docs-options">
+					<ul>
+						<li>
+							<h3>Options:</h3>
+						</li>
+						<li>
+							<a class="chip bg bg-robin"
+								u on-click="s:[flex-dir-r:public]">row</a>
+						</li>
+						<li>
+							<a class="chip bg bg-robin"
+								u on-click="s:[flex-dir-rr:public]">row-reverse</a>
+						</li>
+						<li>
+							<a class="chip bg bg-sienna"
+								u on-click="s:[flex-dir-c:public]">column</a>
+						</li>
+						<li>
+							<a class="chip bg bg-robin"
+								u on-click="s:[flex-dir-cr:public]">column-reverse</a>
+						</li>
+					</ul>
+				</aside>
+				<div class="docs-example">
+					<div>
+						<nav>
+							<ul>
+								<li>
+									<a class="selected" u on-click="c:[selected:add] | s:[docs-preview:public]">Example</a>
+								</li>
+								<li>
+									<a u on-click="c:[selected:add] | s:[docs-html:public]">HTML</a>
+								</li>
+								<li>
+									<a u on-click="c:[selected:add] | s:[docs-css:public]">CSS</a>
+								</li>
+							</ul>
+							<a class="docs-example-run">Run</a>
+						</nav>
+						<section>
+							<div class="docs-example-preview"
+								u init-with="p:[z-index:10, op:1]"
+								when-docs-preview="p:[z-index:10, op:1]"
+								when-docs-html="p:[z-index:-10, op:0]"
+								when-docs-css="p:[z-index:-10, op:0]">
+								<ul class="p15-grid" style="display:flex"
+									u init-with="p:[flex-direction:column]"
+									when-flex-dir-r="p:[flex-direction:row]"
+									when-flex-dir-rr="p:[flex-direction:row-reverse]"
+									when-flex-dir-c="p:[flex-direction:column]"
+									when-flex-dir-cr="p:[flex-direction:column-reverse]">
+									<li><div class="flex-center width-48 height-48 bg-stone border-2 radius-2 txt-24 semibold">1</div></li>
+									<li><div class="flex-center width-48 height-48 bg-cobalt border-2 radius-2 txt-24 semibold">2</div></li>
+									<li><div class="flex-center width-48 height-48 bg-eggplant border-2 radius-2 txt-24 semibold">3</div></li>
+								</ul>
+							</div>
+							<div class="docs-example-html"
+								u init-with="p:[z-index:-10, op:0]"
+								when-docs-preview="p:[z-index:-10, op:0]"
+								when-docs-html="p:[z-index:10, op:1]"
+								when-docs-css="p:[z-index:-10, op:0]">
+								<textarea>&lt;ul class="p15-grid"&gt;
+									&lt;li&gt;&lt;div class="bg-stone"&gt;1&lt;/div&gt;&lt;/li&gt;
+									&lt;li&gt;&lt;div class="bg-cobalt"&gt;1&lt;/div&gt;&lt;/li&gt;
+									&lt;li&gt;&lt;div class="bg-eggplant"&gt;1&lt;/div&gt;&lt;/li&gt;
+								&lt;/ul&gt;</textarea>
+							</div>
+							<div class="docs-example-css"
+								u init-with="p:[z-index:-10, op:0]"
+								when-docs-preview="p:[z-index:-10, op:0]"
+								when-docs-html="p:[z-index:-10, op:0]"
+								when-docs-css="p:[z-index:10, op:1]">
+								<pre>ul {
+									display: flex;
+									flex-direction: column;
+								}</pre>
+								<!-- u init-with="p:[z-index:10, op:1]"
+								when-flex-dir-r="p:[z-index:-10, op:0]"
+								when-flex-dir-rr="p:[z-index:-10, op:0]"
+								when-flex-dir-c="p:[z-index:10, op:1]"
+								when-flex-dir-cr="p:[z-index:-10, op:0]"" -->
+							</div>
+						</section>
+					</div>
+				</div>
+			</article>
+		</section>
+	</main>
+</view>

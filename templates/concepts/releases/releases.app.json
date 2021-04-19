@@ -1,0 +1,78 @@
+{
+    "vars": {
+        "data": {
+            "examples": [
+                {
+                    "html": "<div u-list='rgba_item in [{rgb:(255, 255, 255), opacity: 0.5}]>"
+                }
+            ],
+            "repeat": {
+                "base": {},
+                "variable": {}
+            },
+            "exists": {},
+            "attributes": {},
+            "external": {},
+            "types": {}
+        },
+        "life cycle": {},
+        "structure": {
+        },
+        "components": {
+            "image": {},
+            "custom": {},
+            "graphic": {},
+            "text": {},
+            "modal": {}
+        }
+
+    },
+    "config": {
+        "pathParams": {},
+        "base_url": "^",
+        "parse": {
+            "float": ["content.track.duration"]
+        },
+        "scripts": {
+            "base": "https://",
+            "queue": [
+                {
+                    "path": "s3-us-west-1.amazonaws.com/ui-guru/samples/soundcloud.json",
+                    "mappings": [
+                    {
+                        "from": "collection[1].track",
+                        "to":"content.track"
+                    }
+                    ]
+                },
+                {
+                    "path": "wis.sndcdn.com/xeXS8StuaDqa_m.json",
+                    "mappings": [
+                        {
+                            "to":"content.viz"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "content": {
+        "client": {
+            "setup": {},
+            "components": {}
+        },
+        "examples": [{
+                    "html": "<div u-list='rgba_item in [{rgb:(255, 255, 255), opacity: 0.5}]>"
+                }]
+    },
+    "components": {
+        "inspect-dict": {
+            "template_url": "./ui/templates/concepts/releases/components/release-item.html",
+            "data": {
+                "external": {
+                    "dict": ""
+                }
+            }
+        }
+    }
+}

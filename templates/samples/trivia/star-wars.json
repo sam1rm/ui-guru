@@ -1,0 +1,75 @@
+{
+    "vars": {
+		"loader": {
+            "char": {"name": "Gabrielle Walker", "birth_year": "1992"}
+        },
+        "editable": {
+			"nav": {
+				"header": {
+					"test": "test",
+					"tabs": ["people", "species", "planets", "starships", "films"]
+				}
+			}
+		}
+	},
+    "config": {
+        "pathParams": {},
+        "base_url": "^",
+        "parse": {},
+        "scripts": {
+            "base": "./ui/templates/samples/trivia/",
+            "queue": [
+                {
+                    "path": "star-wars-char.json",
+                    "mappings": [
+	                    {
+	                        "to":"content.char"
+	                    }
+                    ]
+                },
+				{
+                    "path": "star-wars-planets.json",
+                    "mappings": [
+	                    {
+	                        "to":"content.planets"
+	                    }
+                    ]
+                }
+            ]
+        }
+    },
+    "content": {},
+    "components": {
+		"logo": {
+            "template_url": "./ui/templates/samples/trivia/components/star-wars/logo.tpl"
+        },
+		"people-card": {
+            "template_url": "./ui/templates/samples/trivia/components/star-wars/people-card.tpl",
+			"data": {
+                "external": {
+                    "char": "var"
+                }
+            }
+        },
+		"planet-card": {
+            "template_url": "./ui/templates/samples/trivia/components/star-wars/planet-card.tpl"
+        },
+		"main-header": {
+            "template_url": "./ui/templates/samples/trivia/components/star-wars/header.tpl",
+            "data": {
+                "external": {
+                    "header": "var"
+                }
+            }
+        },
+        "nav-bar": {
+            "data": {
+                "external": {
+                    "tabInfo": "var",
+                    "activeTab": "var"
+                }
+            },
+            "template_url": "./ui/templates/samples/trivia/components/star-wars/nav.tpl"
+        }
+	}
+}

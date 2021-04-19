@@ -1,0 +1,28 @@
+.ui-guru-scene {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -270px;
+  margin-left: -400px;
+  width: 800px;
+  height: 450; }
+
+.ui-guru-loader {
+  background: #C6DDD6; }
+  .ui-guru-loader .loader-portal-container {
+    background: #C6DDD6; }
+  .ui-guru-loader .states.loader-portal {
+    background: #C6DDD6; }
+    .ui-guru-loader .states.loader-portal .logo {
+      position: absolute;
+      top: 5px;
+      left: 25px;
+      width: 200px;
+      height: 70px; }
+  .ui-guru-loader .portal-transition {
+    background: #9cbdbe; }
+  .ui-guru-loader .portal-end {
+    z-index: 10;
+    background: #C6DDD6; }
+
+/*# sourceMappingURL=loader.css.map */

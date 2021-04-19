@@ -1,0 +1,88 @@
+{
+    "vars": {
+        "arguments": [
+            { "name": "Variable Name"},
+            { "name": "Action Name", "description": "What do you want to do with it?" },
+            { "name": "New Value", "description": "What do you want to set it to?", "options": ["set", "increment", "decrement"]},
+            { "name": "Delay", "description": "When? Immediately? In 1s? 2s?" },
+            { "name": "Repeat every..", "description": "When? Immediately? In 1s? 2s?", "options": ["any number", "infinite", "easingFunc"], "future options":"take in an array of values"}
+        ],
+        "components": {
+            "columns": ["Html", "output"]
+        },
+        "examples": {
+            "list": [
+                {
+                    "title": "Setting on click",
+                    "type": "Setting",
+                    "html": "<div u init-with='eval:[set:opacityVal:0.5]|p:[opacity:{{vars.opacityVal}}]' when-opacity-val-changes='p:[opacity:{{vars.opacityVal}}]' pointer on-click='eval:[set:opacityVal:1]'>{{vars.opacityVal}}</div>"
+                },
+                {
+                    "title": "Indexed list with start & end",
+                    "html": "init-with='eval:[set:opacityVal:0.5]|p:[opacity:{{vars.opacityVal}}]' when-opacity-val-changes='p:[opacity:{{vars.opacityVal}}]' pointer on-click='eval:[set:opacityVal:1]'>{{vars.opacityVal}}</div>"
+                },
+                {
+                    "title": "Order",
+                    "html": "<example/>"
+                }
+
+            ]
+        }
+    },
+    "config": {
+        "pathParams": {},
+        "base_url": "^",
+        "parse": {
+            "float": ["content.track.duration"]
+        },
+        "scripts": {
+            "base": "https://",
+            "queue": [
+                {
+                    "path": "wis.sndcdn.com/xeXS8StuaDqa_m.json",
+                    "mappings": [
+                        {
+                            "to":"content.viz"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "content": {
+        "client": {
+            "setup": {},
+            "components": {}
+        },
+        "examples": [{
+                    "html": "<div u-list='rgba_item in [{rgb:(255, 255, 255), opacity: 0.5}]>"
+                }]
+    },
+    "components": {
+        "orange-box": {
+            "template_url": "./ui/templates/concepts/list/components/orange-box.tpl",
+            "data": {
+                "external": {
+                    "contents": "var"
+                }
+            }
+        },
+        "tab-links": {
+            "data": {
+                "external": {
+                    "tabInfo": "var",
+                    "activeTab": "var"
+                }
+            },
+            "template_url": "./ui/templates/samples/one-pager/containers/tab-links.tpl"
+        },
+        "list-item-example-one": {
+            "template_url": "./ui/templates/concepts/vars/components/var-example-template.html",
+            "data": {
+                "external": {
+                    "example": "var"
+                }
+            }
+        }
+    }
+}

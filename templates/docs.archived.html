@@ -1,0 +1,28 @@
+
+<view bg="stone" link-data="ui/static/data/docs2.json" render-after-ext-scripts link-data-name="docs" row class='full-xy'>
+    <div grow='1' bg='azure' ng-if='docs.data'>
+        <side-bar custom> </side-bar>
+    </div>
+
+
+    <div grow='3' bg='slate' column ng-if='docs.data'>
+        <div stretch x='center' grow='1'>
+            <!--TO be modularized, temporary-->
+            <search-bar custom data="docs.data.vars.components.searchBar"> </search-bar>
+
+        </div>
+        <div stretch x='center' grow='6'>
+
+            <div ng-show='docs.data.vars.activeTab === sectionName' ng-repeat='(sectionName, categoryData) in docs.data.content'>
+                {{categoryData}}
+            </div>
+        </div>
+
+    </div>
+
+    <!-- <sidebar custom data="docs.sections">
+    </sidebar> -->
+
+
+
+</view>

@@ -1,0 +1,271 @@
+<ul class="ui-settings-tiles ui-settings-section"
+	u init-with="p:[position:absolute, z-index:-1, top:0, left:0, op:0]"
+	when-account-link-clicked="a:[z-index:1:-1:50:linear:450:1:f, opacity:1:0:500:easeInSine:0:1:f] | p:[position:absolute, left:0, top:0]"
+	when-customize-link-clicked="a:[z-index:-1:1:50:linear:0:1:f, opacity:0:1:500:easeOutSine:0:1:f] | p:[position:relative, top:auto, left:auto] | s:[custom-p-theme:public:300, custom-c-theme:public:1500]">
+	<li>
+		<div class="ui-settings-tile">
+			<header>
+				<hr u init-with="p:[tr:scaleX(0), tro:left center]"
+					when-custom-p-theme="a:[scaleX:0:1:150:easeOutCubic:200:1:f]"/>
+				<h1 u init-with="p:[tr:rotateX(90deg) translateY(-10px), op:0]"
+					when-custom-p-theme="a:[rotateX:90deg:0deg:250:easeOutCirc:100:1:f, translateY:-10px:0px:250:easeInCirc:150:1:f]:delay-200 | p:[op:1:900]">Public Theme</h1>
+				<hr u init-with="p:[tr:scaleX(0), tro:right center]"
+					when-custom-p-theme="a:[scaleX:0:1:150:easeOutCubic:200:1:f]"/>
+			</header>
+			<div class="borders">
+				<hr u init-with="p:[tr:scaleY(0), tro:bottom center]"
+					when-custom-p-theme="a:[scaleY:0:1:150:easeOutCubic:50:1:f]"/>
+				<hr u init-with="p:[tr:scaleX(0), tro:center center]"
+					when-custom-p-theme="a:[scaleX:0:1:150:easeOutCubic:0:1:f]"/>
+				<hr u init-with="p:[tr:scaleY(0), tro:bottom center]"
+					when-custom-p-theme="a:[scaleY:0:1:150:easeOutCubic:50:1:f]"/>
+			</div>
+			<div class="ui-settings-tile-content">
+				<ul class="ui-settings-themes"
+					u when-custom-p-theme="s:[theme-options:public:linear-1000]:+500">
+					<!-- u when-custom-p-theme="s:[theme-options:children:linear-1000]:+500" -->
+					<li u init-with="p:[op:0]"
+						when-theme-options="a:[bounceIn-subtle:400:linear:0:1:f] | s:[name-theme-1:public:450]">
+						<div class="ui-settings-theme">
+							<input type="radio" name="theme" checked/>
+							<div>
+								<graphic url='ui/templates/components/svg/theme.html'></graphic>
+								<div>
+									<div class="theme-input">
+										<svg viewBox="0 0 24 24">
+											<circle class="border" cx="12" cy="12" r="9.5"></circle>
+											<g>
+												<circle class="bg" cx="12" cy="12" r="9"></circle>
+											</g>
+											<circle class="check" cx="12" cy="12" r="9"></circle>
+										</svg>
+									</div>
+									<h3 u init-with="p:[op:0]"
+										when-name-theme-1="a:[opacity:0:1:400:linear:0:1:f]">Sienna Club</h3>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li u init-with="p:[op:0]"
+						when-theme-options="a:[fadeInDown:400:easeOutQuad:0:1:f] | s:[name-theme-2:public:450]">
+						<div class="ui-settings-theme">
+							<input type="radio" name="theme"/>
+							<div>
+								<graphic url='ui/templates/components/svg/theme.html'></graphic>
+								<div>
+									<div class="theme-input">
+										<svg viewBox="0 0 24 24">
+											<circle class="border" cx="12" cy="12" r="9.5"></circle>
+											<g>
+												<circle class="bg" cx="12" cy="12" r="9"></circle>
+											</g>
+											<circle class="check" cx="12" cy="12" r="9"></circle>
+										</svg>
+									</div>
+									<h3 u init-with="p:[op:0]"
+										when-name-theme-2="a:[opacity:0:1:400:linear:0:1:f]">Sienna Club</h3>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li u init-with="p:[op:0]"
+						when-theme-options="a:[fadeInDown:400:easeOutQuad:0:1:f] | s:[name-theme-3:public:450]">
+						<div class="ui-settings-theme">
+							<input type="radio" name="theme"/>
+							<div>
+								<graphic url='ui/templates/components/svg/theme.html'></graphic>
+								<div>
+									<div class="theme-input">
+										<svg viewBox="0 0 24 24">
+											<circle class="border" cx="12" cy="12" r="9.5"></circle>
+											<g>
+												<circle class="bg" cx="12" cy="12" r="9"></circle>
+											</g>
+											<circle class="check" cx="12" cy="12" r="9"></circle>
+										</svg>
+									</div>
+									<h3 u init-with="p:[op:0]"
+										when-name-theme-1="a:[opacity:0:1:400:linear:0:1:f]">Sienna Club</h3>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li u init-with="p:[op:0]"
+						when-theme-options="a:[fadeInDown:400:easeOutQuad:0:1:f] | s:[name-theme-4:public:450]">
+						<div class="ui-settings-theme">
+							<input type="radio" name="theme"/>
+							<div>
+								<graphic url='ui/templates/components/svg/theme.html'></graphic>
+								<div>
+									<div class="theme-input">
+										<svg viewBox="0 0 24 24">
+											<circle class="border" cx="12" cy="12" r="9.5"></circle>
+											<g>
+												<circle class="bg" cx="12" cy="12" r="9"></circle>
+											</g>
+											<circle class="check" cx="12" cy="12" r="9"></circle>
+										</svg>
+									</div>
+									<h3 u init-with="p:[op:0]"
+										when-name-theme-4="a:[opacity:0:1:400:linear:0:1:f]">Sienna Club</h3>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li u init-with="p:[op:0]"
+						when-theme-options="a:[fadeInDown:400:easeOutQuad:0:1:f] | s:[name-theme-5:public:450]">
+						<div class="ui-settings-theme">
+							<input type="radio" name="theme"/>
+							<div>
+								<graphic url='ui/templates/components/svg/theme.html'></graphic>
+								<div>
+									<div class="theme-input">
+										<svg viewBox="0 0 24 24">
+											<circle class="border" cx="12" cy="12" r="9.5"></circle>
+											<g>
+												<circle class="bg" cx="12" cy="12" r="9"></circle>
+											</g>
+											<circle class="check" cx="12" cy="12" r="9"></circle>
+										</svg>
+									</div>
+									<h3 u init-with="p:[op:0]"
+										when-name-theme-5="a:[opacity:0:1:400:linear:0:1:f]">Sienna Club</h3>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class="ui-settings-tile">
+			<header>
+				<hr u init-with="p:[tr:scaleX(0), tro:left center]"
+					when-custom-c-theme="a:[scaleX:0:1:150:easeOutCubic:200:1:f]"/>
+				<h1 u init-with="p:[tr:rotateX(90deg) translateY(-10px), op:0]"
+					when-custom-c-theme="a:[rotateX:90deg:0deg:250:easeOutCirc:100:1:f, translateY:-10px:0px:250:easeInCirc:150:1:f]:delay-200 | p:[op:1:900]">Custom Theme</h1>
+				<hr u init-with="p:[tr:scaleX(0), tro:right center]"
+					when-custom-c-theme="a:[scaleX:0:1:150:easeOutCubic:200:1:f]"/>
+			</header>
+			<div class="borders">
+				<hr u init-with="p:[tr:scaleY(0), tro:bottom center]"
+					when-custom-c-theme="a:[scaleY:0:1:150:easeOutCubic:50:1:f]"/>
+				<hr u init-with="p:[tr:scaleX(0), tro:center center]"
+					when-custom-c-theme="a:[scaleX:0:1:150:easeOutCubic:0:1:f]"/>
+				<hr u init-with="p:[tr:scaleY(0), tro:bottom center]"
+					when-custom-c-theme="a:[scaleY:0:1:150:easeOutCubic:50:1:f]"/>
+			</div>
+			<div class="ui-settings-tile-content">
+				<ul class="ui-settings-themes flex-center">
+					<li>
+						<div class="ui-settings-theme"
+							u init-with="p:[op:0]"
+							when-custom-c-theme="a:[bounceIn-subtle:800:linear:0:1:f]:delay-500">
+							<graphic url='ui/templates/components/svg/theme.html'></graphic>
+						</div>
+					</li>
+				</ul>
+				<ul class="ui-settings-colors"
+					u when-custom-c-theme="s:[palette:public:easeInCirc-600]:+750">
+					<li u on-init="p:[op:0]"
+						when-palette="a:[fadeInDown:450:easeOutExpo:0:1:f] | s:[c-name-1:public:200]">
+						<a class="ui-settings-color">
+							<h3 u init-with="p:[op:0, tr:translateX(-20%)]"
+								when-c-name-1="a:[translateX:-20%:0%:650:easeOutCubic:0:1:f, opacity:0:1:650:easeOutCubic:0:1:f]">Background</h3>
+							<div>
+								<div class="color" u init-with="p:[bg:#ee7361]"></div>
+								<fieldset>
+									<div>
+										<label>#</label>
+										<input value="ee7361" type="text" size="6"/>
+									</div>
+								</fieldset>
+							</div>
+						</a>
+					</li>
+					<li u on-init="p:[op:0]"
+						when-palette="a:[fadeInDown:450:easeOutExpo:0:1:f] | s:[c-name-2:public:200]">
+						<a class="ui-settings-color">
+							<h3 u init-with="p:[op:0, tr:translateX(-20%)]"
+								when-c-name-2="a:[translateX:-20%:0%:650:easeOutCubic:0:1:f, opacity:0:1:650:easeOutCubic:0:1:f]">Background</h3>
+							<div>
+								<div class="color" u init-with="p:[bg:#ee7361]"></div>
+								<fieldset>
+									<div>
+										<label>#</label>
+										<input value="ee7361" type="text" size="6"/>
+									</div>
+								</fieldset>
+							</div>
+						</a>
+					</li>
+					<li u on-init="p:[op:0]"
+						when-palette="a:[fadeInDown:450:easeOutExpo:0:1:f] | s:[c-name-3:public:200]">
+						<a class="ui-settings-color">
+							<h3 u init-with="p:[op:0, tr:translateX(-20%)]"
+								when-c-name-3="a:[translateX:-20%:0%:650:easeOutCubic:0:1:f, opacity:0:1:650:easeOutCubic:0:1:f]">Background</h3>
+							<div>
+								<div class="color" u init-with="p:[bg:#ee7361]"></div>
+								<fieldset>
+									<div>
+										<label>#</label>
+										<input value="ee7361" type="text" size="6"/>
+									</div>
+								</fieldset>
+							</div>
+						</a>
+					</li>
+					<li u on-init="p:[op:0]"
+						when-palette="a:[fadeInDown:450:easeOutExpo:0:1:f] | s:[c-name-4:public:200]">
+						<a class="ui-settings-color">
+							<h3 u init-with="p:[op:0, tr:translateX(-20%)]"
+								when-c-name-4="a:[translateX:-20%:0%:650:easeOutCubic:0:1:f, opacity:0:1:650:easeOutCubic:0:1:f]">Background</h3>
+							<div>
+								<div class="color" u init-with="p:[bg:#ee7361]"></div>
+								<fieldset>
+									<div>
+										<label>#</label>
+										<input value="ee7361" type="text" size="6"/>
+									</div>
+								</fieldset>
+							</div>
+						</a>
+					</li>
+					<li u on-init="p:[op:0]"
+						when-palette="a:[fadeInDown:450:easeOutExpo:0:1:f] | s:[c-name-5:public:200]">
+						<a class="ui-settings-color">
+							<h3 u init-with="p:[op:0, tr:translateX(-20%)]"
+								when-c-name-5="a:[translateX:-20%:0%:650:easeOutCubic:0:1:f, opacity:0:1:650:easeOutCubic:0:1:f]">Background</h3>
+							<div>
+								<div class="color" u init-with="p:[bg:#ee7361]"></div>
+								<fieldset>
+									<div>
+										<label>#</label>
+										<input value="ee7361" type="text" size="6"/>
+									</div>
+								</fieldset>
+							</div>
+						</a>
+					</li>
+					<li u on-init="p:[op:0]"
+						when-palette="a:[fadeInDown:450:easeOutExpo:0:1:f] | s:[c-name-6:public:200]">
+						<a class="ui-settings-color">
+							<h3 u init-with="p:[op:0, tr:translateX(-20%)]"
+								when-c-name-6="a:[translateX:-20%:0%:650:easeOutCubic:0:1:f, opacity:0:1:650:easeOutCubic:0:1:f]">Background</h3>
+							<div>
+								<div class="color" u init-with="p:[bg:#ee7361]"></div>
+								<fieldset>
+									<div>
+										<label>#</label>
+										<input value="ee7361" type="text" size="6"/>
+									</div>
+								</fieldset>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</li>
+</ul>

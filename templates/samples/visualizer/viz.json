@@ -1,0 +1,56 @@
+{
+    "vars": {},
+    "config": {
+        "pathParams": {},
+        "base_url": "^",
+        "parse": {
+            "float": ["content.track.duration"]
+        },
+        "scripts": {
+            "base": "https://",
+            "queue": [
+                {
+                    "path": "s3-us-west-1.amazonaws.com/ui-guru/samples/soundcloud.json",
+                    "mappings": [
+                    {
+                        "from": "collection[1].track",
+                        "to":"content.track"
+                    }
+                    ]
+                },
+                {
+                    "path": "wis.sndcdn.com/xeXS8StuaDqa_m.json",
+                    "mappings": [
+                        {
+                            "to":"content.viz"
+                        }
+                    ]
+            	}
+            ]
+        }
+    },
+    "content": {},
+    "components": {
+        "viz-bar": {
+            "template_url": "./ui/templates/samples/visualizer/components/viz-bar.html",
+            "data": {
+                "external": {
+                    "sample": "var"
+                }
+            },
+            "replace": false
+        },
+        "viz-bar-alt": {
+            "template_url": "./ui/templates/samples/visualizer/components/viz-bar-alt.html",
+            "data": {
+                "external": {
+                    "sample": "var"
+                }
+            },
+            "replace": false
+        },
+        "viz-timer": {
+            "template_url": "./ui/templates/samples/visualizer/components/viz-timer.html"
+        }
+    }
+}

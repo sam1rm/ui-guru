@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title></title>
+    </head>
+
+
+    <body animation="slide-left-right-ios7"  ng-app="uguru">
+        <!-- <ion-nav-view id='root-nav' animation="slide-left-right" u> -->
+        <script type="text/ng-template" id="view.index.html">
+
+
+
+        </script>
+        <ui-view id="uguru-view" class='full-xy absolute top-0 left-0' ng-controller='RootController as root'>
+
+
+
+
+
+
+          <!-- </ion-nav-view> -->
+        </ui-view>
+
+    </body>
+</html>
+<footer>
+
+    <script>
+
+        var files = [
+            'app.css:async',
+            'https://s3-us-west-1.amazonaws.com/ui-guru/templates/ihml/app2.js'
+
+        ];
+        var fileInitCB = {
+            'app.js': function(e) {console.log('page is ready', e)}
+        }
+        var globalLoader;
+        for (var i = 0; i < files.length; i++) {
+            if (files[i].split('.js').length > 1) {
+                var new_script = initScriptElem(files[i])
+
+            } else if (files[i].split('.css').length > 1) {
+                var new_script = initLinkElem(files[i]);
+            }
+        }
+
+
+        function initLinkElem(src_path) {
+            var new_link = document.createElement('link');
+            new_link.async = src_path.split('async').length > 1;
+            new_link.type = "text/css";
+            new_link.rel = "stylesheet";
+            new_link.href = src_path.replace(':async', '');
+            document.getElementsByTagName("head")[0].appendChild(new_link);
+        }
+
+        function initEventFromName(event_name) {
+            var newEvent = document.createEvent('Event');
+            newEvent.initEvent(event_name, true, true);
+            return newEvent;
+        }
+
+
+
+        function initScriptElem(src_path) {
+            var new_script = document.createElement('script');
+            new_script.type = 'text/javascript';
+            new_script.async = src_path.split('async').length > 1;
+
+            new_script.src = src_path.replace(':async', '');
+            document.getElementsByTagName('head')[0].appendChild(new_script);
+            if (src_path in fileInitCB) {
+                fileInitCB[src_path](new_script);
+            } else {
+                new_script.onload = function(file_name) {
+                  console.log(file_name)
+                    return function() {
+                        // timer[file_name.split('/').reverse()[0]] = new Date().getTime();
+                    };
+                }(src_path);
+            }
+            return new_script
+        }
+    </script>
+</footer>
+
+</html>
+

@@ -1,0 +1,149 @@
+{
+    "app": {
+        "loader": {
+            "url": "ui/templates/loader.html"
+        },
+        "views": {
+            "documentation": {
+                "url": "ui/templates/documentation.html"
+			},
+            "collections": {
+                "url": "ui/templates/collections.html",
+				"components": {
+                    "nav": {
+                        "url": "ui/templates/components/nav/private.html"
+                    }
+                }
+            },
+            "submissions": {
+                "url": "ui/templates/submissions.html",
+				"components": {
+                    "nav": {
+                        "url": "ui/templates/components/nav/private.html"
+                    },
+					"header": {
+                        "url": "ui/templates/components/profile/header.html"
+                    }
+                }
+            },
+            "settings": {
+                "url": "ui/templates/settings.html",
+				"components": {
+                    "nav": {
+                        "url": "ui/templates/components/nav/private.html"
+                    },
+                    "account": {
+                        "url": "ui/templates/components/settings/account.html"
+                    },
+                    "customize": {
+                        "url": "ui/templates/components/settings/customize.html"
+                    }
+                }
+            },
+            "gallery": {
+                "url": "ui/templates/gallery.html",
+                "components": {
+                    "nav": {
+                        "url": "ui/templates/components/nav/switch.html"
+                    },
+                    "login": {
+                        "url": "ui/templates/components/login.html"
+                    },
+                    "sidebar": {
+                        "url": "ui/templates/components/sidebar.html"
+                    },
+                    "footer": {
+                        "url": "ui/templates/components/footer.html"
+                    }
+                },
+                "data": {
+                    "rectangles": [
+                        {"background": "cerise"},
+                        {"background": "transparent"}
+                    ],
+                    "filterTags": [
+                        {"name": "cards", "background": "bg-cerise-80p"},
+                        {"name": "collections", "background": "bg-cerise-80p"},
+                        {"name": "asdsad", "background": "bg-slate-50p"},
+                        {"name": "map", "background": "bg-shamrock-20p"},
+                        {"name": "media", "background": "bg-olive-20p"},
+                        {"name": "icons", "background": "bg-gold-80p", "textColor":"charcoal"},
+                        {"name": "graphics", "background": "bg-moxie-80p"},
+                        {"name": "animation",  "background": "bg-azure-80p"},
+                        {"name": "interactive"}
+                    ],
+                    "tiles": [
+                        {
+                            "import_url": "ui/templates/components/custom/cards/profile-tile.html",
+                            "name": "Profile Tile",
+							"id": "profile-tile",
+                            "chips": [
+                                {
+                                    "bg": "rose",
+                                    "name": "profile"
+                                },
+                                {
+                                    "bg": "rose",
+                                    "name": "tile"
+                                },
+                                {
+                                    "bg": "rose",
+                                    "name": "card"
+                                }
+                            ]
+
+                        }
+                    ]
+                }
+            },
+            "docs": {
+                "url": "ui/templates/docs.html",
+                "data": {}
+            },
+            "docs2": {
+                "url": "ui/templates/docs2.html",
+                "data": {}
+            }
+        }
+    },
+    "components": {
+        "rectangle": {
+            "template_url": "ui/templates/components/custom/rectangle.tpl",
+            "fields": ["background"],
+            "size": "[opacity:0]"
+        },
+        "filter-tag": {
+            "template_url":"ui/templates/components/custom/filter-tag.tpl",
+            "fields": ["name", "background"]
+        },
+        "tile": {
+            "template_url": "ui/templates/components/custom/tile.tpl",
+            "fields": ["import_url", "id"]
+        }
+    },
+    "spec": {
+        "visual": {
+            "depth 1": [
+                "Vertical grid that behaves like http://isotope.metafizzy.co/",
+                "Three to four different sizes for items i.e. small, medium, large",
+                "Parallax hover similar to http://www.adultswim.com/music/singles-2016/"
+            ],
+            "depth 2": [
+                "Component is centered on the top",
+                "Details including tags and related items go underneath",
+                "Bottom left corner has navigation details like https://www.etq-amsterdam.com/shop/derby-alloy/",
+                "Bottom right corner has a menu (dropdown or bar) with the different versions of each component"
+            ]
+        },
+        "onEnter": [
+            "Gallery items come in similar to http://codepen.io/teamuguru/pen/58460c8c0fe2c6d785741a3ce224eda6",
+            "Items enter in order of size",
+            "First row comes in from the top, second from the sides, everything else comes in from the bottom"
+        ],
+        "Other": {
+            "onScroll": "Item enter direction alternates between sides and bottom",
+            "onHover": "Item border and background turn dark + parallax hover",
+            "onClick": "Item moves to center top and box expands to cover screen"
+        }
+    }
+}

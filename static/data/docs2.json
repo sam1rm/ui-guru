@@ -1,0 +1,175 @@
+{
+    "vars": {
+        "components": {
+            "searchBar": {
+                "text": ""
+            },
+			"formInput": [
+				{
+					"title": "Title",
+					"placeholder": "Lorem Ipsum"
+				},
+				{
+					"title": "File",
+					"placeholder": "lorem.html"
+				},
+				{
+					"title": "Line",
+					"placeholder": "01"
+				}
+			],
+			"formTextarea": [
+				{
+					"title": "Description",
+					"placeholder": "Describe your problem",
+					"custom": ""
+				},
+				{
+					"title": "Snippet",
+					"placeholder": "<h1>Hello Gabri</h1>",
+					"custom": "source-code"
+				}
+			],
+            "actionLink": [
+                {
+                    "name": "Search",
+                    "keyMapping": "s",
+					"icon": "shared/templates/components/svg/docs/search-circle.html"
+                },
+                {
+                    "name": "Report Bug",
+                    "keyMapping": "b",
+					"icon": "shared/templates/components/svg/docs/bug.html"
+                },
+                {
+                    "name": "Add Doc",
+                    "keyMapping": "d",
+					"icon": "shared/templates/components/svg/docs/add-doc.html"
+                },
+                {
+                    "name": "Add Feature",
+                    "keyMapping": "f",
+					"icon": "shared/templates/components/svg/docs/add-ft.html"
+                }
+            ]
+        },
+        "searchText": "Get Started",
+        "activeTab": "Attributes"
+    },
+    "config": {
+        "pathParams": {
+            "content": 1,
+            "subcategory": 2,
+            "property": 3,
+            "attribute": 3
+        },
+        "base_url": "^",
+        "scripts": {
+            "base": "./shared/static/data/docs/",
+            "queue": [
+                {
+                    "path": "attributes.json",
+                    "name": "attributes",
+                    "mapping": {
+                        "to":"content.attributes"
+                    }
+                },
+                {
+                    "path": "directives.json",
+                    "name": "directives",
+                    "mapping": {
+                        "to" : "content.dir"
+                    }
+                },
+                {
+                    "path": "css.json",
+                    "name": "css",
+                    "mapping": {
+                        "to" : "content.css"
+                    }
+                },
+                {
+                    "path": "html.json",
+                    "name": "html",
+                    "mapping": {
+                            "to": "content.html"
+                    }
+                },
+                {
+                    "path": "style-guide.json",
+                    "name": "guide",
+                    "mapping": {
+                        "to":"content.style_guide"
+                    }
+                }
+            ]
+        }
+    },
+    "content": {},
+    "components": {
+        "search-bar": {
+            "template_url": "./ui/templates/docs/search-bar.tpl",
+            "fields": ["background"],
+            "size": "[opacity:0]"
+        },
+        "side-bar": {
+            "template_url": "./ui/templates/docs/side-bar.tpl"
+        },
+        "side-bar-item": {
+            "template_url": "./ui/templates/docs/side-bar-item.tpl"
+        },
+        "omnibar": {
+            "template_url": "./ui/templates/docs/omnibar.tpl"
+        },
+        "action-link": {
+            "template_url": "./ui/templates/docs/action-link.tpl",
+            "fields": ["", "name"]
+        },
+        "article-topic": {
+            "template_url": "./ui/templates/docs/article-topic.tpl",
+            "fields": ["title"]
+        },
+        "article-main": {
+            "template_url": "./ui/templates/docs/article-main.tpl"
+        },
+        "article-options": {
+            "template_url": "./ui/templates/docs/article-options.tpl"
+        },
+        "article-option-item": {
+            "template_url": "./ui/templates/docs/article-option-item.tpl",
+            "fields": ["name"]
+        },
+        "article-example": {
+            "template_url": "./ui/templates/docs/article-example.tpl"
+        },
+        "search-result": {
+            "template_url": "./ui/templates/docs/search-result.tpl"
+        },
+        "example-preview": {
+            "template_url": "./ui/templates/docs/example-preview.tpl"
+        },
+        "example-html": {
+            "template_url": "./ui/templates/docs/example-html.tpl"
+        },
+        "example-css": {
+            "template_url": "./ui/templates/docs/example-css.tpl"
+        },
+        "form-input": {
+            "template_url": "./ui/templates/docs/form-input.tpl",
+            "fields": ["title", "placeholder"]
+        },
+        "form-textarea": {
+            "template_url": "./ui/templates/docs/form-textarea.tpl",
+            "fields": ["title", "placeholder", "custom"]
+        },
+        "form-tags": {
+            "template_url": "./ui/templates/docs/form-tags.tpl"
+        },
+        "form-severity": {
+            "template_url": "./ui/templates/docs/form-severity.tpl"
+        }
+
+
+    }
+
+}

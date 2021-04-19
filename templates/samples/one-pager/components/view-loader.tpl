@@ -1,0 +1,2 @@
+<graphic u init-with="p:[perspective-origin:50% 50%,p:opacity:0]" on-init="a:[slideInDown:2000:easeOutCirc:0:1:f, rotateY:-1080deg:0deg:2000:easeOutCirc:0:1:f, scale:0:1:2000:easeOutCirc:0:1:f]" height='25' width='25' class='flex-grow svg-stroke-5 stroke-cerise fill-cerise' height='50' url='shared/templates/components/svg/main/heart.html'>
+</graphic>

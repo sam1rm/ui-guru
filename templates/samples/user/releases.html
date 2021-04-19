@@ -1,0 +1,60 @@
+<view size='100' abs top='0' left='0' width='100%' height='100%'>
+    <imports>
+            <import-dict>
+                {
+                    "_type": "fake_auth_code",
+                    "info": {
+                        "profile": {
+                            "name": {
+                                "first": "Samir"
+                            }
+
+                        }
+                    },
+                    "components": {},
+                    "projects": [
+                        {
+                            name: "releases",
+                            last_updated: ""
+                        },
+                        {
+                            name: "todo",
+                            projects: [
+                            {name: "timer"},
+                            {name: "codepen",ideas: { "cb comperators": [] }}
+                            ]
+                        }
+
+                    ]
+                }
+
+            </import-dict>
+    </imports>
+    <components>
+        <header-text header="string">
+            <div>
+                {{header}}
+            </div>
+        </header-text>
+    </components>
+    <main>
+        <content u>
+            <ul x='center' y='center' size='100' u init-with="p:[opacity:0]" on-init="s:[enter-card:public:linear-1000]|p:[opacity:1]" column>
+                <li>
+                    <header-text header="{{view.data.info.profile.name.first}}'s Updates"> </header-text>
+                </li>
+                <li  size='250px' m='20px' u-list="project in view.data.projects" x='center' column wrap class='border-dashed border-1 border-smoke' u pointer init-with="p:[transition:transform 500ms ease]" on-mouseleave="p:[transform:scale(1)]|s:[scale-back-normal:depth(-0)]" when-scale-smaller="p:[transform:scale(0)]" when-scale-back-normal="p:[transform:unset]" on-mouseenter="p:[transform:scale(1.5)]|s:[scale-smaller:public]:+100" >
+                    <div column grow='1' u when-enter-card="a:[translateX:-100%:0%:1000:linear:0:1:f]">
+                        <div grow='2.5'  column f-s='24px' x='center' y='center' f-w='900' class='uppercase' op='0.8'>
+                            {{project.name}}
+                        </div>
+                    </div>
+                </li>
+                <div s3-upload bucket="'samir.ui.guru'" ng-model="root.s3.url"
+   s3-upload-options="{getOptionsUri: 'http://0.0.0.0:5001/params', targetFilename:'test', folder: 'uploads/'}">
+                </div>
+            </ul>
+        </content>
+
+    </main>
+</view>
